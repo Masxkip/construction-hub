@@ -1,0 +1,1344 @@
+/* Reset default margins and paddings */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Body Styling */
+  body {
+    background-color: whitesmoke;  /* Light gray background */
+    color: #333;  /* Darker text for readability */ 
+  }
+
+ /* Universal Section Styling */
+.section-st {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 60px 20px;
+  position: relative;
+  text-align: center;
+  color: black;
+  background: linear-gradient(rgb(244, 244, 244), rgba(221, 221, 221, 0.858)), url("images/e1.png") center/cover no-repeat;
+}
+
+
+
+/* Section Title */
+.section-st h2 {
+  font-size: 2.2rem;
+  margin-bottom: 15px;
+  font-weight: bold;
+  color: #000;
+}
+
+/* Section Paragraph */
+.section-st p {
+  font-size: 1.2rem;
+  color: #000;
+  line-height: 1.6;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .section-st {
+      padding: 40px 15px;
+  }
+
+  .section-st .section-content {
+      padding: 20px;
+  }
+
+  .section-st h2 {
+      font-size: 1.8rem;
+  }
+
+  .section-st p {
+      font-size: 1rem;
+  }
+}
+
+  
+  /* Main Content Wrapper */
+  .main-content {
+    width: 100%; /* Make it full width */
+  max-width: 100%; /* Remove content restriction */
+  margin: 0; /* Remove auto-centering */
+  padding: 0
+  }
+  
+  /* Responsive Container */
+  @media (max-width: 768px) {
+    /* Adjust for smaller navbar */
+    
+  
+    .main-content {
+      padding: 10px;
+    }
+  }
+  
+
+
+/* General Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    padding: 1.2rem 2rem;
+    color: white;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+  }
+  
+  .logo-img {
+    width: 120px; /* Adjust size */
+    height:90px;
+}
+
+ /* Desktop Search Bar */
+.search-bar-desktop {
+    flex: 1;
+    margin: 0 15px;
+    display: flex;
+    justify-content: center;
+    width: 300%; /* Expand the search bar to full width */
+  }
+  
+  /* Adjust input field width */
+  .search-bar-desktop input {
+    width: 94%; /* Increase width from 50% to 80% */
+    max-width: 600px; /* Prevent it from being too wide */
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 1rem;
+  }
+
+  /* Clear Button */
+.clear-search {
+    background: transparent;
+    border: none;
+    font-size: 1.2rem;
+    margin-left: -30px;
+    cursor: pointer;
+    color: #888;
+  }
+
+  /* Mobile Search Icon */
+.search-icon {
+    background: none;
+    color: white;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+    display: none;
+  }
+
+/* Mobile Search Dropdown */
+.search-dropdown {
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    background: white;
+    padding: 10px;
+    display: none;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  
+  .search-dropdown input {
+    width: 90%;
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+  }
+
+  
+  .nav-links {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    gap: 20px;
+  }
+  
+  .nav-links li {
+    position: relative;
+  }
+  
+  .nav-links a, .dropdown button {
+    text-decoration: none;
+    color: white;
+    background: none;
+    border: none;
+    font-size: 1rem;
+    cursor: pointer;
+  }
+  
+  .nav-links a:hover, .dropdown button:hover {
+    color: rgb(235, 197, 11);
+  }
+  
+  /* Dropdown Styling */
+  .dropdown-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: #333;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    border-radius: 5px;
+  }
+  
+  .dropdown-menu li {
+    padding: 5px 10px;
+  }
+  
+  .dropdown-menu li a {
+    color: white;
+    display: block;
+    padding: 5px 0;
+  }
+  
+  .dropdown-menu li a:hover {
+    color: #f4a261;
+  }
+  
+  /* Hamburger Menu */
+  .hamburger {
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+    cursor: pointer;
+  }
+  
+  .bar {
+    width: 25px;
+    height: 3px;
+    background: white;
+  }
+  
+  /* Mobile Menu */
+  .mobile-menu {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 70%;
+    height: 100vh;
+    background: #222;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    box-shadow: -2px 0 5px rgba(0, 0, 0, 0.5);
+  }
+  
+  .mobile-links {
+    list-style: none;
+    padding: 0;
+    margin-top: 2rem;
+    width: 100%;
+  }
+  
+  .mobile-links li {
+    padding: 1rem 0;
+  }
+  
+  .mobile-links a, .mobile-menu .dropdown button {
+    color: white;
+    font-size: 1.2rem;
+    text-decoration: none;
+  }
+  
+  /* Dropdown Menu in Mobile View - Scrollable */
+.mobile-menu .dropdown-menu {
+    position: relative;
+    background: #333;
+    padding: 10px;
+    border-radius: 5px;
+    max-height: 200px; /* Limits height */
+    overflow-y: auto;  /* Enables scrolling if dropdown exceeds height */
+  }
+  
+  .mobile-menu .dropdown-menu li {
+    padding: 5px 10px;
+  }
+  
+  .mobile-menu .dropdown-menu li a {
+    color: white;
+    display: block;
+    padding: 5px 0;
+  }
+  
+  .mobile-menu .dropdown-menu li a:hover {
+    color: #f4a261;
+  }
+  
+  /* Smooth Scrolling */
+  .mobile-menu .dropdown-menu::-webkit-scrollbar {
+    width: 5px;
+  }
+  
+  .mobile-menu .dropdown-menu::-webkit-scrollbar-thumb {
+    background: #f4a261;
+    border-radius: 5px;
+  }
+  
+  .mobile-menu .dropdown-menu::-webkit-scrollbar-track {
+    background: #222;
+  }
+  
+  
+  .mobile-links a:hover {
+    color: #f4a261;
+  }
+  
+  /* Close Button */
+  .close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 2rem;
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+  }
+  
+  /* Responsive Styles */
+  @media (max-width: 768px) {
+    
+
+    .nav-links {
+      display: none;
+    }
+  
+    .hamburger {
+      display: flex;
+    }
+
+    .logo {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+      }
+    
+      .search-bar-desktop {
+        display: none;
+      }
+
+      .search-dropdown {
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        background: white;
+        padding: 10px;
+        display: flex;
+        justify-content: center;
+        margin-top: 20px;
+      }
+
+      .search-icon {
+        background: none;
+        color: white;
+        border: none;
+        font-size: 1.5rem;
+        cursor: pointer;
+        display: flex;
+      }
+
+  }
+
+
+  
+  
+
+
+
+  /* Hero Section */
+.hero {
+  height: 90vh;
+  background: url("images/c1.jpg") center/cover no-repeat; /* Background image */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+  padding: 20px;
+  position: relative;
+}
+
+/* Dark Overlay for Better Text Readability */
+.hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.205); /* Fading effect */
+}
+  
+ /* Hero Content */
+.hero-content {
+  max-width: 700px;
+  background: rgba(0, 0, 0, 0.438);
+  padding: 30px;
+  border-radius: 10px;
+  position: relative; /* Ensures text is above overlay */
+  z-index: 1;
+}
+  
+  .hero h1 {
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+  }
+  
+  .hero p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+  }
+  
+  .cta-button {
+    display: inline-block;
+    background: rgb(228, 190, 0);
+    color: black;
+    padding: 12px 24px;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+  }
+  
+  .cta-button:hover {
+    background: #e76f51;
+  }
+  
+  /* Features Section */
+  .features {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    padding: 50px 20px;
+    background: #f8f9fa;
+  }
+  
+  .feature {
+    max-width: 300px;
+  }
+  
+  .feature h2 {
+    color: #333;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+  }
+  
+  .feature p {
+    color: #666;
+    font-size: 1rem;
+  }
+  
+
+
+
+/* Category Page */
+.category-page {
+    padding: 60px 20px;
+    text-align: center;
+  }
+  
+  h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+  
+  /* Search Bar */
+  .search-bar {
+    width: 80%;
+    max-width: 400px;
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 20px;
+  }
+  
+  /* Items Grid */
+  .items-grid {
+    
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+  }
+  
+
+  
+
+
+
+
+
+  
+/* ============================================= */
+/* Inventory Card */
+.inventory-card {
+  width: 370px;
+  padding: 15px;
+  background: white;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  text-align: center;
+}
+
+/* Image Slider */
+.image-slider {
+  position: relative;
+  width: 100%;
+  height: 200px;
+}
+
+.image-slider img {
+  width: 100%;
+  height: 120%;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+/* Slider Buttons */
+.prev-btn, .next-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+  border-radius: 50%;
+}
+
+.prev-btn { left: 5px; }
+.next-btn { right: 5px; }
+
+/* Dots for Image Navigation */
+.image-dots {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.image-dots .dot {
+  width: 10px;
+  height: 10px;
+  background: gray;
+  border-radius: 50%;
+  margin: 0 5px;
+  margin-top: 42px;
+  cursor: pointer;
+}
+
+.image-dots .dot.active {
+  background: black;
+}
+
+/* "View All Photos" Overlay */
+.view-all-overlay {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 40px;
+  background: rgba(255, 255, 255, 0.8);
+  color: #000;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.view-all-overlay:hover {
+  background: rgba(255, 255, 255, 1);
+}
+
+/* View Details Button */
+.view-details-btn {
+  display: block;
+  background: #008f5e;
+  color: white;
+  padding: 10px;
+  text-align: center;
+  border-radius: 5px;
+  text-decoration: none;
+  margin-top: 10px;
+}
+
+.view-details-btn:hover {
+  background: #006f49;
+}
+
+  
+  /* Item Details */
+  .item-name {
+    font-size: 1.1rem;
+    font-weight: bold;
+    margin-top: 40px;
+  }
+  
+  .item-price {
+    font-size: 1.2rem;
+    color: rgb(235, 197, 11);
+    font-weight: bold;
+    margin: 5px 0;
+  }
+  
+  
+/* ============================================= */
+
+
+/* ============================================= */
+/* Search Results Dropdown */
+.search-results {
+  position: absolute;
+  top: 40px; /* Below the search input */
+  left: 42%;
+  margin-top: 31px;
+  transform: translateX(-50%);
+  background: white;
+  color: #222;
+  width: 80%;
+  max-width: 540px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  max-height: 250px;
+  overflow-y: auto;
+  list-style: none;
+  padding: 5px;
+  z-index: 10;
+}
+
+/* Search Result Items */
+.search-results li {
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+  color: #222;
+  cursor: pointer;
+  text-align: left;
+}
+
+.search-li{
+    color: #222;
+}
+
+.search-lii{
+    color: #222;
+}
+
+.search-results li:hover {
+  background: #f4f4f4;
+}
+
+@media (max-width: 768px) {
+
+    .search-results {
+        position: absolute;
+        top: 40px; /* Below the search input */
+        left: 50%;
+        margin-top: 1px;
+        width: 86%;
+        max-width: 500px;
+      }
+  }
+/* ============================================= */
+
+
+/* ============================================= */
+/* Item Detail Page */
+.item-detail-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+  background: #f8f8f8;
+}
+
+.item-detail-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 900px;
+  width: 100%;
+  background: #f8f8f8;
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Image Container */
+.item-detail-image {
+  position: relative;
+  width: 100%;
+  max-width: 700px;
+}
+
+.item-detail-image img {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+}
+
+/* Slider Navigation */
+.prev-btn, .next-btn {
+  position: absolute;
+  top: 50%;
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  transform: translateY(-50%);
+}
+
+.prev-btn { left: 10px; }
+.next-btn { right: 10px; }
+
+/* Image Thumbnails */
+.image-thumbnails {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+  gap: 10px;
+}
+
+.image-thumbnails img {
+  width: 80px;
+  height: 60px;
+  cursor: pointer;
+  border: 2px solid transparent;
+}
+
+.image-thumbnails img.active {
+  border-color: black;
+}
+
+/* Item Specifications */
+.item-detail-info{
+  margin-top: 30px;
+}
+
+.item-detail-info p {
+  font-size: 1.2rem;
+  color: #000;
+}
+
+.item-specs {
+  width: 100%;
+  margin-top: 40px;
+}
+
+.item-specs h3 {
+    font-size: 1.7rem;
+    margin-bottom: 15px;
+}
+
+.spec-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  background: #f4f4f4;
+  margin-bottom: 5px;
+  border-radius: 5px;
+}
+
+.spec-item span {
+  font-weight: bold;
+}
+
+/* Contact Buttons */
+.contact-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 15px;
+}
+
+.call-btn, .email-btn, .get-quote-btn {
+  background: black;
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  text-align: center;
+  display: inline-block;
+  font-weight: bold;
+}
+
+/* Company Info */
+.company-info {
+  margin-top: 15px;
+  font-size: 0.9rem;
+  text-align: center;
+}
+
+.company-info p {
+  font-weight: bold;
+}
+
+.company-info a {
+  color: black;
+  text-decoration: none;
+  font-size: 1.1rem;
+}
+
+.company-info a:hover {
+  text-decoration: underline;
+  color: rgb(235, 197, 11);
+}
+
+/* Get a Quote Button */
+.quote-button {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.get-quote-btn {
+  background: rgb(235, 197, 11);
+  transition: background 0.3s;
+  color: #000;
+  padding: 10px 40px;
+}
+
+.get-quote-btn:hover {
+  background: black;
+  color: white;
+  
+}
+/* ============================================= */
+
+
+/* ============================================= */
+/* Best Sellers Section */
+.best-sellers {
+    text-align: center;
+    padding: 50px 20px;
+
+  }
+  
+  .best-sellers h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #222;
+  }
+  
+  /* Best Sellers Grid */
+  .best-sellers-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 45px;
+    max-width: 950px;
+    margin: auto;
+  }
+  
+  /* Best Seller Card */
+  .best-seller-card {
+    background: white;
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.2s ease-in-out;
+  }
+  
+  .best-seller-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  /* Image */
+  .best-seller-image {
+    width: 100%;
+    max-height: 280px;
+    border-radius: 8px;
+    object-fit: cover;
+  }
+  
+  /* Name */
+  .best-seller-card h3 {
+    font-size: 1.2rem;
+    margin-top: 10px;
+  }
+  
+  /* Price */
+  .best-seller-price {
+    font-size: 1.4rem;
+    color: rgb(235, 197, 11);
+    font-weight: bold;
+    margin: 5px 0;
+  }
+/* ============================================= */
+  
+
+/* ============================================= */
+  /* View Details Button */
+  .view-details-btn {
+    display: inline-block;
+    padding: 8px 12px;
+    background: black;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    margin-top: 10px;
+  }
+  
+  .view-details-btn:hover {
+    background: rgb(235, 197, 11);
+    color: #000;
+  }
+  
+  /* Discover More Button */
+  .discover-more {
+    margin-top: 30px;
+  }
+  
+  .discover-btn {
+    display: inline-block;
+    padding: 12px 18px;
+    background: black;
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    font-weight: bold;
+  }
+  
+  .discover-btn:hover {
+    background: rgb(235, 197, 11);
+    color: #000;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .best-sellers-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+/* ============================================= */
+
+
+/* ============================================= */
+/* Home Contact Section */
+.home-contact {
+    text-align: center;
+    padding: 50px 20px;
+    background: white;
+  }
+  
+  /* Center the Contact Form */
+  .contact-form-wrapper {
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically (if needed) */
+    width: 100%;
+  }
+  
+/* Contact Page */
+.contact-page {
+    text-align: center;
+    padding: 50px 20px;
+    background: #f8f9fa;
+  }
+  
+  .contact-container {
+    display: flex;
+    justify-content: space-between;
+    max-width: 900px;
+    margin: auto;
+    gap: 30px;
+  }
+  
+  /* Left - Contact Info */
+  .contact-info {
+    width: 40%;
+    text-align: left;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .contact-info h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+  }
+  
+  /* Right - Contact Form */
+  .contact-form {
+    width: 55%;
+    background: white;
+    padding: 55px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .contact-form h3 {
+    margin-bottom: 15px;
+  }
+  
+  .contact-form input,
+  .contact-form textarea {
+    width: 100%;
+    padding: 20px;
+    margin: 8px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+  }
+  
+  .contact-form textarea {
+    height: 150px;
+    resize: none;
+  }
+  
+  .send-btn {
+    display: inline-block;
+    background: #000;
+    color: white;
+    padding: 10px 15px;
+    margin-top: 15px;
+    border: none;
+    font-size: 1em;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+  .send-btn:hover {
+    background: rgb(235, 197, 11);
+    color: #000;
+  }
+  
+  /* Quote Section */
+  .contact-quote {
+    margin-top: 40px;
+    padding: 18px;
+    background: rgb(235, 197, 11);
+    color: white;
+    font-size: 1.2rem;
+    border-radius: 5px;
+  }
+
+  .contact-quote p {
+    font-size: 1.5rem;
+  }
+/* ============================================== */
+
+
+/* ============================================= */
+/* Call Us Now Button */
+.call-us-btn {
+    background: rgb(235, 197, 11)!important; /* Force the color change */
+    color: black !important;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 8px 15px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    height: 40px;
+    transition: background 0.3s ease-in-out;
+  }
+  
+  /* Ensure Hover Works */
+  .call-us-btn:hover {
+    background: rgb(246, 211, 36) !important; /* Force hover color */
+  }
+  
+  /* Position CTA Button in Navbar */
+  .nav-cta {
+    list-style: none;
+    margin-left: 10px;
+  }
+/* ============================================= */
+  
+
+/* ============================================= */
+/* Home About Section */
+.home-about {
+    text-align: center;
+    padding: 50px 20px;
+    background: #f8f9fa;
+  }
+  
+  .about-content {
+    max-width: 800px;
+    margin: auto;
+    font-size: 1.2rem;
+  }
+  
+  /* Learn More Button */
+  .learn-more-btn {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 20px;
+    background: black;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+  }
+  
+  .learn-more-btn:hover {
+    background: rgb(235, 197, 11);
+    color: #000;
+  }
+/* ============================================= */
+
+  
+/* ============================================= */
+/* About Page */
+.about-page {
+    text-align: center;
+    padding: 50px 20px;
+    background: white;
+  }
+  
+  /* About Intro */
+  .about-intro {
+    max-width: 800px;
+    margin: auto;
+    font-size: 1.2rem;
+  }
+  
+  /* About Mission */
+  .about-mission {
+    background: #f8f9fa;
+    padding: 30px 20px;
+    border-radius: 10px;
+    margin: 30px auto;
+    max-width: 800px;
+  }
+  
+  /* About Values */
+  .about-values {
+    max-width: 800px;
+    margin: auto;
+  }
+  
+  .about-values ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .about-values li {
+    font-size: 1.2rem;
+    margin: 10px 0;
+  }
+  
+  /* About Footer */
+  .about-footer {
+    margin-top: 30px;
+    font-size: 1.2rem;
+  }
+/* ============================================= */
+
+
+/* ============================================= */
+/* Why Work With Us Section */
+.why-work-with-us {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 100px 20px;
+  background: url("images/hn1.jpg") center/cover no-repeat; /* Background image */
+  position: relative;
+  color: white;
+}
+
+/* Dark Overlay for Readability */
+.why-work-with-us::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.685); /* Fading effect */
+}
+
+/* Content Wrapper */
+.why-content {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  max-width: 1100px;
+  width: 100%;
+  position: relative; /* Ensures text is above overlay */
+  z-index: 1;
+}
+
+/* Left Side - Image */
+.why-image img {
+  width: 250px;
+  height: auto;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+/* Right Side - Text Content */
+.why-text {
+  flex: 1;
+  text-align: left;
+}
+
+.why-text h2 {
+  font-size: 2.5rem;
+  margin-bottom: 15px;
+}
+
+.why-text p {
+  font-size: 1.3rem;
+  margin-bottom: 20px;
+}
+
+/* Bullet Points */
+.why-text ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.why-text li {
+  font-size: 1.25rem;
+  margin-bottom: 10px;
+  position: relative;
+  padding-left: 20px;
+}
+
+/* Small Circle Bullet */
+.why-text li::before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  top: 0;
+  font-size: 1.5rem;
+  color: #2a9d8f;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .why-content {
+      flex-direction: column;
+      text-align: center;
+  }
+
+  .why-image img {
+      width: 100%;
+      max-width: 400px;
+  }
+
+  .why-text ul {
+      text-align: left;
+  }
+}
+/* ============================================= */
+
+
+
+/* ============================================= */
+/* Footer Section */
+.footer {
+  background: #111;
+  color: white;
+  padding: 70px 20px;
+  text-align: center;
+  min-height: 250px;
+}
+
+/* Footer Container */
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1100px;
+  margin: auto;
+  gap: 40px;
+  flex-wrap: wrap;
+  height: 220px;
+}
+
+/* Footer Sections */
+.footer-left, .footer-middle, .footer-right {
+  flex: 2;
+  text-align: left;
+}
+
+/* Logo */
+.footer-logo {
+  width: 150px;
+  margin-top: -55px;
+  margin-bottom: -9px;
+}
+
+/* Footer Text */
+.footer h3 {
+  font-size: 1.4rem;
+  margin-bottom: 10px;
+}
+
+.footer p {
+  font-size: 1rem;
+  margin-bottom: 8px;
+}
+
+/* Footer Quick Links */
+.footer-links {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-links li {
+  margin-bottom: 8px;
+}
+
+.footer-links a {
+  text-decoration: none;
+  color: white;
+  font-size: 1rem;
+  transition: color 0.3s ease-in-out;
+}
+
+.footer-links a:hover {
+  color: rgb(235, 197, 11); /* Light green hover effect */
+}
+
+/* Footer Bottom - Moved Outside for Full Yellow Background */
+.footer-bottom {
+  background: rgb(235, 197, 11); /* FULL YELLOW SECTION */
+  padding: 27px 0;
+  font-size: 1rem;
+  color: black; /* Black Copyright Text */
+  text-align: center;
+  font-weight: bold;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .footer-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .footer-left, .footer-middle, .footer-right {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+}
+/* ============================================= */

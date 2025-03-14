@@ -1,0 +1,8 @@
+# Ignore node_modules
+node_modules/
+
+# Ignore other common build files
+dist/
+.env
+.DS_Store
+.vscode/
