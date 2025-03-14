@@ -419,7 +419,8 @@
   }
   
   .cta-button:hover {
-    background: #e76f51;
+    background: black;
+    color: white;
   }
   
   /* Features Section */
@@ -1158,7 +1159,7 @@
   justify-content: center;
   align-items: center;
   padding: 100px 20px;
-  background: url("images/hn1.jpg") center/cover no-repeat; /* Background image */
+  background: url("../public/images/hn1.jpg") center/cover no-repeat; /* Background image */
   position: relative;
   color: white;
 }
