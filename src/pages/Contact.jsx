@@ -15,16 +15,14 @@ const Contact = () => {
           <p><strong>Phone:</strong> +1 555-123-4567</p>
         </div>
 
+
         {/* Right - Contact Form */}
         <ContactForm />
       </div>
-
-      {/* Bottom Quote Section */}
-      <div className="contact-quote">
-        <p>📞 Please call for a quote: <strong>+1 555-123-4567</strong></p>
-      </div>
     </div>
     </section>
+    
+    
   );
 };
 

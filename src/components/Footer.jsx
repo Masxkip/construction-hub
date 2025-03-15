@@ -1,9 +1,19 @@
 import { Link } from "react-router-dom";
+import { Phone } from "lucide-react";
 
 const Footer = () => {
   return (
     <>
       {/* Main Footer Section */}
+      <div className="contact-quote">
+      <Phone className="phone-icon" size={30} />
+      <p>
+        Please call for a quote:{" "}
+        <a href="tel:+15551234567" className="phone-number">
+          +1 555-123-4567
+        </a>
+      </p>
+    </div>
       <footer className="footer">
         <div className="footer-container">
 

@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import BestSellers from "../components/BestSellers";
 import ContactForm from "../components/ContactForm";
+import { Wrench, DollarSign, Truck, Phone } from "lucide-react"; // Import icons
 
 const Home = () => {
   return (
@@ -16,24 +17,38 @@ const Home = () => {
       
       {/* Features Section */}
       <section className="features">
-        <div className="feature">
-          <h2>High-Quality Machines</h2>
-          <p>Durable and efficient equipment for your projects.</p>
-        </div>
-        <div className="feature">
-          <h2>Affordable Pricing</h2>
-          <p>Get the best deals on top-notch construction tools.</p>
-        </div>
-        <div className="feature">
-          <h2>Fast & Secure Delivery</h2>
-          <p>We ensure timely delivery to your site.</p>
-        </div>
-      </section>
+      <div className="feature">
+        <Wrench size={43} className="feature-icon" />
+        <h2>High-Quality Machines</h2>
+        <p>Durable and efficient equipment for your projects.</p>
+      </div>
+      <div className="feature">
+        <DollarSign size={43} className="feature-icon" />
+        <h2>Affordable Pricing</h2>
+        <p>Get the best deals on top-notch construction tools.</p>
+      </div>
+      <div className="feature">
+        <Truck size={43} className="feature-icon" />
+        <h2>Fast & Secure Delivery</h2>
+        <p>We ensure timely delivery to your site.</p>
+      </div>
+    </section>
 
       {/* Best Sellers Section */}
       <section className="best-sellers-section">
         <BestSellers />
       </section>
+
+      {/* Quote call section */}
+      <div className="contact-quote">
+      <Phone className="phone-icon" size={30} />
+      <p>
+        Please call for a quote:{" "}
+        <a href="tel:+15551234567" className="phone-number">
+          +1 555-123-4567
+        </a>
+      </p>
+    </div>
 
       <section className="home-about">
   <div className="about-content">

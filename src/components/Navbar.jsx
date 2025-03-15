@@ -2,6 +2,8 @@ import { useState, useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
 import excavatorsData from "../data/excavatorsData";
 import loadersData from "../data/loadersData";
+import forkliftsData from "../data/forkliftsData";
+import cranesData from "../data/cranesData";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -20,7 +22,7 @@ const Navbar = () => {
   }, [location.pathname]);
 
   // Combine all categories into one array
-  const allItems = [...excavatorsData, ...loadersData];
+  const allItems = [...excavatorsData, ...loadersData, ...forkliftsData, ...cranesData];
 
   // Handle Search Functionality
   const handleSearch = (e) => {
@@ -42,13 +44,32 @@ const Navbar = () => {
     <nav className="navbar">
       <div className="nav-left">
         {/* Mobile Search Icon */}
-        <button className="search-icon" onClick={() => setSearchOpen(!searchOpen)}>🔍</button>
+        <button className="search-icon" onClick={() => setSearchOpen(!searchOpen)}>
+        <svg
+          className="search-svg"
+          xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          strokeWidth="2"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+        >
+          <circle cx="11" cy="11" r="8"></circle>
+          <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+        </svg>
+      </button>
+
       </div>
 
       {/* Logo */}
       <div className="logo">
-  <img src="/images/lg2.png" alt="ConstructionHub Logo" className="logo-img" />
-</div>
+      <Link to="/">
+        <img src="/images/lg2.png" alt="ConstructionHub Logo" className="logo-img" />
+        </Link>
+      </div>
 
       {/* Desktop Search Bar */}
       <div className="search-bar-desktop">
@@ -79,10 +100,10 @@ const Navbar = () => {
 
         {/* Inventory Dropdown */}
         <li className="dropdown">
-          <Link to="/inventory">Inventory</Link>
-          <button onClick={() => setDropdownOpen(!dropdownOpen)}> ▼ </button>
+          <button onClick={() => setDropdownOpen(!dropdownOpen)}>Inventory ▼ </button>
           {dropdownOpen && (
             <ul className="dropdown-menu">
+              <li><Link to="/inventory">All Inventory</Link></li>
               <li><Link to="/category/excavators">Excavators</Link></li>
               <li><Link to="/category/loaders">Loaders</Link></li>
               <li><Link to="/category/cranes">Cranes</Link></li>
@@ -94,9 +115,8 @@ const Navbar = () => {
         <li><Link to="/shipping">Shipping</Link></li>
         <li><Link to="/contact">Contact</Link></li>
         <li className="nav-cta">
-        <a href="tel:+15551234567" className="call-us-btn">Call Us Now</a>
+          <a href="tel:+15551234567" className="call-us-btn">Call Us Now</a>
         </li>
-
       </ul>
 
       {/* Hamburger Menu */}
@@ -135,7 +155,7 @@ const Navbar = () => {
         </div>
       )}
 
-      {/* Mobile Search Dropdown */}
+      {/* 🔥 Mobile Search Dropdown 🔥 */}
       {searchOpen && (
         <div className="search-dropdown">
           <input
@@ -149,7 +169,7 @@ const Navbar = () => {
             <ul className="search-results">
               {searchResults.map((item) => (
                 <li key={item.id}>
-                  <Link to={`/inventory/item/${item.id}`} onClick={() => setSearchTerm("")} className="search-lii">
+                  <Link to={`/inventory/item/${item.id}`} onClick={() => setSearchTerm("")} className="search-li">
                     {item.name} - {item.price}
                   </Link>
                 </li>

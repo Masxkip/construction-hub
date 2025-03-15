@@ -1,7 +1,7 @@
 import { useState } from "react";
 
 const ContactForm = () => {
-  const [formData, setFormData] = useState({ name: "", email: "", message: "" });
+  const [formData, setFormData] = useState({ name: "", email: "", phone: "", message: "" });
 
   // Handle input changes
   const handleChange = (e) => {
@@ -12,7 +12,7 @@ const ContactForm = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     alert("Message sent successfully!");
-    setFormData({ name: "", email: "", message: "" }); // Reset form
+    setFormData({ name: "", email: "", phone: "", message: "" }); // Reset form
   };
 
   return (
@@ -31,6 +31,14 @@ const ContactForm = () => {
         name="email" 
         placeholder="Your Email" 
         value={formData.email} 
+        onChange={handleChange} 
+        required 
+      />
+      <input 
+        type="tel" 
+        name="phone" 
+        placeholder="Your Phone Number" 
+        value={formData.phone} 
         onChange={handleChange} 
         required 
       />
