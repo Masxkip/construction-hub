@@ -27,7 +27,7 @@ padding: 60px 20px;
 position: relative;
 text-align: center;
 color: black;
-background: linear-gradient(rgb(244, 244, 244), rgba(221, 221, 221, 0.858)), url("images/e1.png") center/cover no-repeat;
+background: linear-gradient(rgb(244, 244, 244), rgba(221, 221, 221, 0.858)), url("../public/images/e1.png") center/cover no-repeat;
 }
 
 /* Section Title */
@@ -372,7 +372,7 @@ padding: 0
 /* Hero Section */
 .hero {
 height: 90vh;
-background: url("images/c1.jpg") center/cover no-repeat; /* Background image */
+background: url("../public/images/c1.jpg") center/cover no-repeat; /* Background image */
 display: flex;
 align-items: center;
 justify-content: center;
@@ -1206,7 +1206,7 @@ display: flex;
 justify-content: center;
 align-items: center;
 padding: 100px 20px;
-background: url("images/hn1.jpg") center/cover no-repeat; /* Background image */
+background: url("../public/images/hn1.jpg") center/cover no-repeat; /* Background image */
 position: relative;
 color: white;
 }
