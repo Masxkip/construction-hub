@@ -10,7 +10,8 @@ import ItemDetail from "./pages/ItemDetail";
 import About from "./pages/About";
 import Contact from "./pages/Contact";
 import Footer from "./components/Footer";
-
+import CompanyNews from "./pages/CompanyNews";
+import OurTeam from "./pages/OurTeam"; 
 import "./index.css";
 
 function App() {
@@ -28,6 +29,8 @@ function App() {
           <Route path="/category/forklifts" element={<Forklifts />} /> 
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} />
+          <Route path="/company-news" element={<CompanyNews />} />
+          <Route path="/our-team" element={<OurTeam />} />
           <Route path="/Footer" element={<Footer />} />
 
         </Routes>

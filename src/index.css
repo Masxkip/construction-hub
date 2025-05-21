@@ -1490,3 +1490,293 @@ color: #333; /* Darker shade on hover */
 }
 }
 /* ============================================= */
+
+
+
+.company-news {
+  padding: 40px 20px;
+  background: #f9f9f9;
+}
+
+.section-header {
+  font-size: 28px;
+  text-align: center;
+  border-bottom: 2px solid #222;
+  margin-bottom: 40px;
+  padding-bottom: 10px;
+}
+
+/* Container for all news blocks */
+.news-container {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+
+/* Each individual news block */
+.news-block {
+  display: flex;
+  flex-direction: column;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 30px;
+}
+
+/* Image */
+.news-image {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+/* Title */
+.news-title {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 8px;
+  color: #111;
+}
+
+/* Text */
+.news-content {
+  font-size: 16px;
+  color: #444;
+}
+
+/* Horizontal separator line */
+.separator {
+  margin-top: 30px;
+  border: none;
+  border-top: 1px solid #ddd;
+}
+
+/* DESKTOP layout */
+@media (min-width: 768px) {
+  .news-block {
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 20px;
+  }
+
+  .news-image {
+    width: 35%;
+    height: 220px;
+    margin-bottom: 0;
+  }
+
+  .news-text {
+    width: 65%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .news-title {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+
+  .news-content {
+    font-size: 18px;
+    line-height: 1.6;
+  }
+}
+
+
+
+
+.our-team {
+  padding: 60px 20px;
+  background-color: #ffffff;
+  max-width: 1300px;
+  margin: 0 auto;
+}
+
+/* Section header */
+.team-section-header {
+  font-size: 32px;
+  text-align: center;
+  margin-bottom: 10px;
+  position: relative;
+}
+
+/* Full-width underline */
+.team-section-header::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 2px;
+  background-color: #222;
+  margin: 20px auto 40px;
+}
+
+/* Grid setup */
+.team-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 50px;
+}
+
+/* Individual team card */
+.team-card {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  border: 1px solid #ddd;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+/* BIG Square Image */
+.team-image {
+  width: 180px;
+  height: 180px;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+/* Text content */
+.team-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.team-name {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+.team-title {
+  font-size: 18px;
+  color: #555;
+}
+
+/* Desktop: 2 columns, 3 rows */
+@media (min-width: 768px) {
+  .team-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .team-card {
+    max-width: 100%;
+  }
+}
+
+
+
+
+
+
+.about-us-container {
+  max-width: 1100px;
+  margin: auto;
+  padding: 40px 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #333;
+}
+
+.about-us-container h1 {
+  font-size: 36px;
+  text-align: center;
+  margin-bottom: 30px;
+  font-weight: 700;
+}
+
+.about-us-container h2 {
+  font-size: 24px;
+  margin-top: 30px;
+  color: #222;
+}
+
+.about-us-container p {
+  font-size: 17px;
+  line-height: 1.7;
+  margin: 15px 0;
+}
+
+.about-us-container ul {
+  padding-left: 20px;
+  margin: 10px 0;
+}
+
+.about-us-container ul li {
+  margin-bottom: 10px;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.values-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.values-list li {
+  background-color: #f0f0f0;
+  padding: 8px 12px;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+@media (max-width: 768px) {
+  .about-us-container h1 {
+    font-size: 28px;
+  }
+
+  .about-us-container h2 {
+    font-size: 20px;
+  }
+
+  .about-us-container p,
+  .about-us-container ul li {
+    font-size: 15px;
+  }
+
+  .values-list {
+    flex-direction: column;
+    gap: 6px;
+  }
+}
+
+
+.about-highlights {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  margin-top: 40px;
+  padding: 20px 0;
+}
+
+.highlight-column {
+  flex: 1 1 30%;
+  min-width: 280px;
+}
+
+.highlight-column h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+  font-weight: 700;
+  color: #333;
+}
+
+.highlight-column p {
+  font-size: 15px;
+  line-height: 1.6;
+  color: #555;
+}
+
+@media (max-width: 768px) {
+  .about-highlights {
+    flex-direction: column;
+  }
+
+  .highlight-column {
+    width: 100%;
+  }
+}

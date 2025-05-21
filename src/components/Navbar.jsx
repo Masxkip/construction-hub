@@ -112,7 +112,8 @@ const Navbar = () => {
           )}
         </li>
 
-        <li><Link to="/shipping">Shipping</Link></li>
+        <li><Link to="/our-team">Our Team</Link></li>
+        <li><Link to="/company-news">Company News</Link></li>
         <li><Link to="/contact">Contact</Link></li>
         <li className="nav-cta">
           <a href="tel:+15551234567" className="call-us-btn">Call Us Now</a>
@@ -149,7 +150,7 @@ const Navbar = () => {
               )}
             </li>
             <li><Link to="/products" onClick={() => setIsOpen(false)}>Financing</Link></li>
-            <li><Link to="/shipping" onClick={() => setIsOpen(false)}>Shipping</Link></li>
+            <li><Link to="/company-news" onClick={() => setIsOpen(false)}>Shipping</Link></li>
             <li><Link to="/contact" onClick={() => setIsOpen(false)}>Contact</Link></li>
           </ul>
         </div>
