@@ -10,7 +10,6 @@ const BestSellers = () => {
           <div key={item.id} className="best-seller-card">
             <img src={item.images[0]} alt={item.name} className="best-seller-image" />
             <h3>{item.name}</h3>
-            <p className="best-seller-price">{item.price}</p>
             <Link to={`/inventory/item/${item.id}`} className="view-details-btn">
               View Details
             </Link>
