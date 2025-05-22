@@ -1623,6 +1623,7 @@ color: #333; /* Darker shade on hover */
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
   max-width: 1000px;
   margin: 0 auto;
+  height: 250px; /* ✅ Set fixed height based on the tallest box */
 }
 
 /* BIG Square Image */
@@ -1638,6 +1639,7 @@ color: #333; /* Darker shade on hover */
   display: flex;
   flex-direction: column;
   justify-content: center;
+  height: 100%;
 }
 
 .team-name {
@@ -1776,3 +1778,48 @@ color: #333; /* Darker shade on hover */
     width: 100%;
   }
 }
+
+
+
+
+
+.bero-header {
+  position: relative;
+  height: 180px;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5); /* Dark overlay */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.bero-content {
+  text-align: center;
+  color: #fff;
+  z-index: 1;
+}
+
+.bero-content h1 {
+  font-size: 36px;
+  font-weight: 700;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+}
+
+.bero-content h3 {
+  font-size: 18px;
+  font-weight: 400;
+}
+

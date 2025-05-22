@@ -1,10 +1,17 @@
 import React from "react";
+import HeroHeader from "../components/HeroHeader";
+import bgImage from "/images/c1.jpg"; 
+
 
 const AboutUs = () => {
   return (
+         <>
+      <HeroHeader
+        title="About Us"
+        subtitle="Learn More About Our Team and Mission"
+        backgroundImage={bgImage}
+      />
     <div className="about-us-container">
-      <h1>About Us</h1>
-
       <section>
         <h2>Building the Future, One Machine at a Time</h2>
         <p>
@@ -146,6 +153,7 @@ const AboutUs = () => {
 
 
     </div>
+    </>
   );
 };
 

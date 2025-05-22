@@ -4,7 +4,7 @@ const teamMembers = [
   {
     id: 1,
     name: "Jane Doe",
-    title: "President of AAA professionals",
+    title: "President",
     role: "President & Lead of AAA professionals",
     image: "/images/BenWhite.jpg",
   },
@@ -18,29 +18,29 @@ const teamMembers = [
   {
     id: 3,
     name: "Emily Zhang",
-    title: "Accounts Receivables & Rental Coordinator",
-    role: "Sales Department",
+    title: "Accounts Receivables",
+    role: "Sales Department of AAA professionals",
     image: "/images/AmandaBarker.jpg",
   },
   {
     id: 4,
     name: "Michael Lee",
     title: "Marketing Manager",
-    role: "Sales Management",
+    role: "Sales Management of AAA professionals",
     image: "/images/steve-wells.jpg",
   },
   {
     id: 5,
     name: "Sarah Ali",
     title: "Head Mechanic",
-    role: "Head of Service Department",
+    role: "Head of Service Department of AAA professionals",
     image: "/images/GaryPhillips.jpg",
   },
   {
     id: 6,
     name: "Carlos Diaz",
     title: "Data Analyst",
-    role: "Sales Management",
+    role: "Sales Management of AAA professionals",
     image: "/images/team6.jpg",
   },
 ];
