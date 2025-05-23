@@ -74,22 +74,31 @@ const InventorySearch = ({ inventoryData }) => {
 
   return (
     <div className="inventory-container">
-      <div className="search-bar" style={{ position: "relative" }}>
-        <input
-          type="text"
-          placeholder="Search equipment..."
-          value={searchQuery}
-          onChange={(e) => setSearchQuery(e.target.value)}
-        />
-        {searchQuery && (
-          <button
-            onClick={() => setSearchQuery("")}
-            className="clear-search-btn"
-          >
-            ✕
-          </button>
-        )}
-        <button onClick={() => setFilterMenuOpen(true)}>Filter</button>
+      <div className="search-bar">
+  <div className="search-input-wrapper">
+    <input
+      type="text"
+      placeholder="Search equipment..."
+      value={searchQuery}
+      onChange={(e) => setSearchQuery(e.target.value)}
+    />
+    {searchQuery && (
+      <button
+        className="clear-search-btn"
+        onClick={() => setSearchQuery("")}
+      >
+        ✕
+      </button>
+    )}
+  </div>
+
+
+        <button
+        onClick={() => setFilterMenuOpen(true)}
+        className="filter-toggle-btn"
+        >
+        Filter
+        </button>
       </div>
 
       {filterMenuOpen && (
