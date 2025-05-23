@@ -319,11 +319,63 @@ padding: 0
   cursor: pointer;
 }
 
+
+.company-header {
+  flex: 1;
+}
+
+.company-name {
+  font-size: 2rem;
+  font-weight: 700;
+  color: white;
+  margin: 0;
+  padding-left: 10px;
+  letter-spacing: 1px;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4);
+}
+
+/* Branding block */
+.branding {
+  display: flex;
+  align-items: center;
+  flex: 1;
+}
+
+.logo-link {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+}
+
+.logo-img {
+  width: 70px;
+  height: auto;
+  margin-right: 12px;
+}
+
+.company-name {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: white;
+  letter-spacing: 1px;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4);
+}
+
+
 /* Responsive Styles */
 @media (max-width: 768px) {
   .navbar{
-    padding: 2rem;
+    padding: 1.3rem;
   }
+
+  .branding {
+  justify-content: flex-start !important;
+  padding-right: 40px;
+}
+
+.logo-img {
+  margin-right: 18px; /* instead of 12px */
+}
 
   .nav-links {
     display: none;

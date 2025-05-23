@@ -43,56 +43,17 @@ const Navbar = () => {
   return (
     <nav className="navbar">
       <div className="nav-left">
-        {/* Mobile Search Icon */}
-        <button className="search-icon" onClick={() => setSearchOpen(!searchOpen)}>
-        <svg
-          className="search-svg"
-          xmlns="http://www.w3.org/2000/svg"
-          width="24"
-          height="24"
-          viewBox="0 0 24 24"
-          fill="none"
-          stroke="currentColor"
-          strokeWidth="2"
-          strokeLinecap="round"
-          strokeLinejoin="round"
-        >
-          <circle cx="11" cy="11" r="8"></circle>
-          <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
-        </svg>
-      </button>
 
       </div>
 
-      {/* Logo */}
-      <div className="logo">
-      <Link to="/">
-        <img src="/images/lg2.png" alt="ConstructionHub Logo" className="logo-img" />
-        </Link>
-      </div>
+      <div className="branding">
+  <Link to="/" className="logo-link">
+    <img src="/images/lg2.png" alt="AAA Logo" className="logo-img" />
+    <span className="company-name">AAA Professionals</span>
+  </Link>
+</div>
 
-      {/* Desktop Search Bar */}
-      <div className="search-bar-desktop">
-        <input
-          type="text"
-          placeholder="Search products..."
-          value={searchTerm}
-          onChange={handleSearch}
-        />
-        {/* Display Search Results */}
-        {searchResults.length > 0 && (
-          <ul className="search-results">
-            {searchResults.map((item) => (
-              <li key={item.id}>
-                <Link to={`/inventory/item/${item.id}`} onClick={() => setSearchTerm("")} className="search-li">
-                  {item.name} - {item.price}
-                </Link>
-              </li>
-            ))}
-          </ul>
-        )}
-      </div>
-
+     
       {/* Nav Links */}
       <ul className={`nav-links ${isOpen ? "open" : ""}`}>
         <li><Link to="/">Home</Link></li>
