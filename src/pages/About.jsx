@@ -13,7 +13,7 @@ const AboutUs = () => {
       />
     <div className="about-us-container">
       <section>
-        <h2>Building the Future, One Machine at a Time</h2>
+        <h2>Driving Progress Across Construction & Beyond</h2>
         <p>
           At <strong>Company Wrench</strong>, we go beyond simply selling or renting heavy equipment — we provide
           powerful, tailored solutions for the construction, demolition, recycling, scrap, utility,

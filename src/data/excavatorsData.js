@@ -2,7 +2,7 @@ const excavatorsData = [
   {
       id: 101,
       name: "CAT 320 Excavator",
-      price: "$55,000",
+      price: "Call for Prices",
       images: [
         "/images/i1.jpeg", "/images/i2.jpeg", "/images/e2.jpg",
         "/images/b1.jpg", "/images/h4.jpg", "/images/hn1.jpg",
@@ -10,6 +10,7 @@ const excavatorsData = [
       ],
       phone: "+1 543-201-5678",
       email: "sales@catdealers.com",
+      location: "Vancouver",
       companyName: "CAT Construction",
       companyEmail: "info@catdealers.com",
       manufacturer:"Caterpillar",

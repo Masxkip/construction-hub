@@ -4,7 +4,8 @@ const Contact = () => {
   return (
     <section className="section-st">
     <div className="section-content">
-      <h2>Contact Us</h2>
+      <h2>Get in Touch with the Experts in Heavy Equipment Sales & Service</h2>
+      <br />
       <div className="contact-container">
         {/* Left - Contact Information */}
         <div className="contact-info">

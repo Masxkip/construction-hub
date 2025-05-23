@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import BestSellers from "../components/BestSellers";
 import ContactForm from "../components/ContactForm";
-import { Wrench, DollarSign, Truck, Phone } from "lucide-react"; // Import icons
+import { Wrench, DollarSign, Clock, Phone } from "lucide-react"; // Import icons
 
 const Home = () => {
   return (
@@ -28,26 +28,32 @@ const Home = () => {
         <p>Get the best deals on top-notch construction tools.</p>
       </div>
       <div className="feature">
-        <Truck size={43} className="feature-icon" />
-        <h2>Fast & Secure Delivery</h2>
-        <p>We ensure timely delivery to your site.</p>
-      </div>
+  <Clock size={43} className="feature-icon" />
+  <h2>Rapid Response & Delivery</h2>
+  <p>24/7 service availability and fast shipping to minimize your downtime.</p>
+</div>
     </section>
 
 
-       <section className="home-about">
+    <section className="home-about">
   <div className="about-content">
-    <h2>About Us</h2>
+    <h2>Who We Are and Why It Matters</h2>
     <p>
-     At Company Wrench, we are dedicated to providing powerful, high-performance heavy equipment solutions to meet the demands of construction, demolition, recycling, and forestry professionals across the country. Whether you’re looking to rent or buy, our wide selection of machines and attachments is backed by expert support and unmatched customer care.
-
-    Founded with a problem-solving mindset, we’ve grown from a small business into a trusted name in the industry with 13 locations nationwide. We proudly partner with top manufacturers like LaBounty, Kobelco, JCB, and SANY to ensure we offer only the best tools for the job. From excavators to specialty attachments, our team is committed to delivering the “Cutting Edge” of Customer Service.
-
-    We believe in building lasting partnerships through safety, honesty, and teamwork. In 2018, we strengthened our commitment to our people by becoming an employee-owned company, empowering our staff to serve customers like family. With over two decades of growth, our mission remains the same — to solve problems, support our customers, and deliver exceptional value every step of the way.
+      We’re not just a heavy equipment dealer — we’re the team you call when “good enough” isn’t good enough. At Company Wrench, we specialize in selling, renting, and servicing the toughest machines in the industry — but what truly sets us apart is how we do it.
+    </p>
+    <p>
+      Built on a foundation of grit, innovation, and relentless customer focus, we’ve grown from a small Ohio shop into a nationwide leader with 13 branches and a reputation for solving problems others can’t. Our fleet is packed with trusted names like Kobelco, JCB, SANY, and LaBounty, and our technicians don’t just fix problems — they prevent them.
+    </p>
+    <p>
+      We run 24/7, respond fast, and deliver even faster. From emergency on-site repairs to massive part inventories and mobile service trucks, we’re built for uptime. And because we believe service starts from within, we became 100% employee-owned — giving every member of our team a stake in your success.
+    </p>
+    <p>
+      If you need machines that move mountains and a crew that moves faster — welcome to Company Wrench. This is the **Cutting Edge of Customer Service.**
     </p>
     <Link to="/about" className="learn-more-btn">Learn More</Link>
   </div>
 </section>
+
 
 
 
@@ -97,7 +103,7 @@ At Company Wrench, we don’t just sell or rent equipment — we build lasting p
 
 
       <section className="home-contact">
-  <h2>Get in Touch</h2>
+  <h2>Let’s Talk – Your Equipment Partnership Starts Here</h2>
   <div className="contact-form-wrapper">
     <ContactForm />
   </div>

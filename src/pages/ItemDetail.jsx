@@ -64,6 +64,11 @@ const ItemDetail = () => {
           <p className="item-detail-price"><strong>Price:</strong> {item.price}</p>
           <p><strong>Company:</strong> {item.companyName}</p>
 
+             {/* Contact Buttons */}
+          <div className="contact-buttons">
+            <a href={`tel:${item.phone}`} className="call-btn">📞 915-583-2274</a>
+            <a href={`mailto:${item.email}`} className="email-btn">✉ Email Seller</a>
+          </div>
           {/* Additional Details */}
           <div className="item-specs">
             <h3>General</h3>
@@ -89,11 +94,7 @@ const ItemDetail = () => {
             </div>
           </div>
 
-          {/* Contact Buttons */}
-          <div className="contact-buttons">
-            <a href={`tel:${item.phone}`} className="call-btn">📞 915-583-2274</a>
-            <a href={`mailto:${item.email}`} className="email-btn">✉ Email Seller</a>
-          </div>
+         
 
           {/* Company Info */}
           <div className="company-info">

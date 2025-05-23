@@ -149,8 +149,8 @@ const Navbar = () => {
                 </ul>
               )}
             </li>
-            <li><Link to="/products" onClick={() => setIsOpen(false)}>Financing</Link></li>
-            <li><Link to="/company-news" onClick={() => setIsOpen(false)}>Shipping</Link></li>
+            <li><Link to="/our-team">Our Team</Link></li>
+            <li><Link to="/company-news">Company News</Link></li>
             <li><Link to="/contact" onClick={() => setIsOpen(false)}>Contact</Link></li>
           </ul>
         </div>

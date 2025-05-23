@@ -1823,3 +1823,177 @@ color: #333; /* Darker shade on hover */
   font-weight: 400;
 }
 
+
+
+
+
+/* BACKDROP OVERLAY */
+.filter-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 9998;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* MODAL BOX */
+.filter-modal {
+  background-color: #fff;
+  width: 90%;
+  max-width: 600px;
+  border-radius: 18px;
+  padding: 30px;
+  box-shadow: 0 0 40px rgba(0, 0, 0, 0.3);
+  z-index: 9999;
+  max-height: 90vh;
+  overflow-y: auto;
+  position: relative;
+}
+
+/* CLOSE BUTTON */
+.modal-close-btn {
+  position: absolute;
+  top: 18px;
+  right: 20px;
+  font-size: 1.5rem;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  color: #333;
+}
+
+/* HEADERS & GROUPS */
+.filter-fields {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.filter-group {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #ddd;
+}
+
+/* Left-align headers */
+.filter-group label:first-child {
+  font-weight: bold;
+  font-size: 1rem;
+  text-align: left;
+  margin-bottom: 10px;
+  color: #222;
+}
+
+/* Optional: checkbox labels spacing */
+.checkbox-group {
+  display: flex;
+  flex-direction: column;
+  padding-left: 10px;
+  gap: 10px;
+}
+
+.checkbox-option {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.95rem;
+}
+
+/* INPUTS */
+.filter-group input[type="number"] {
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+  max-width: 200px;
+}
+
+/* BUTTONS */
+.filter-buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+}
+
+.filter-buttons button {
+  padding: 10px 25px;
+  background-color: #17385E;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.filter-buttons button:hover {
+  background-color: #0f2a46;
+}
+
+/* MOBILE */
+@media (max-width: 600px) {
+  .filter-modal {
+    width: 95%;
+    padding: 20px;
+  }
+
+  .filter-buttons {
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+  }
+
+  .filter-buttons button {
+    width: 100%;
+  }
+}
+
+
+.search-bar {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  margin: 30px auto;
+  max-width: 600px;
+}
+
+.search-bar input {
+  flex: 1;
+  padding: 10px;
+  font-size: 1rem;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.search-bar button {
+  background-color: #008f5e;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.search-bar button:hover {
+  background-color: #006f49;
+}
+
+
+.clear-search-btn {
+  position: absolute;
+  right: 110px;
+  top: 10px;
+  background: transparent;
+  border: none;
+  font-size: 1.2rem;
+  color: #666;
+  cursor: pointer;
+}
+
+
