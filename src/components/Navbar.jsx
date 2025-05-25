@@ -7,7 +7,7 @@ import cranesData from "../data/cranesData";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
-  const [dropdownOpen, setDropdownOpen] = useState(false);
+
   const [searchTerm, setSearchTerm] = useState("");
   const [searchOpen, setSearchOpen] = useState(false);
   const [searchResults, setSearchResults] = useState([]);
@@ -16,7 +16,6 @@ const Navbar = () => {
   // Close mobile menu, dropdown, and search bar when navigating to a new page
   useEffect(() => {
     setIsOpen(false);
-    setDropdownOpen(false);
     setSearchOpen(false);
     setSearchResults([]); // Clear search results on new page load
   }, [location.pathname]);
@@ -49,7 +48,7 @@ const Navbar = () => {
       <div className="branding">
   <Link to="/" className="logo-link">
     <img src="/images/lg2.png" alt="AAA Logo" className="logo-img" />
-    <span className="company-name">AAA Professionals</span>
+    <span className="company-name">AAA Construction</span>
   </Link>
 </div>
 
@@ -57,22 +56,8 @@ const Navbar = () => {
       {/* Nav Links */}
       <ul className={`nav-links ${isOpen ? "open" : ""}`}>
         <li><Link to="/">Home</Link></li>
-        <li><Link to="/about">About</Link></li>
-
-        {/* Inventory Dropdown */}
-        <li className="dropdown">
-          <button onClick={() => setDropdownOpen(!dropdownOpen)}>Inventory ▼ </button>
-          {dropdownOpen && (
-            <ul className="dropdown-menu">
-              <li><Link to="/inventory">All Inventory</Link></li>
-              <li><Link to="/category/excavators">Excavators</Link></li>
-              <li><Link to="/category/loaders">Loaders</Link></li>
-              <li><Link to="/category/cranes">Cranes</Link></li>
-              <li><Link to="/category/forklifts">Forklifts</Link></li>
-            </ul>
-          )}
-        </li>
-
+        <li><Link to="/inventory">Inventory</Link></li>
+        <li><Link to="/services">Services</Link></li>
         <li><Link to="/our-team">Our Team</Link></li>
         <li><Link to="/company-news">Company News</Link></li>
         <li><Link to="/contact">Contact</Link></li>
@@ -94,22 +79,9 @@ const Navbar = () => {
           <button className="close-btn" onClick={() => setIsOpen(false)}>✖</button>
           <ul className="mobile-links">
             <li><Link to="/" onClick={() => setIsOpen(false)}>Home</Link></li>
-            <li><Link to="/about" onClick={() => setIsOpen(false)}>About</Link></li>
-            {/* Inventory Dropdown in Mobile */}
-            <li className="dropdown">
-              <button onClick={() => setDropdownOpen(!dropdownOpen)}>
-                Inventory ▼
-              </button>
-              {dropdownOpen && (
-                <ul className="dropdown-menu">
-                  <li><Link to="/inventory" onClick={() => setIsOpen(false)}>All Inventory</Link></li>
-                  <li><Link to="/category/excavators" onClick={() => setIsOpen(false)}>Excavators</Link></li>
-                  <li><Link to="/category/loaders" onClick={() => setIsOpen(false)}>Loaders</Link></li>
-                  <li><Link to="/category/cranes" onClick={() => setIsOpen(false)}>Cranes</Link></li>
-                  <li><Link to="/category/forklifts" onClick={() => setIsOpen(false)}>Forklifts</Link></li>
-                </ul>
-              )}
-            </li>
+           
+            <li><Link to="/inventory" onClick={() => setIsOpen(false)}>Inventory</Link></li>
+            <li><Link to="/services" onClick={() => setIsOpen(false)}>Services</Link></li>
             <li><Link to="/our-team">Our Team</Link></li>
             <li><Link to="/company-news">Company News</Link></li>
             <li><Link to="/contact" onClick={() => setIsOpen(false)}>Contact</Link></li>

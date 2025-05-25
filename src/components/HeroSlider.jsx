@@ -1,0 +1,73 @@
+import { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
+
+
+const slides = [
+  {
+    image: "/images/c1.jpg",
+    title: "Reliable Construction Equipment for Every Job",
+    subtitle: "Browse our wide range of high-quality construction machinery.",
+    button: "View Inventory",
+    link: "/inventory"
+  },
+  {
+    image: "/images/e2.jpg",
+    title: "Heavy-Duty Machines Built to Last",
+    subtitle: "Powerful tools for construction, demolition, and beyond.",
+    button: "Explore Equipment",
+    link: "/equipment"
+  },
+  {
+    image: "/images/c3.jpg",
+    title: "Innovative Solutions, Trusted Brands",
+    subtitle: "Partner with us for premium machinery and expert service.",
+    button: "Get Started",
+    link: "/contact"
+  }
+];
+
+const HeroSlider = () => {
+  const [index, setIndex] = useState(0);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setIndex((prev) => (prev + 1) % slides.length);
+    }, 6000);
+    return () => clearInterval(interval);
+  }, []);
+
+  const goToPrevious = () => {
+    setIndex((prev) => (prev - 1 + slides.length) % slides.length);
+  };
+
+  const goToNext = () => {
+    setIndex((prev) => (prev + 1) % slides.length);
+  };
+
+  const currentSlide = slides[index];
+
+  return (
+    <section
+      className="hero"
+      style={{
+        backgroundImage: `url(${currentSlide.image})`,
+      }}
+    >
+      <button className="nav-arrow left" onClick={goToPrevious}>
+        &#10094;
+      </button>
+      <div className="hero-content">
+        <h1>{currentSlide.title}</h1>
+        <p>{currentSlide.subtitle}</p>
+        <Link to={currentSlide.link} className="cta-button">
+          {currentSlide.button}
+        </Link>
+      </div>
+      <button className="nav-arrow right" onClick={goToNext}>
+        &#10095;
+      </button>
+    </section>
+  );
+};
+
+export default HeroSlider;

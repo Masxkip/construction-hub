@@ -2,18 +2,14 @@ import { Link } from "react-router-dom";
 import BestSellers from "../components/BestSellers";
 import ContactForm from "../components/ContactForm";
 import { Wrench, DollarSign, Clock, Phone } from "lucide-react"; // Import icons
+import HeroSlider from "../components/HeroSlider";
+import PartnersSection from "../components/PartnersSection";
+import ServicesIntro from "../components/ServicesIntro";
 
 const Home = () => {
   return (
     <div className="home">
-      {/* Hero Section */}
-      <section className="hero">
-        <div className="hero-content">
-          <h1>Reliable Construction Equipment for Every Job</h1>
-          <p>Browse our wide range of high-quality construction machinery.</p>
-          <Link to="/inventory" className="cta-button">View Inventory</Link>
-        </div>
-      </section>
+      <HeroSlider />
       
       {/* Features Section */}
       <section className="features">
@@ -73,7 +69,10 @@ const Home = () => {
       </p>
     </div>
 
-   
+     {/* Other sections */}
+      <ServicesIntro />
+
+   <PartnersSection />
 
 <section className="why-work-with-us">
   <div className="why-content">

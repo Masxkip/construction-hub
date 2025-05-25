@@ -13,6 +13,7 @@ import Footer from "./components/Footer";
 import CompanyNews from "./pages/CompanyNews";
 import OurTeam from "./pages/OurTeam";
 import ScrollToTop from "./components/ScrollToTop"; // ✅ Ensure it's imported
+import ServicesLanding from "./pages/ServicesLanding"; 
 import "./index.css";
 
 function App() {
@@ -29,6 +30,7 @@ function App() {
           <Route path="/category/loaders" element={<Loaders />} />
           <Route path="/category/cranes" element={<Cranes />} />
           <Route path="/category/forklifts" element={<Forklifts />} />
+          <Route path="/services" element={<ServicesLanding />} />
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/company-news" element={<CompanyNews />} />
