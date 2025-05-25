@@ -2455,3 +2455,87 @@ color: #333; /* Darker shade on hover */
     font-size: 0.95rem;
   }
 }
+
+
+
+
+
+
+.welcome-section {
+  background: #fff;
+  padding: 60px 40px;
+  text-align: center;
+}
+
+.welcome-section h2 {
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: #17385E;
+  text-transform: uppercase;
+}
+
+.welcome-section hr {
+  width: 80%;
+  max-width: 700px;
+  margin: 20px auto 40px;
+  border: none;
+  border-top: 2px solid #ccc;
+}
+
+.welcome-visuals {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  flex-wrap: wrap;
+  margin-bottom: 40px;
+}
+
+.welcome-visuals img {
+  height: 160px;
+  object-fit: cover;
+  border-radius: 6px;
+}
+
+.logo-center {
+  height: 130px;
+  object-fit: contain;
+}
+
+.welcome-description {
+  max-width: 900px;
+  margin: 0 auto;
+  font-size: 1.05rem;
+  line-height: 1.7;
+  color: #444;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .welcome-section {
+    padding: 40px 20px;
+  }
+
+  .welcome-section h2 {
+    font-size: 1.5rem;
+  }
+
+  .welcome-visuals {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .welcome-visuals img {
+    width: 100%;
+    max-width: 320px;
+    height: auto;
+  }
+
+  .logo-center {
+    height: 100px;
+  }
+
+  .welcome-description {
+    font-size: 1rem;
+  }
+}

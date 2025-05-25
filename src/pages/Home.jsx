@@ -5,6 +5,7 @@ import { Wrench, DollarSign, Clock, Phone } from "lucide-react"; // Import icons
 import HeroSlider from "../components/HeroSlider";
 import PartnersSection from "../components/PartnersSection";
 import ServicesIntro from "../components/ServicesIntro";
+import WelcomeSection from "../components/WelcomeSection";
 
 const Home = () => {
   return (
@@ -30,6 +31,8 @@ const Home = () => {
 </div>
     </section>
 
+    <WelcomeSection />
+    <PartnersSection />
 
     <section className="home-about">
   <div className="about-content">
@@ -71,8 +74,6 @@ const Home = () => {
 
      {/* Other sections */}
       <ServicesIntro />
-
-   <PartnersSection />
 
 <section className="why-work-with-us">
   <div className="why-content">
