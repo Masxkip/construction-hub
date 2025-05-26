@@ -1332,21 +1332,54 @@ font-size: 1.5rem;
 color: whitesmoke;
 }
 
-/* Responsive Design */
 @media (max-width: 768px) {
-.why-content {
+  .why-work-with-us {
+    padding: 60px 20px;
+    background-position: center;
+  }
+
+  .why-content {
     flex-direction: column;
+    gap: 30px;
     text-align: center;
-}
+  }
 
-.why-image img {
+  .why-image img {
     width: 100%;
-    max-width: 200px;
-}
+    max-width: 220px;
+    margin: 0 auto;
+  }
 
-.why-text ul {
+  .why-text {
+    width: 100%;
+    padding: 0 10px;
+  }
+
+  .why-text h2 {
+    font-size: 1.8rem;
+  }
+
+  .why-text p {
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 20px;
+  }
+
+  .why-text ul {
+    padding-left: 15px;
     text-align: left;
-}
+  }
+
+  .why-text li {
+    font-size: 1rem;
+    margin-bottom: 15px;
+    padding-left: 18px;
+  }
+
+  .why-text li::before {
+    font-size: 1.2rem;
+    top: 2px;
+  }
 }
 /* ============================================= */
 
@@ -2464,19 +2497,21 @@ color: #333; /* Darker shade on hover */
 .welcome-section {
   background: #fff;
   padding: 60px 40px;
-  text-align: center;
+  text-align: left; /* left-align for a stronger full-width layout */
+  color: #222;
 }
 
 .welcome-section h2 {
-  font-size: 2.2rem;
+  font-size: 2.5rem;
   font-weight: 700;
   color: #17385E;
   text-transform: uppercase;
+  text-align: center;
 }
 
 .welcome-section hr {
-  width: 80%;
-  max-width: 700px;
+  width: 100%;
+  max-width: none;
   margin: 20px auto 40px;
   border: none;
   border-top: 2px solid #ccc;
@@ -2503,21 +2538,24 @@ color: #333; /* Darker shade on hover */
 }
 
 .welcome-description {
-  max-width: 900px;
+  font-size: 1.2rem;
+  line-height: 1.8;
+  width: 100%; /* fill full width */
+  margin: 0;
+  padding: 0 10px;
+   max-width: 1400px;
   margin: 0 auto;
-  font-size: 1.05rem;
-  line-height: 1.7;
-  color: #444;
+  padding: 0 10px;
 }
 
-/* Responsive */
+/* ✅ Mobile Responsive */
 @media (max-width: 768px) {
   .welcome-section {
     padding: 40px 20px;
   }
 
   .welcome-section h2 {
-    font-size: 1.5rem;
+    font-size: 1.7rem;
   }
 
   .welcome-visuals {
@@ -2537,10 +2575,74 @@ color: #333; /* Darker shade on hover */
 
   .welcome-description {
     font-size: 1rem;
+    line-height: 1.6;
+    padding: 0;
   }
 }
 
 
+
+.home-about {
+  padding: 60px 40px;
+  background: #f8f9fa;
+  color: #222;
+  text-align: left;
+}
+
+.about-content {
+  max-width: 1400px;  /* Gives it room to stretch, but not too much */
+  margin: 0 auto;
+  padding: 0;
+  font-size: 1.2rem;
+}
+
+
+.about-content h2 {
+  font-size: 2.2rem;
+  margin-bottom: 20px;
+  color: #17385E;
+}
+
+/* Button Styling (unchanged) */
+.learn-more-btn {
+  display: inline-block;
+  margin-top: 25px;
+  padding: 12px 24px;
+  background: #17385E;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 5px;
+}
+
+.learn-more-btn:hover {
+  background: #1d4572;
+}
+
+/* ✅ Responsive Mobile Styling */
+@media (max-width: 768px) {
+  .home-about {
+    padding: 40px 20px;
+  }
+
+  .about-content {
+    font-size: 1rem;
+    line-height: 1.6;
+  }
+
+  .about-content h2 {
+    font-size: 1.6rem;
+    text-align: center;
+  }
+
+  .learn-more-btn {
+    font-size: 1rem;
+    padding: 10px 20px;
+    display: block;
+    margin: 20px auto 0;
+    text-align: center;
+  }
+}
 
 
 

@@ -34,16 +34,31 @@ const Home = () => {
     <WelcomeSection />
     <PartnersSection />
 
-    <section className="home-about">
-  <div className="about-content">
+   <section
+  className="services-intro"
+  style={{
+    backgroundImage: `url('/images/e1.png')` // Replace with your own background if needed
+  }}
+>
+  <div className="services-content">
     <h2>Who We Are and Why It Matters</h2>
     <p>
-    At AAA Construction Equipment, we are a proudly family-owned company with deep roots in the construction industry. With years of hands-on experience in equipment sales, rentals, and service through a successful past partnership, we’ve now taken full ownership of our operations—bringing our own name, values, and vision to the forefront.
-
-    What makes us different? We understand construction equipment because we’ve been in the field, worked with contractors, and solved real-world jobsite challenges. We know what reliable machinery looks like—and what it takes to deliver it. That’s why we provide only the most dependable equipment, backed by expert advice and personalized support.
-    When you work with us, you're not just buying or renting a machine—you’re gaining a long-term partner who cares about your success. We treat your business like our own, and we’re here to help you get the job done—on time, and with confidence.
+      At AAA Construction Equipment, we are a proudly family-owned company with deep roots in the construction industry.
+      With years of hands-on experience in equipment sales, rentals, and service through a successful past partnership,
+      we’ve now taken full ownership of our operations—bringing our own name, values, and vision to the forefront.
     </p>
-    <Link to="/about" className="learn-more-btn">Learn More</Link>
+    <p>
+      What makes us different? We understand construction equipment because we’ve been in the field, worked with contractors,
+      and solved real-world jobsite challenges. We know what reliable machinery looks like—and what it takes to deliver it.
+      That’s why we provide only the most dependable equipment, backed by expert advice and personalized support.
+    </p>
+    <p>
+      When you work with us, you're not just buying or renting a machine—you’re gaining a long-term partner who cares about your success.
+      We treat your business like our own, and we’re here to help you get the job done—on time, and with confidence.
+    </p>
+    <Link to="/about" className="cta-button">
+      Learn More
+    </Link>
   </div>
 </section>
 
