@@ -47,8 +47,7 @@ const Navbar = () => {
 
       <div className="branding">
   <Link to="/" className="logo-link">
-    <img src="/images/lg2.png" alt="AAA Logo" className="logo-img" />
-    <span className="company-name">AAA Construction</span>
+    <img src="/images/4.png" alt="AAA Logo" className="logo-img" />
   </Link>
 </div>
 
@@ -56,6 +55,7 @@ const Navbar = () => {
       {/* Nav Links */}
       <ul className={`nav-links ${isOpen ? "open" : ""}`}>
         <li><Link to="/">Home</Link></li>
+        <li><Link to="/about">About us</Link></li>
         <li><Link to="/inventory">Inventory</Link></li>
         <li><Link to="/services">Services</Link></li>
         <li><Link to="/our-team">Our Team</Link></li>
@@ -79,7 +79,7 @@ const Navbar = () => {
           <button className="close-btn" onClick={() => setIsOpen(false)}>✖</button>
           <ul className="mobile-links">
             <li><Link to="/" onClick={() => setIsOpen(false)}>Home</Link></li>
-           
+            <li><Link to="/about" onClick={() => setIsOpen(false)}>About us</Link></li>
             <li><Link to="/inventory" onClick={() => setIsOpen(false)}>Inventory</Link></li>
             <li><Link to="/services" onClick={() => setIsOpen(false)}>Services</Link></li>
             <li><Link to="/our-team">Our Team</Link></li>

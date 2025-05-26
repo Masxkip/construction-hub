@@ -7,19 +7,15 @@ const WelcomeSection = () => {
 
       <div className="welcome-visuals">
         <img src="/images/c1.jpg" alt="Sparks, NV Location" />
-        <img src="/images/c1.jpg" alt="Company Logo" className="logo-center" />
+        <img src="/images/AAA.png" alt="Company Logo" className="logo-center" />
         <img src="/images/c1.jpg" alt="Nampa, ID Location" />
       </div>
 
       <p className="welcome-description">
-        AAA Construction Services is a proudly owned and operated company, built on family values and
-        a deep commitment to the construction equipment industry. Our team listens closely to our customers'
-        needs and treats every project as if it were our own. Whether you're purchasing, renting, or servicing
-        equipment, our entire company is here to support you — not just one department.
+        
+        At AAA Construction Equipment, we’re a proud, family-run business with a strong reputation in the construction equipment industry. What sets us apart is our commitment to truly understanding our customers’ businesses as if they were our own. Whether it's sales, rentals, parts, or service, we don’t treat issues as isolated departmental concerns — every challenge is taken on by our entire team.
         <br /><br />
-        We ensure direct access to our leadership and industry experts 24/7, empowering customers with the best
-        support and fastest solutions. With reliable equipment, genuine parts, and hands-on service,
-        AAA Construction stands as your trusted partner in every phase of your operation.
+        Additionally, our customers have direct access to company leadership at all times, ensuring fast, personalized support. Paired with top-tier factory partnerships and support, this approach gives us the competitive advantage to consistently deliver exceptional service and value.
       </p>
     </section>
   );

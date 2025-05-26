@@ -8,6 +8,7 @@
 /* ============================================= */
 
 
+
 /* ============================================= */
 /* Body Styling */
 body {
@@ -103,8 +104,8 @@ padding: 0
 }
 
 .logo-img {
-  width: 120px; /* Adjust size */
-  height:90px;
+  width: 140px; /* Adjust size */
+  height:79px;
 }
 
 /* Desktop Search Bar */
@@ -345,12 +346,6 @@ padding: 0
   display: flex;
   align-items: center;
   text-decoration: none;
-}
-
-.logo-img {
-  width: 70px;
-  height: auto;
-  margin-right: 12px;
 }
 
 .company-name {
@@ -1176,6 +1171,11 @@ color: white;
   text-align: center;
   padding: 50px 20px;
   background: #f8f9fa;
+}
+
+.about-content h2 {
+  font-size: 2em;
+  color: #17385E;
 }
 
 .about-content {
@@ -2198,7 +2198,7 @@ color: #333; /* Darker shade on hover */
 }
 
 .partners-title {
-  font-size: 2.7rem;
+  font-size: 2.2rem;
   margin-bottom: 40px;
   color: #17385E;
   text-transform: uppercase;
@@ -2539,3 +2539,9 @@ color: #333; /* Darker shade on hover */
     font-size: 1rem;
   }
 }
+
+
+
+
+
+

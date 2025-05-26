@@ -9,26 +9,17 @@ const ServicesIntro = () => {
       }}
     >
       <div className="services-content">
-        <h2>At AAA Constructions</h2>
+        <h2>Your Equipment, Our Priority</h2>
         <h3>
-          We don't just offer sales — we also specialize in parts and professional services.
+          We don't just offer sales — we also specialize in Parts, Service & Sales All Under One Roof.
         </h3>
         <p>
-          Our commitment goes beyond just supplying construction equipment. We provide tailored
-          solutions for contractors and developers who rely on dependable, high-performance machinery.
-          Whether you’re purchasing a brand new machine or looking for a specific part to keep your fleet
-          running, AAA Constructions is your one-stop shop.
+          At AAA Construction Equipment, we don’t just sell machines — we power your entire operation.
+          We specialize in premium equipment sales, genuine OEM parts, and expert service tailored for hardworking contractors and developers. Whether you're investing in new machinery or searching for the right part to keep your fleet moving, we're your go-to partner from the ground up..
         </p>
         <p>
-          From genuine OEM parts to expert servicing and diagnostics, our team of professionals ensures
-          your equipment performs at its peak. We stock a comprehensive inventory of components for top
-          industry brands and offer full-service maintenance including engine tuning, hydraulics,
-          electrical repairs, and preventive checkups.
-        </p>
-        <p>
-          With years of experience in construction technology and field support, we’ve built a reputation
-          on reliability, quick turnaround, and premium quality. When you work with us, you're getting
-          more than a supplier — you're gaining a long-term equipment partner.
+          Need fast diagnostics? Engine tuning? Full hydraulic or electrical repairs? Our seasoned technicians are ready to get your equipment back on site — and keep it there. With a fully stocked inventory from top industry brands and years of field-proven experience, we deliver speed, precision, and peace of mind.
+          Why do clients stick with us? Because we don’t just supply equipment — we stand behind it. When you choose AAA, you’re not just buying a machine; you’re partnering with a team that treats your uptime like our bottom line. 
         </p>
 
         <Link to="/services" className="cta-button">

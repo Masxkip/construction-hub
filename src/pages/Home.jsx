@@ -38,16 +38,10 @@ const Home = () => {
   <div className="about-content">
     <h2>Who We Are and Why It Matters</h2>
     <p>
-      We’re not just a heavy equipment dealer — we’re the team you call when “good enough” isn’t good enough. At Company Wrench, we specialize in selling, renting, and servicing the toughest machines in the industry — but what truly sets us apart is how we do it.
-    </p>
-    <p>
-      Built on a foundation of grit, innovation, and relentless customer focus, we’ve grown from a small Ohio shop into a nationwide leader with 13 branches and a reputation for solving problems others can’t. Our fleet is packed with trusted names like Kobelco, JCB, SANY, and LaBounty, and our technicians don’t just fix problems — they prevent them.
-    </p>
-    <p>
-      We run 24/7, respond fast, and deliver even faster. From emergency on-site repairs to massive part inventories and mobile service trucks, we’re built for uptime. And because we believe service starts from within, we became 100% employee-owned — giving every member of our team a stake in your success.
-    </p>
-    <p>
-      If you need machines that move mountains and a crew that moves faster — welcome to Company Wrench. This is the **Cutting Edge of Customer Service.**
+    At AAA Construction Equipment, we are a proudly family-owned company with deep roots in the construction industry. With years of hands-on experience in equipment sales, rentals, and service through a successful past partnership, we’ve now taken full ownership of our operations—bringing our own name, values, and vision to the forefront.
+
+    What makes us different? We understand construction equipment because we’ve been in the field, worked with contractors, and solved real-world jobsite challenges. We know what reliable machinery looks like—and what it takes to deliver it. That’s why we provide only the most dependable equipment, backed by expert advice and personalized support.
+    When you work with us, you're not just buying or renting a machine—you’re gaining a long-term partner who cares about your success. We treat your business like our own, and we’re here to help you get the job done—on time, and with confidence.
     </p>
     <Link to="/about" className="learn-more-btn">Learn More</Link>
   </div>
@@ -86,16 +80,17 @@ const Home = () => {
     <div className="why-text">
       <h2>Why Work With Us?</h2>
 <p>
-At Company Wrench, we don’t just sell or rent equipment — we build lasting partnerships through unmatched service, innovation, and integrity. With over two decades of industry leadership, 13 U.S. locations, and a family-first culture, we offer more than machines — we offer solutions. From specialized equipment to 24/7 support, we go the extra mile to keep your operation moving.
+  At AAA Construction Equipment, we’re more than just a supplier — we’re your equipment partner, dedicated to driving your success from the ground up. With decades of combined experience in equipment sales, parts, and service, we’ve earned our reputation by putting customers first and backing every machine with real support.
+  When you work with AAA, you’re choosing a company built on family values, deep industry knowledge, and a commitment to doing things right.
 </p>
 <ul>
-  <li>Expertly trained service technicians for both on-site and in-shop repairs.</li>
-  <li>Flexible rental and purchase options for industry-leading equipment.</li>
-  <li>Certified dealers of top brands like Kobelco, JCB, SANY, and Fuchs.</li>
-  <li>Custom fabrication and modifications to meet your project needs.</li>
-  <li>Employee-owned culture focused on safety, honesty, and customer satisfaction.</li>
-  <li>Round-the-clock service and preventative maintenance solutions.</li>
-  <li>Access to OEM-quality parts at competitive prices.</li>
+  <li> Expert Service Team — Certified technicians available for fast, professional repairs both in-shop and on-site.</li>
+  <li>Flexible Options — From long-term rentals to full ownership, we tailor equipment solutions to fit your project and budget.</li>
+  <li>Top-Tier Brands — We carry trusted names in construction like CAT, Komatsu, Hitachi, and more.</li>
+  <li>Custom Solutions — Need a modification or custom fit? Our team can fabricate and fine-tune equipment to match your specs.</li>
+  <li>Dependable Parts Access — Get OEM-quality parts quickly and at competitive prices to minimize downtime.</li>
+  <li>24/7 Support — We’re always on call when you need us — because jobsite delays aren’t an option.</li>
+  <li> Built on Trust — Family-owned, customer-focused, and rooted in honest business practices.</li>
       </ul>
     </div>
   </div>

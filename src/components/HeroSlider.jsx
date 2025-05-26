@@ -18,7 +18,7 @@ const slides = [
     link: "/equipment"
   },
   {
-    image: "/images/c3.jpg",
+    image: "/images/hn1.jpg",
     title: "Innovative Solutions, Trusted Brands",
     subtitle: "Partner with us for premium machinery and expert service.",
     button: "Get Started",
