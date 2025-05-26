@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import PartnersSection from "../components/PartnersSection";
 
 const ServicesLanding = () => {
   return (
@@ -18,7 +19,7 @@ const ServicesLanding = () => {
       {/* Services Grid */}
       <div className="services-grid">
         <div className="service-item">
-          <img src="/images/parts/undercarriage.png" alt="Compact Wheel & Undercarriage Parts" />
+          <img src="/images/Se9.jpg" alt="Compact Wheel & Undercarriage Parts" />
           <h3>Aftermarket Undercarriage Parts</h3>
           <p>
             Access our large inventory of undercarriage parts for excavators, dozers, track loaders, material handlers, crushing & screening equipment, and more. 
@@ -27,7 +28,7 @@ const ServicesLanding = () => {
         </div>
 
        <div className="service-item">
-          <img src="/images/parts/undercarriage.png" alt="Compact Wheel & Undercarriage Parts" />
+          <img src="/images/Se5.jpg" alt="Compact Wheel & Undercarriage Parts" />
           <h3>Compact Wheel & Undercarriage Parts</h3>
           <p>
             We provide premium rubber tracks and tires for track loaders, mini excavators, and skid steers.
@@ -37,7 +38,7 @@ const ServicesLanding = () => {
         </div>
 
         <div className="service-item">
-          <img src="/images/parts/undercarriage.png" alt="Compact Wheel & Undercarriage Parts" />
+          <img src="/images/Se3.jpg" alt="Compact Wheel & Undercarriage Parts" />
           <h3>Ground Engaging Tools & Parts</h3>
           <p>
            We stock a variety of ground engaging tools and parts to fit almost any bucket, scraper, or loader on the market at affordable prices.
@@ -46,7 +47,7 @@ const ServicesLanding = () => {
         </div>
 
         <div className="service-item">
-          <img src="/images/parts/undercarriage.png" alt="Compact Wheel & Undercarriage Parts" />
+          <img src="/images/Se4.jpg" alt="Compact Wheel & Undercarriage Parts" />
           <h3>Hydraulic Breaker/Hammer Parts</h3>
           <p>
            We stock a wide variety of aftermarket and OEM hammer parts for any brand hydraulic breaker. From small skid steer mounted hammers, to large excavator mounted breakers, we have a few to choose from. Our OEM parts selection includes trusted brands, such as LaBounty, Stanley, Paladin, Indeco, Allied, Kent, Furukawa, and more!
@@ -55,7 +56,7 @@ const ServicesLanding = () => {
         </div>
 
         <div className="service-item">
-          <img src="/images/parts/undercarriage.png" alt="Compact Wheel & Undercarriage Parts" />
+          <img src="/images/Se7.jpg" alt="Compact Wheel & Undercarriage Parts" />
           <h3>Mobile Shear Attachment Parts</h3>
           <p>
            Our readily available inventory and industry leading pricing have built a solid reputation in the demolition and recycling industries for being the first choice for LaBounty blade kits. 
@@ -64,7 +65,7 @@ const ServicesLanding = () => {
         </div>
 
         <div className="service-item">
-          <img src="/images/parts/undercarriage.png" alt="Compact Wheel & Undercarriage Parts" />
+          <img src="/images/Se8.jpg" alt="Compact Wheel & Undercarriage Parts" />
           <h3>Sweeping Equipment Parts</h3>
           <p>
             We supply replacement brooms and brushes for sweeping debris and light snow removal applications.  
@@ -73,7 +74,7 @@ const ServicesLanding = () => {
         </div>
 
         <div className="service-item">
-          <img src="/images/parts/undercarriage.png" alt="Compact Wheel & Undercarriage Parts" />
+          <img src="/images/Se1.jpg" alt="Compact Wheel & Undercarriage Parts" />
           <h3>Chipper & Stump Grinder Parts </h3>
           <p>
             We stock knives & hardware, anvils & hardware, filters, clutch replacement parts, replacement belts, and lubricants & coolants.
@@ -81,7 +82,7 @@ const ServicesLanding = () => {
         </div>
 
         <div className="service-item">
-          <img src="/images/parts/undercarriage.png" alt="Compact Wheel & Undercarriage Parts" />
+          <img src="/images/Se6.jpg" alt="Compact Wheel & Undercarriage Parts" />
           <h3>Mulching Equipment Parts</h3>
           <p>
             We offer mulching teeth, rotor systems, filter kits, cutting knives, lubricants, and cab guards.
@@ -89,7 +90,7 @@ const ServicesLanding = () => {
         </div>
 
         <div className="service-item">
-          <img src="/images/parts/undercarriage.png" alt="Compact Wheel & Undercarriage Parts" />
+          <img src="/images/Se2.jpg" alt="Compact Wheel & Undercarriage Parts" />
           <h3>Fork Carriage Parts</h3>
           <p>
            We carry a large selection of Fork Carriage Parts and Replacement Fork Tines.
@@ -106,6 +107,8 @@ const ServicesLanding = () => {
         </p>
         <Link to="/contact" className="cta-button">Get In Touch</Link>
       </div>
+
+       <PartnersSection />
     </section>
   );
 };

@@ -2390,7 +2390,7 @@ color: #333; /* Darker shade on hover */
 }
 
 .service-item img {
-  height: 140px;
+  height: 200px;
   margin-bottom: 20px;
   object-fit: contain;
 }

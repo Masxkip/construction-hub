@@ -5,7 +5,7 @@ const ServicesIntro = () => {
     <section
       className="services-intro"
       style={{
-        backgroundImage: `url('/images/services-bg.jpg')`
+        backgroundImage: `url('/images/e1.png')`
       }}
     >
       <div className="services-content">

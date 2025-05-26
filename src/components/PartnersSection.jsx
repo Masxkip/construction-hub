@@ -1,21 +1,21 @@
 
 
 const partnerLogos = [
-  "/images/c1.jpg",
-  "/images/c1.jpg",
-  "/images/c1.jpg",
-  "/images/c1.jpg",
- "/images/c1.jpg",
-  "/images/c1.jpg",
-  "/images/c1.jpg",
-  "/images/partners/mauldin.png",
-  "/images/partners/felling.png",
-  "/images/partners/rammer.png",
-  "/images/partners/jlg.png",
-  "/images/partners/bomag.png",
-  "/images/partners/itre.png",
-  "/images/partners/dynapac.png",
-  "/images/partners/trackless.png"
+  "/images/lo14.webp",
+  "/images/lo1.jpg",
+  "/images/lo2.jpg",
+  "/images/lo3.jpg",
+  "/images/lo4.jpg",
+ "/images/lo5.jpg",
+  "/images/lo6.jpg",
+  "/images/lo7.jpg",
+  "/images/lo8.jpg",
+  "/images/lo9.jpg",
+  "/images/lo10.webp",
+  "/images/lo11.webp",
+  "/images/lo12.webp",
+  "/images/lo13.webp",
+  
 ];
 
 const PartnersSection = () => {
