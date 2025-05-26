@@ -6,7 +6,7 @@ const teamMembers = [
     name: "Jane Doe",
     title: "President",
     role: "President & Lead of AAA professionals",
-    image: "/images/BenWhite.jpg",
+    image: "/images/BenWhite_1.jpg",
   },
   {
     id: 2,
@@ -34,14 +34,14 @@ const teamMembers = [
     name: "Sarah Ali",
     title: "Head Mechanic",
     role: "Head of Service Department of AAA professionals",
-    image: "/images/GaryPhillips.jpg",
+    image: "/images/RichWilson.jpg",
   },
   {
     id: 6,
     name: "Carlos Diaz",
     title: "Data Analyst",
     role: "Sales Management of AAA professionals",
-    image: "/images/team6.jpg",
+    image: "/images/GaryPhillips.jpg",
   },
 ];
 

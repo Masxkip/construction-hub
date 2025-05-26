@@ -4,6 +4,8 @@ import forkliftsData from "../data/forkliftsData";
 import cranesData from "../data/cranesData";
 import InventorySearch from "../components/InventorySearch";
 import InventoryCard from "../components/InventoryCard";
+import HeroHeader from "../components/HeroHeader";
+import bgImage from "/images/c1.jpg"; 
 import "../index.css";
 
 const AllInventory = () => {
@@ -16,12 +18,17 @@ const AllInventory = () => {
   ];
 
   return (
+    <>
+      <HeroHeader
+        title="All Inventory"
+        subtitle="Learn More About Our Team and Mission"
+        backgroundImage={bgImage}
+      />
     <div className="category-page">
-      <h2>All Inventory</h2>
-
       {/* Our new powerful search + filter + display logic */}
       <InventorySearch inventoryData={allItems} />
     </div>
+    </>
   );
 };
 
