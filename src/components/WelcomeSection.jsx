@@ -6,9 +6,9 @@ const WelcomeSection = () => {
       <hr />
 
       <div className="welcome-visuals">
-        <img src="/images/c1.jpg" alt="Sparks, NV Location" />
-        <img src="/images/AAA.png" alt="Company Logo" className="logo-center" />
-        <img src="/images/c1.jpg" alt="Nampa, ID Location" />
+        <img src="/images/Hus1.jpg" alt="Sparks, NV Location" />
+        <img src="/images/aab.png" alt="Company Logo" className="logo-center" />
+        <img src="/images/Hus1.jpg" alt="Nampa, ID Location" />
       </div>
 
       <p className="welcome-description">

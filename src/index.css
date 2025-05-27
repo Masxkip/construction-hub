@@ -1332,149 +1332,157 @@ font-size: 1.5rem;
 color: whitesmoke;
 }
 
+/* Responsive Design */
 @media (max-width: 768px) {
-  .why-work-with-us {
-    padding: 60px 20px;
-    background-position: center;
-  }
-
-  .why-content {
+.why-content {
     flex-direction: column;
-    gap: 30px;
     text-align: center;
-  }
+}
 
-  .why-image img {
+.why-image img {
     width: 100%;
-    max-width: 220px;
-    margin: 0 auto;
-  }
+    max-width: 200px;
+}
 
-  .why-text {
-    width: 100%;
-    padding: 0 10px;
-  }
-
-  .why-text h2 {
-    font-size: 1.8rem;
-  }
-
-  .why-text p {
-    font-size: 1rem;
-    line-height: 1.6;
-    margin-bottom: 20px;
-  }
-
-  .why-text ul {
-    padding-left: 15px;
+.why-text ul {
     text-align: left;
-  }
-
-  .why-text li {
-    font-size: 1rem;
-    margin-bottom: 15px;
-    padding-left: 18px;
-  }
-
-  .why-text li::before {
-    font-size: 1.2rem;
-    top: 2px;
-  }
+}
 }
 /* ============================================= */
 
 
 
-/* ============================================= */
 /* Footer Base Styles */
 .footer {
-background: #1d4572;
-color: white;
-padding: 50px 20px;
-text-align: center;
-width: 100%; /* Ensure Full Width */
+  background: #1d4572;
+  color: white;
+  padding: 5px 10px;
+  width: 100%;
 }
 
 /* Footer Container */
 .footer-container {
-display: flex;
-flex-wrap: wrap; /* Allow wrapping for smaller screens */
-justify-content: center; /* Center the content */
-align-items: center;
-max-width: 1100px;
-margin: auto;
-gap: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  max-width: 1300px;
+  margin: auto;
+  gap: 40px;
 }
 
 /* Footer Sections */
 .footer-left, .footer-middle, .footer-right {
-flex: 1; /* Make sections flexible */
-min-width: 250px; /* Ensure they don't shrink too much */
-text-align: center;
+  flex: 1;
+  min-width: 280px;
 }
 
-/* Footer Contact Info & Quick Links */
-.footer-middle p,
-.footer-right ul {
-width: 100%;
-text-align: center;
-white-space: normal; /* Allow text wrapping */
-word-wrap: break-word;
+/* Logo & Description */
+.footer-left {
+  text-align: left;
 }
 
-/* Footer Logo */
 .footer-logo {
-max-width: 120px; /* Adjust logo size for mobile */
-height: auto;
+  max-width: 180px;
+  margin-bottom: 15px;
 }
 
-/* Footer Links */
+.footer-left p {
+  font-size: 1.05rem;
+  line-height: 1.6;
+  text-align: left;
+  max-width: 120%;
+}
+
+/* Contact Info */
+.footer-middle {
+  margin-top: 115px;
+  text-align: center;
+  margin-left: 130px;
+}
+
+.footer-middle h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 5px;
+  display: inline-block;
+}
+
+.footer-middle p {
+  font-size: 1.08rem;
+  margin: 6px 0;
+}
+
+/* Quick Links */
+.footer-right {
+  margin-top: 108px;
+  text-align: right;
+  margin-right: 25px;
+}
+
+.footer-right h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 5px;
+  display: inline-block;
+}
+
 .footer-links {
-list-style: none;
-padding: 0;
-margin: 0;
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
 .footer-links li {
-margin-bottom: 8px;
+  margin-bottom: 8px;
 }
 
 .footer-links a {
-text-decoration: none;
-color: white;
-font-size: 1rem;
-transition: color 0.3s ease-in-out;
+  text-decoration: none;
+  color: white;
+  font-size: 1.08rem;
+  transition: color 0.3s ease-in-out;
 }
 
 .footer-links a:hover {
-color: silver
+  color: silver;
 }
 
-/* Footer Bottom - Full Yellow Section */
+/* Footer Bottom */
 .footer-bottom {
-background: #1d4572;
-padding: 20px 0;
-font-size: 1rem;
-color: whitesmoke;
-text-align: center;
-width: 100%;
-}
-
-/* Full Mobile Optimization */
-@media (max-width: 768px) {
-.footer-container {
-  flex-direction: column; /* Stack sections */
+  background: #1d4572;
+  padding: 20px 0;
+  font-size: 1rem;
+  color: whitesmoke;
   text-align: center;
   width: 100%;
 }
 
-.footer-left, .footer-middle, .footer-right {
-  width: 100%;
-  margin-bottom: 20px;
-}
+/* Mobile Responsive */
+@media (max-width: 768px) {
+  .footer-container {
+    flex-direction: column;
+    text-align: center;
+    gap: 30px;
+  }
+
+  .footer-left, .footer-middle, .footer-right {
+    text-align: center !important;
+  }
+
+  .footer-left p,
+  .footer-middle p {
+    text-align: center;
+  }
+
+  .footer-right {
+    text-align: center;
+  }
 }
 
-/* ============================================= */
+
 
 
 /* ============================================= */
@@ -2543,9 +2551,7 @@ color: #333; /* Darker shade on hover */
   width: 100%; /* fill full width */
   margin: 0;
   padding: 0 10px;
-   max-width: 1400px;
-  margin: 0 auto;
-  padding: 0 10px;
+  
 }
 
 /* ✅ Mobile Responsive */
@@ -2643,6 +2649,7 @@ color: #333; /* Darker shade on hover */
     text-align: center;
   }
 }
+
 
 
 

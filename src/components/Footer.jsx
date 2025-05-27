@@ -19,8 +19,10 @@ const Footer = () => {
 
           {/* Left Section - Logo & Description */}
           <div className="footer-left">
-            <img src="/images/lg2.png" alt="Company Logo" className="footer-logo" />
+            <img src="/images/aab1.png" alt="Company Logo" className="footer-logo" />
             <p>
+              We provide top-quality construction equipment and reliable service, ensuring you get the best solutions for your projects.
+              We provide top-quality construction equipment and reliable service, ensuring you get the best solutions for your projects.
               We provide top-quality construction equipment and reliable service, ensuring you get the best solutions for your projects.
             </p>
           </div>
