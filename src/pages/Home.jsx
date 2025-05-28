@@ -56,7 +56,7 @@ const Home = () => {
       When you work with us, you're not just buying or renting a machine—you’re gaining a long-term partner who cares about your success.
       We treat your business like our own, and we’re here to help you get the job done—on time, and with confidence.
     </p>
-    <Link to="/about" className="cta-button">
+    <Link to="/about" className="cta-button2">
       Learn More
     </Link>
   </div>
