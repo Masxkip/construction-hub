@@ -70,7 +70,7 @@ line-height: 1.6;
 /* ============================================= */  
 /* Main Content Wrapper */
 .main-content {
-  width: 100%; /* Make it full width */
+width: 100%; /* Make it full width */
 max-width: 100%; /* Remove content restriction */
 margin: 0; /* Remove auto-centering */
 padding: 0
@@ -94,7 +94,7 @@ padding: 0
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #17385E;
+  background-color: #0f346b;
   padding: 0.4rem 2rem;
   color: white;
   position: sticky;
@@ -107,66 +107,6 @@ padding: 0
   width: 140px; /* Adjust size */
   height:79px;
 }
-
-/* Desktop Search Bar */
-.search-bar-desktop {
-  flex: 1;
-  margin: 0 15px;
-  display: flex;
-  justify-content: center;
-  width: 300%; /* Expand the search bar to full width */
-}
-
-/* Adjust input field width */
-.search-bar-desktop input {
-  width: 94%; /* Increase width from 50% to 80% */
-  max-width: 600px; /* Prevent it from being too wide */
-  padding: 10px;
-  border-radius: 5px;
-  border: 1px solid #ccc;
-  font-size: 1rem;
-}
-
-/* Clear Button */
-.clear-search {
-  background: transparent;
-  border: none;
-  font-size: 1.2rem;
-  margin-left: -30px;
-  cursor: pointer;
-  color: #888;
-}
-
-/* Mobile Search Icon */
-.search-icon {
-  background: none;
-  color: white;
-  border: none;
-  font-size: 1.5rem;
-  cursor: pointer;
-  display: none;
-}
-
-/* Mobile Search Dropdown */
-.search-dropdown {
-  position: absolute;
-  top: 50px;
-  left: 0;
-  width: 100%;
-  background: white;
-  padding: 10px;
-  display: none;
-  justify-content: center;
-  margin-top: 20px;
-}
-
-.search-dropdown input {
-  width: 90%;
-  padding: 8px;
-  border-radius: 5px;
-  border: 1px solid #ccc;
-}
-
 
 .nav-links {
   display: flex;
@@ -320,7 +260,6 @@ padding: 0
   cursor: pointer;
 }
 
-
 .company-header {
   flex: 1;
 }
@@ -386,97 +325,12 @@ padding: 0
       transform: translateX(-50%);
     }
   
-    .search-bar-desktop {
-      display: none;
-    }
-
-    .search-dropdown {
-      position: absolute;
-      top: 80px;
-      left: 0;
-      width: 100%;
-      background: black;
-      padding: 10px;
-      display: flex;
-      justify-content: center;
-      margin-top: -20px;
-    }
-
-    .search-icon {
-      background: none;
-      color: white;
-      border: none;
-      font-size: 1.5rem;
-      cursor: pointer;
-      display: flex;
-    }
 
 }
 /* ============================================= */
 
 
 /* ============================================= */
-/* Hero Section */
-.hero {
-height: 90vh;
-background: url("../public/images/c1.jpg") center/cover no-repeat; /* Background image */
-display: flex;
-align-items: center;
-justify-content: center;
-text-align: center;
-color: white;
-padding: 20px;
-position: relative;
-}
-
-/* Dark Overlay for Better Text Readability */
-.hero::before {
-content: "";
-position: absolute;
-top: 0;
-left: 0;
-width: 100%;
-height: 100%;
-background: rgba(0, 0, 0, 0.205); /* Fading effect */
-}
-
-/* Hero Content */
-.hero-content {
-max-width: 700px;
-background: rgba(0, 0, 0, 0.438);
-padding: 30px;
-border-radius: 10px;
-position: relative; /* Ensures text is above overlay */
-z-index: 1;
-}
-
-.hero h1 {
-  font-size: 2.5rem;
-  margin-bottom: 15px;
-}
-
-.hero p {
-  font-size: 1.2rem;
-  margin-bottom: 20px;
-}
-
-.cta-button {
-  display: inline-block;
-  background: #17385E;
-  color: white;
-  padding: 12px 24px;
-  border-radius: 5px;
-  font-size: 1.2rem;
-  text-decoration: none;
-  font-weight: bold;
-  transition: 0.3s;
-}
-
-.cta-button:hover {
-  background: #1d4572;
-  color: whitesmoke;
-}
-
 /* Features Section */
 .features {
 display: flex;
@@ -497,7 +351,7 @@ flex: 1;
 
 /* Feature Icons */
 .feature-icon {
-color: #17385E; /* Yellow Icon */
+color: #0f346b; /* Yellow Icon */
 font-size: 30rem; /* Adjust size */
 margin-bottom: 10px;
 }
@@ -512,7 +366,7 @@ margin-bottom: 10px;
 /* Feature Text */
 .feature p {
 color: #666;
-font-size: 1rem;
+font-size: 1.07rem;
 }
 
 /* Responsive Design */
@@ -535,32 +389,14 @@ font-size: 1rem;
 
 
 /* ============================================= */
-
 /* Category Page */
 .category-page {
   padding: 60px 20px;
   text-align: center;
 }
 
-h2 {
-  font-size: 2rem;
-  margin-bottom: 20px;
-}
-
-/* Search Bar */
-.search-bar {
-  width: 80%;
-  max-width: 400px;
-  padding: 10px;
-  font-size: 1rem;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  margin-bottom: 20px;
-}
-
 /* Items Grid */
 .items-grid {
-  
   display: flex;
   flex-wrap: wrap;
   gap: 20px;
@@ -569,42 +405,42 @@ h2 {
 /* ============================================= */
 
 
-/* ============================================= */
 /* Inventory Card */
 .inventory-card {
-width: 370px;
-padding: 15px;
-background: white;
-box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-border-radius: 8px;
-text-align: center;
+  width: 290px; /* smaller container */
+  padding: 12px;
+  background: white;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  text-align: center;
+  margin: auto;
 }
 
 /* Image Slider */
 .image-slider {
-position: relative;
-width: 100%;
-height: 200px;
+  position: relative;
+  width: 100%;
+  height: 160px;
 }
 
 .image-slider img {
-width: 100%;
-height: 120%;
-object-fit: cover;
-border-radius: 8px;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 8px;
 }
 
 /* Slider Buttons */
 .prev-btn, .next-btn {
-position: absolute;
-top: 50%;
-transform: translateY(-50%);
-background: rgba(0, 0, 0, 0.5);
-color: white;
-border: none;
-padding: 5px 10px;
-cursor: pointer;
-border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  padding: 5px 8px;
+  cursor: pointer;
+  border-radius: 50%;
 }
 
 .prev-btn { left: 5px; }
@@ -612,140 +448,89 @@ border-radius: 50%;
 
 /* Dots for Image Navigation */
 .image-dots {
-display: flex;
-justify-content: center;
-margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  margin-top: 6px;
 }
 
 .image-dots .dot {
-width: 10px;
-height: 10px;
-background: gray;
-border-radius: 50%;
-margin: 0 5px;
-margin-top: 42px;
-cursor: pointer;
+  width: 8px;
+  height: 8px;
+  background: gray;
+  border-radius: 50%;
+  margin: 0 4px;
+  margin-top: 24px;
+  cursor: pointer;
 }
 
 .image-dots .dot.active {
-background: black;
+  background: black;
 }
 
-/* "View All Photos" Overlay */
-.view-all-overlay {
-position: absolute;
-bottom: 0;
-width: 100%;
-height: 40px;
-background: rgba(255, 255, 255, 0.8);
-color: #000;
-font-weight: bold;
-display: flex;
-justify-content: center;
-align-items: center;
-text-decoration: none;
-font-size: 14px;
+/* Item Name */
+.item-name {
+  font-size: 1.3rem;
+  font-weight: bold;
+  margin-top: 20px;
 }
 
-.view-all-overlay:hover {
-background: rgba(255, 255, 255, 1);
+/* Item Price List */
+.item-price {
+  font-size: 1rem;
+  color: #17385E;
+  font-weight: 600;
+  margin: 2px 0;
+  line-height: 1.5;
 }
 
 /* View Details Button */
 .view-details-btn {
-display: block;
-background: #008f5e;
-color: white;
-padding: 10px;
-text-align: center;
-border-radius: 5px;
-text-decoration: none;
-margin-top: 10px;
+  background: #003f26;
+  color: white;
+  padding: 8px;
+  font-size: 14px;
+  border-radius: 4px;
+  text-decoration: none;
+  display: inline-block;
+  margin-top: 10px;
+  width: 100%;
+  
 }
 
 .view-details-btn:hover {
-background: #006f49;
+  background: #006f49;
 }
 
-/* Item Details */
-.item-name {
-  font-size: 1.1rem;
-  font-weight: bold;
-  margin-top: 40px;
-}
-
-.item-price {
-  font-size: 1.2rem;
-  color: #17385E;
-  font-weight: bold;
-  margin: 5px 0;
-}
-
-
-/* ============================================= */
-
-
-/* ============================================= */
-/* Search Results Dropdown */
-.search-results {
-position: absolute;
-top: 40px; /* Below the search input */
-left: 42%;
-margin-top: 31px;
-transform: translateX(-50%);
-background: white;
-color: #222;
-width: 80%;
-max-width: 540px;
-border: 1px solid #ccc;
-border-radius: 5px;
-max-height: 250px;
-overflow-y: auto;
-list-style: none;
-padding: 5px;
-z-index: 10;
-}
-
-/* Search Result Items */
-.search-results li {
-padding: 10px;
-border-bottom: 1px solid #ddd;
-color: #222;
-cursor: pointer;
-text-align: left;
-}
-
-.search-li{
-  color: #222;
-}
-
-.search-lii{
-  color: #222;
-}
-
-.search-results li:hover {
-background: #f4f4f4;
-}
-
+/* Responsive */
 @media (max-width: 768px) {
+  .inventory-card {
+    width: 90%;
+    padding: 10px;
+  }
 
-  .search-results {
-      position: absolute;
-      top: 40px; /* Below the search input */
-      left: 50%;
-      margin-top: 1px;
-      width: 86%;
-      max-width: 500px;
-    }
+  .image-slider {
+    height: 150px;
+  }
+
+  .item-name {
+    font-size: 1.3rem;
+  }
+
+  .item-price {
+    font-size: 0.95rem;
+  }
+
+  .view-details-btn {
+    font-size: 13px;
+    padding: 7px;
+  }
 }
-/* ============================================= */
 
 /* ============================================= */
 /* Best Sellers Section */
 .best-sellers {
   text-align: center;
-  padding: 50px 20px;
-
+   padding: 30px 15px; /* Reduced from 50px 20px */
 }
 
 .best-sellers h2 {
@@ -758,65 +543,121 @@ background: #f4f4f4;
 .best-sellers-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 45px;
+  gap: 30px; /* Reduced gap */
   max-width: 950px;
   margin: auto;
 }
 
-/* Best Seller Card */
+/* Best Seller Card - Smaller */
 .best-seller-card {
   background: white;
   border-radius: 10px;
-  padding: 15px;
+  padding: 12px;
+  width: 100%;
+  max-width: 420px; /* Reduced container width */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   text-align: center;
   transition: transform 0.2s ease-in-out;
+  margin: auto; /* Center each card */
 }
 
 .best-seller-card:hover {
   transform: translateY(-5px);
 }
 
-/* Image */
+/* Best Seller Image - Smaller */
 .best-seller-image {
   width: 100%;
-  max-height: 280px;
+  max-height: 220px; /* Reduced image height */
   border-radius: 8px;
   object-fit: cover;
 }
 
 /* Name */
 .best-seller-card h3 {
-  font-size: 1.2rem;
-  margin-top: 10px;
+  font-size: 1.25rem; /* Slightly smaller text */
+  margin-top: 8px;
 }
 
 /* Price */
 .best-seller-price {
-  font-size: 1.4rem;
+  font-size: 1.2rem; /* Slightly smaller text */
   color: rgb(235, 197, 11);
   font-weight: bold;
-  margin: 5px 0;
+  margin: 4px 0;
 }
-/* ============================================= */
 
+/* CTA Button (Optional Match with View Details Style) */
+.best-seller-btn {
+  background: #003f26;
+  color: white;
+  padding: 8px 16px;
+  font-size: 14px;
+  font-weight: 600;
+  border-radius: 4px;
+  text-decoration: none;
+  display: inline-block;
+  margin-top: 10px;
+  transition: background-color 0.3s ease;
+}
+
+.best-seller-btn:hover {
+  background: #006f49;
+}
+
+/* ============================================= */
+/* Responsive Design for Mobile */
+@media (max-width: 768px) {
+  .best-sellers-grid {
+    grid-template-columns: 1fr; /* Stack items */
+    gap: 20px;
+  }
+
+  .best-seller-card {
+    max-width: 95%;
+  }
+
+  .best-seller-image {
+    max-height: 200px;
+  }
+
+  .best-seller-card h3 {
+    font-size: 1.06rem;
+  }
+
+  .best-seller-price {
+    font-size: 1.1rem;
+  }
+
+  .best-seller-btn {
+    font-size: 13px;
+    padding: 7px 14px;
+  }
+}
 
 /* ============================================= */
 /* View Details Button */
 .view-details-btn {
   display: inline-block;
-  padding: 8px 12px;
-  background: #17385E;
-  color: white;
+  background: #0f346b;
+  color: whitesmoke;
+  padding: 8px 16px;
+  border: 2px solid white;
+  border-radius: 8px;
+  font-size: 0.8rem;
+  text-transform: uppercase;
   text-decoration: none;
-  border-radius: 5px;
-  font-weight: bold;
+  font-weight: 600;
+  white-space: nowrap;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
   margin-top: 10px;
 }
 
 .view-details-btn:hover {
-  background: #1d4572;
-  color: white
+  background: white;
+  border: 2px solid #0f346b;
+  color: #0f346b;
 }
 
 /* Discover More Button */
@@ -826,18 +667,24 @@ background: #f4f4f4;
 
 .discover-btn {
   display: inline-block;
-  padding: 12px 18px;
-  background: #17385E;
-  color: white;
+  background: #0f346b;
+  color: whitesmoke;
+  padding: 8px 16px;
+  border: 2px solid white;
+  border-radius: 8px;
+  font-size: 0.95rem;
+  text-transform: uppercase;
   text-decoration: none;
-  font-size: 1.2rem;
-  border-radius: 5px;
-  font-weight: bold;
+  font-weight: 600;
+  white-space: nowrap;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 .discover-btn:hover {
-  background: #1d4572;
-  color: white
+ background: white;
+  border: 2px solid #0f346b;
+  color: #0f346b;
 }
 
 /* Responsive Design */
@@ -974,8 +821,8 @@ background: #f4f4f4;
 /* ============================================= */
 /* Call Us Now Button */
 .call-us-btn {
-  background: whitesmoke!important; /* Force the color change */
-  color: black !important;
+  background: white!important; /* Force the color change */
+  color: #0f346b!important;
   font-weight: bold;
   text-decoration: none;
   padding: 8px 15px;
@@ -988,7 +835,7 @@ background: #f4f4f4;
 
 /* Ensure Hover Works */
 .call-us-btn:hover {
-  background: silver !important; /* Force hover color */
+  background: whitesmoke !important; /* Force hover color */
 }
 
 /* Position CTA Button in Navbar */
@@ -1033,54 +880,6 @@ background: #f4f4f4;
 .learn-more-btn:hover {
   background: #1d4572;
   color: white
-}
-/* ============================================= */
-
-
-/* ============================================= */
-/* About Page */
-.about-page {
-  text-align: center;
-  padding: 50px 20px;
-  background: white;
-}
-
-/* About Intro */
-.about-intro {
-  max-width: 800px;
-  margin: auto;
-  font-size: 1.2rem;
-}
-
-/* About Mission */
-.about-mission {
-  background: #f8f9fa;
-  padding: 30px 20px;
-  border-radius: 10px;
-  margin: 30px auto;
-  max-width: 800px;
-}
-
-/* About Values */
-.about-values {
-  max-width: 800px;
-  margin: auto;
-}
-
-.about-values ul {
-  list-style: none;
-  padding: 0;
-}
-
-.about-values li {
-  font-size: 1.2rem;
-  margin: 10px 0;
-}
-
-/* About Footer */
-.about-footer {
-  margin-top: 30px;
-  font-size: 1.2rem;
 }
 /* ============================================= */
 
@@ -1315,59 +1114,6 @@ color: whitesmoke;
     text-align: center;
   }
 }
-
-
-
-
-/* ============================================= */
-/* Category Buttons */
-.category-buttons {
-display: flex;
-justify-content: center;
-gap: 12px;
-margin-bottom: 20px;
-}
-
-.category-btn {
-background: black;
-color: white;
-border: none;
-padding: 10px 15px;
-cursor: pointer;
-border-radius: 5px;
-transition: background 0.3s ease, transform 0.2s;
-}
-
-.category-btn:hover {
-background: #555;
-transform: scale(1.05);
-}
-
-.category-btn.active {
-background: rgb(235, 197, 11);
-color: black;
-font-weight: bold;
-transform: scale(1.1);
-}
-/* No Items Message */
-.no-items-message {
-text-align: center;
-font-size: 1.2rem;
-color: red;
-margin-top: 20px;
-}
-/* ============================================= */
-
-
-/* ============================================= */
-.search-svg {
-transition: transform 0.3s ease-in-out;
-}
-
-.search-icon:hover .search-svg {
-transform: scale(1.2);
-color: rgb(235, 197, 11);
-}
 /* ============================================= */
 
 
@@ -1418,7 +1164,7 @@ color: #333; /* Darker shade on hover */
 /* ============================================= */
 
 
-
+/* ============================================= */
 .company-news {
   padding: 40px 20px;
   background: #f9f9f9;
@@ -1503,10 +1249,10 @@ color: #333; /* Darker shade on hover */
     line-height: 1.5;
   }
 }
+/* ============================================= */
 
 
-
-
+/* ============================================= */
 .our-team {
   padding: 60px 20px;
   background-color: #ffffff;
@@ -1590,12 +1336,10 @@ color: #333; /* Darker shade on hover */
     max-width: 100%;
   }
 }
+/* ============================================= */
 
 
-
-
-
-
+/* ============================================= */
 .about-us-container {
   max-width: 1100px;
   margin: auto;
@@ -1667,9 +1411,6 @@ color: #333; /* Darker shade on hover */
   }
 }
 
-
-
-
 .about-highlights {
   display: flex;
   flex-wrap: wrap;
@@ -1705,11 +1446,10 @@ color: #333; /* Darker shade on hover */
     width: 100%;
   }
 }
+/* ============================================= */
 
 
-
-
-
+/* ============================================= */
 .bero-header {
   position: relative;
   height: 180px;
@@ -1749,11 +1489,11 @@ color: #333; /* Darker shade on hover */
   font-size: 18px;
   font-weight: 400;
 }
+/* ============================================= */
 
 
 
-
-
+/* ============================================= */
 /* BACKDROP OVERLAY */
 .filter-overlay {
   position: fixed;
@@ -1881,7 +1621,6 @@ color: #333; /* Darker shade on hover */
   }
 }
 
-
 .search-bar {
   display: flex;
   gap: 10px;
@@ -1931,12 +1670,10 @@ color: #333; /* Darker shade on hover */
   cursor: pointer;
   line-height: 1;
 }
+/* ============================================= */
 
 
-
-
-
-
+/* ============================================= */
 .hero {
   height: 90vh;
   background-size: cover;
@@ -1982,21 +1719,25 @@ color: #333; /* Darker shade on hover */
   margin-bottom: 20px;
 }
 
-.cta-button {
+.cta-button1 {
   display: inline-block;
-  background: #17385E;
-  color: white;
-  padding: 12px 24px;
-  border-radius: 5px;
-  font-size: 1.2rem;
+  background: whitesmoke;
+  color: #0f346b;
+  padding: 8px 16px;
+  border: 2px solid #0f346b;
+  border-radius: 8px;
+  font-size: 0.95rem;
+  text-transform: uppercase;
   text-decoration: none;
-  font-weight: bold;
-  transition: 0.3s;
+  font-weight: 600;
+  white-space: nowrap;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-.cta-button:hover {
-  background: #1d4572;
-  color: whitesmoke;
+.cta-button1:hover {
+  background: #0f346b;
+  color: white;
 }
 
 .nav-arrow {
@@ -2026,7 +1767,6 @@ color: #333; /* Darker shade on hover */
   right: 16px;
 }
 
-
 @media (max-width: 768px) {
   .nav-arrow {
     font-size: 1.2rem;
@@ -2046,26 +1786,22 @@ color: #333; /* Darker shade on hover */
   }
 
   .hero h1 {
-    font-size: 1.6rem;
+    font-size: 1.8rem;
   }
 
   .hero p {
-    font-size: 1rem;
+    font-size: 1.3rem;
   }
 
-  .cta-button {
+  .cta-button1 {
     font-size: 1rem;
-    padding: 10px 20px;
+    padding: 8px 15px;
   }
 }
+/* ============================================= */
 
 
-
-
-
-
-
-
+/* ============================================= */
 .partners {
   padding: 60px 250px;
   text-align: center;
@@ -2121,13 +1857,13 @@ color: #333; /* Darker shade on hover */
     font-size: 1.5rem;
   }
 }
+/* ============================================= */
 
 
 
-
-
+/* ============================================= */
 .services-intro {
-    min-height: 70vh; /* Or try 60vh if you want it even shorter */
+  min-height: 70vh; /* Or try 60vh if you want it even shorter */
   padding: 60px 20px;
   background-size: cover;
   background-position: center;
@@ -2224,13 +1960,10 @@ color: #333; /* Darker shade on hover */
     padding: 10px 20px;
   }
 }
+/* ============================================= */
 
 
-
-
-
-
-
+/* ============================================= */
 .services-landing {
   padding: 60px 40px;
   background: #fff;
@@ -2319,7 +2052,7 @@ color: #333; /* Darker shade on hover */
   }
 
   .service-item img {
-    height: 100px;
+    height: 150px;
   }
 
   .service-item h3 {
@@ -2330,12 +2063,11 @@ color: #333; /* Darker shade on hover */
     font-size: 0.95rem;
   }
 }
+/* ============================================= */
 
 
 
-
-
-
+/* ============================================= */
 .welcome-section {
   background: #fff;
   padding: 60px 40px;
@@ -2419,9 +2151,10 @@ color: #333; /* Darker shade on hover */
     padding: 0;
   }
 }
+/* ============================================= */
 
 
-
+/* ============================================= */
 .home-about {
   padding: 60px 40px;
   background: #f8f9fa;
@@ -2483,13 +2216,10 @@ color: #333; /* Darker shade on hover */
     text-align: center;
   }
 }
+/* ============================================= */
 
 
-
-
-
-
-
+/* ============================================= */
 .item-detail-layout {
   display: flex;
   flex-wrap: wrap;
@@ -2577,14 +2307,15 @@ color: #333; /* Darker shade on hover */
 
 .item-title {
   font-size: 2rem;
-  color: #d93a00;
+  color: #1d4572;
   margin-bottom: 10px;
 }
 
-.item-price {
-  font-size: 1.3rem;
-  color: #7e8e1b;
+.item-price1 {
+  font-size: 1.38rem;
+  color: red;
   margin-bottom: 20px;
+  font-weight: 700;
 }
 
 .item-specs {
@@ -2615,10 +2346,10 @@ color: #333; /* Darker shade on hover */
 .get-quote-btn,
 .second-btn {
   padding: 8px 16px;
-  border: 2px solid #d93a00;
+  border: 2px solid #1d4572;
   border-radius: 4px;
   background: transparent;
-  color: #d93a00;
+  color: #1d4572;
   font-weight: 600;
   font-size: 0.95rem;
   text-transform: uppercase;
@@ -2632,10 +2363,9 @@ color: #333; /* Darker shade on hover */
 
 .get-quote-btn:hover,
 .second-btn:hover {
-  background-color: #d93a00;
+  background-color: #1d4572;
   color: white;
 }
-
 
 .divider {
   margin-top: 30px;
@@ -2704,9 +2434,8 @@ color: #333; /* Darker shade on hover */
     padding: 10px 14px;
     font-size: 0.9rem;
   }
-
 }
-
+/* ============================================= */
 
 
 

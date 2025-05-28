@@ -2,7 +2,7 @@ const bulldozersData = [
   {
       id: 101,
       name: "CAT D5C XL Hystat",
-      price: "Call for Prices",
+      price: "Call for Price",
       images: [
         "/images/i1/i1a.jpeg", "/images/i1/i1t.jpeg", "/images/i1/i1g.jpeg",
         "/images/i1/i1k.jpeg", "/images/i1/i1m.jpeg", "/images/i1/i1h.jpeg",

@@ -59,7 +59,7 @@ const HeroSlider = () => {
       <div className="hero-content">
         <h1>{currentSlide.title}</h1>
         <p>{currentSlide.subtitle}</p>
-        <Link to={currentSlide.link} className="cta-button">
+        <Link to={currentSlide.link} className="cta-button1">
           {currentSlide.button}
         </Link>
       </div>

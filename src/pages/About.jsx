@@ -26,6 +26,14 @@ const AboutUs = () => {
         </p>
       </section>
 
+       <h2>Our History</h2>
+          <p>
+            AAA Construction Equipment is built on a legacy of excellence that spans over 60 years in the construction equipment industry. Our roots trace back to a long-standing partnership with CASE Construction Equipment, where our team earned its reputation through decades of dedicated service, expert support, and unwavering customer commitment.
+            What began as a collaborative effort within a larger organization has evolved into a proudly independent, family-owned company. After years of industry experience and customer trust, we launched AAA Construction Equipment to create a brand that reflects our values, our identity, and our forward-looking vision.
+            While we’ve grown into our own name, the foundation remains the same — reliability, hands-on knowledge, and strong relationships with both our customers and manufacturers. Our enduring relationship with CASE continues to be a key part of our journey, and we’ve expanded our partnerships to include a range of trusted brands and equipment solutions.
+            Today, we stand as a medium-sized company with deep industry roots, serving contractors, developers, and equipment operators with the same passion and work ethic that defined our beginnings. Our history isn’t just where we come from — it’s what drives us to keep building stronger every day.
+          </p>
+
       <section>
         <h2>What Makes Us Different?</h2>
         <p>
@@ -90,15 +98,6 @@ const AboutUs = () => {
           <li><strong>Preventative maintenance kits </strong>tailored to your equipment and usage.</li>
           </ul>
           <p>When downtime isn’t an option, trust AAA to deliver the right parts — on time, every time. Our knowledgeable team ensures you get exactly what you need to keep your machines moving and your projects on track.</p>
-          
-
-            <h2>Our History</h2>
-          <p>
-            AAA Construction Equipment is built on a legacy of excellence that spans over 60 years in the construction equipment industry. Our roots trace back to a long-standing partnership with CASE Construction Equipment, where our team earned its reputation through decades of dedicated service, expert support, and unwavering customer commitment.
-            What began as a collaborative effort within a larger organization has evolved into a proudly independent, family-owned company. After years of industry experience and customer trust, we launched AAA Construction Equipment to create a brand that reflects our values, our identity, and our forward-looking vision.
-            While we’ve grown into our own name, the foundation remains the same — reliability, hands-on knowledge, and strong relationships with both our customers and manufacturers. Our enduring relationship with CASE continues to be a key part of our journey, and we’ve expanded our partnerships to include a range of trusted brands and equipment solutions.
-            Today, we stand as a medium-sized company with deep industry roots, serving contractors, developers, and equipment operators with the same passion and work ethic that defined our beginnings. Our history isn’t just where we come from — it’s what drives us to keep building stronger every day.
-          </p>
 
 
             <h2>Heavy Equipment Service</h2>

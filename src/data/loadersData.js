@@ -2,7 +2,7 @@ const loadersData = [
   {
   id: 301,
       name: "CAT 262D3 Skid Steer Loader",
-      price: "Call for Prices",
+      price: "Call for Price",
       images: [
         "/images/i5/i5a.jpeg", "/images/i5/i5b.jpeg", "/images/i5/i5c.jpeg",
         "/images/i5/i5d.jpeg", "/images/i5/i5e.jpeg", "/images/i5/i5f.jpeg",

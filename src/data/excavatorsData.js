@@ -3,7 +3,7 @@ const excavatorsData = [
       {
      id: 203,
       name: "Kubota KX080-4",
-      price: "Call for Prices",
+      price: "Call for Price",
       images: [
         "/images/i4/i4a.jpeg", "/images/i4/i4b.jpeg", "/images/i4/i4c.jpeg",
         "/images/i4/i4d.jpeg", "/images/i4/i4e.jpeg", "/images/i4/i4f.jpeg",
@@ -25,7 +25,7 @@ const excavatorsData = [
   {
       id: 201,
       name: "Bobcat E85 Compact",
-      price: "Call for Prices",
+      price: "Call for Price",
       images: [
         "/images/i2/i2f.jpeg", "/images/i2/i2h.jpeg", "/images/i2/i2k.jpeg",
         "/images/i2/i2i.jpeg", "/images/i2/i2d.jpeg", "/images/i2/i2a.jpeg",
@@ -46,7 +46,7 @@ const excavatorsData = [
     {
     id: 204,
       name: "CAT 306CR Compact Excavator",
-      price: "Call for Prices",
+      price: "Call for Price",
       images: [
         "/images/i6/i6a.jpeg", "/images/i6/i6b.jpeg", "/images/i6/i6c.jpeg",
         "/images/i6/i6d.jpeg", "/images/i6/i6e.jpeg", "/images/i6/i6f.jpeg",
@@ -66,7 +66,7 @@ const excavatorsData = [
     {
      id: 202,
       name: "CAT 308E2 CR Compact Excavator",
-      price: "Call for Prices",
+      price: "Call for Price",
       images: [
         "/images/i3/i3d.jpeg", "/images/i3/i3c.jpeg", "/images/i3/i3g.jpeg",
         "/images/i3/i3f.jpeg", "/images/i3/i3n.jpeg", "/images/i3/i3m.jpeg",

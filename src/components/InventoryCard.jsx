@@ -15,7 +15,6 @@ const InventoryCard = ({ item }) => {
 
   // Limit images to show only the first 5
   const displayedImages = item.images.slice(0, 5);
-  const isLastImage = currentImage === displayedImages.length - 1;
 
   // Handle next and previous images
   const nextImage = () => {
@@ -32,13 +31,6 @@ const InventoryCard = ({ item }) => {
         <button className="prev-btn" onClick={prevImage}>❮</button>
         <img src={displayedImages[currentImage]} alt={item.name} />
         <button className="next-btn" onClick={nextImage}>❯</button>
-
-        {/* Overlay for last image */}
-        {isLastImage && (
-          <Link to={`/inventory/item/${item.id}`} className="view-all-overlay">
-            View All Photos
-          </Link>
-        )}
       </div>
 
       {/* Image Dots */}

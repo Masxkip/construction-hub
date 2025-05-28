@@ -57,7 +57,7 @@ const ItemDetail = () => {
       {/* Right side - Item Info */}
       <div className="item-info-side">
         <h1 className="item-title">{item.name}</h1>
-        <p className="item-price">{item.price}</p>
+        <p className="item-price1">{item.price}</p>
 
         <ul className="item-specs">
           <li><strong>Serial Number:</strong> {item.serialNumber || "N/A"}</li>
