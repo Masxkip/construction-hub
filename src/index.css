@@ -1105,7 +1105,7 @@ color: whitesmoke;
     align-items: center;
     text-align: center;
     gap: 25px;
-    padding: 20px 15px;
+    padding: 5px 5px;
   }
 
   /* Footer Left */
@@ -1120,6 +1120,7 @@ color: whitesmoke;
   .footer-logo {
     max-width: 140px;
     margin: 0 auto 10px;
+    margin-left: 130px;
   }
 
   .footer-left p {
@@ -1128,6 +1129,7 @@ color: whitesmoke;
     max-width: 100%;
     text-align: center;
     margin-top: 10px;
+    margin-right: 30px;
   }
 
   /* Footer Middle */
@@ -1135,6 +1137,8 @@ color: whitesmoke;
     width: 100%;
     padding: 0 10px;
     text-align: center;
+    margin-top: 10px;
+    margin-left: -30px;
   }
 
   .footer-middle h3 {
@@ -1154,6 +1158,7 @@ color: whitesmoke;
     width: 100%;
     padding: 0 10px;
     text-align: center;
+    margin-top: 10px;
   }
 
   .footer-right h3 {
