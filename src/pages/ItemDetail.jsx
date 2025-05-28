@@ -83,8 +83,8 @@ const ItemDetail = () => {
 
         {/* Action buttons */}
         <div className="quote-buttons">
-          <a href={`/get-quote/${item.id}`} className="get-quote-btn">Get a Quote</a>
-          <button className="second-btn">Download Spec Sheet</button>
+          <a href={`/get-quote/${item.id}`} className="get-quote-btn">Email Seller</a>
+          <button className="second-btn">Get a Quote</button>
         </div>
 
         {/* Divider line */}
