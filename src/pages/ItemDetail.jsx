@@ -3,27 +3,19 @@ import { useState } from "react";
 import excavatorsData from "../data/excavatorsData";
 import loadersData from "../data/loadersData";
 import forkliftsData from "../data/forkliftsData";
+import bulldozersData from "../data/bulldozersData";
 import cranesData from "../data/cranesData";
-import "../index.css"; // Ensure styling is applied
+
 
 const ItemDetail = () => {
   const { id } = useParams();
-
-  // Combine all inventory items
-  const allItems = [...excavatorsData, ...loadersData, ...forkliftsData, ...cranesData];
-
-  // Find the selected item
-  const item = allItems.find((item) => item.id.toString() === id);
-
-  // ✅ Move useState **above** the conditional return
   const [currentIndex, setCurrentIndex] = useState(0);
 
-  // Handle case where item is not found
-  if (!item) {
-    return <p className="error-message">Item not found.</p>;
-  }
+  const allItems = [...bulldozersData, ...excavatorsData, ...loadersData, ...forkliftsData, ...cranesData];
+  const item = allItems.find((item) => item.id.toString() === id);
 
-  // Navigation functions for slider
+  if (!item) return <p className="error-message">Item not found.</p>;
+
   const nextImage = () => {
     setCurrentIndex((prevIndex) => (prevIndex + 1) % item.images.length);
   };
@@ -35,80 +27,64 @@ const ItemDetail = () => {
   };
 
   return (
-    <section className="section-st">
-    <div className="section-content">
-      <div className="item-detail-card">
-        {/* Image Section with Slider */}
-        <div className="item-detail-image">
-          <button className="prev-btn" onClick={prevImage}>❮</button>
-          <img src={item.images[currentIndex]} alt={item.name} />
-          <button className="next-btn" onClick={nextImage}>❯</button>
+    <section className="item-detail-layout">
+      {/* Left side - Main Image & Thumbnails */}
+      <div className="item-image-side">
+        <div className="slider-wrapper">
+          <img src={item.images[currentIndex]} alt={item.name} className="main-img" />
+          <button className="nav-btn left" onClick={prevImage}>❮</button>
+          <button className="nav-btn right" onClick={nextImage}>❯</button>
         </div>
 
-        {/* Image Thumbnails */}
-        <div className="image-thumbnails">
-          {item.images.slice(0, 5).map((img, index) => (
+        {/* Thumbnail row */}
+        <div className="thumbnail-row">
+          {item.images.slice(0, 6).map((img, index) => (
             <img
               key={index}
               src={img}
-              alt="Thumbnail"
-              className={index === currentIndex ? "active" : ""}
+              alt={`thumb-${index}`}
+              className={`thumb ${index === currentIndex ? "active" : ""}`}
               onClick={() => setCurrentIndex(index)}
             />
           ))}
         </div>
 
-        {/* Details Section */}
-        <div className="item-detail-info">
-          <h2>{item.name}</h2>
-          <p className="item-detail-price"><strong>Price:</strong> {item.price}</p>
-          <p><strong>Company:</strong> {item.companyName}</p>
-
-             {/* Contact Buttons */}
-          <div className="contact-buttons">
-            <a href={`tel:${item.phone}`} className="call-btn">📞 915-583-2274</a>
-            <a href={`mailto:${item.email}`} className="email-btn">✉ Email Seller</a>
-          </div>
-          {/* Additional Details */}
-          <div className="item-specs">
-            <h3>General</h3>
-            <div className="spec-item">
-              <span>Manufacturer:</span>
-              <span>{item.manufacturer}</span>
-            </div>
-            <div className="spec-item">
-              <span>Model:</span>
-              <span>{item.model}</span>
-            </div>
-            <div className="spec-item">
-              <span>Serial Number:</span>
-              <span>{item.serialNumber}</span>
-            </div>
-            <div className="spec-item">
-              <span>Condition:</span>
-              <span>{item.condition}</span>
-            </div>
-            <div className="spec-item">
-              <span>Description:</span>
-              <span>{item.description}</span>
-            </div>
-          </div>
-
-         
-
-          {/* Company Info */}
-          <div className="company-info">
-            <p>Seller: {item.companyName}</p>
-            <a href={`mailto:${item.companyEmail}`}>{item.companyEmail}</a>
-          </div>
-
-           {/* Get a Quote Button */}
-           <div className="quote-button">
-            <a href={`/get-quote/${item.id}`} className="get-quote-btn"> Get a Quote</a>
-          </div>
-        </div>
+        <p className="image-note">
+          Pictures may not be current. Contact us for the latest. Items shown may not be included in sale price unless noted.
+        </p>
       </div>
-    </div>
+
+      {/* Right side - Item Info */}
+      <div className="item-info-side">
+        <h1 className="item-title">{item.name}</h1>
+        <p className="item-price">{item.price}</p>
+
+        <ul className="item-specs">
+          <li><strong>Condition:</strong> {item.condition || "N/A"}</li>
+          <li><strong>Manufacturer:</strong> {item.manufacturer || "N/A"}</li>
+          <li><strong>Model:</strong> {item.model || "N/A"}</li>
+          <li><strong>Serial Number:</strong> {item.serialNumber || "N/A"}</li>
+        </ul>
+
+        <div className="item-contact">
+          <p><strong>Phone:</strong> <a href={`tel:${item.phone}`}>{item.phone}</a></p>
+          <p><strong>Company Email:</strong> <a href={`mailto:${item.companyEmail}`}>{item.companyEmail}</a></p>
+        </div>
+
+        <div className="item-description">
+          <h3>Description</h3>
+          <p>{item.description || "No description available."}</p>
+        </div>
+
+        {/* Action buttons */}
+        <div className="quote-buttons">
+          <a href={`/get-quote/${item.id}`} className="get-quote-btn">Get a Quote</a>
+          <button className="second-btn">Download Spec Sheet</button>
+        </div>
+
+        {/* Divider line */}
+        <hr className="divider" />
+      </div>
     </section>
   );
 };

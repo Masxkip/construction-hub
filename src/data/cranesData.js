@@ -11,18 +11,6 @@ const cranesData = [
     companyName: "Liebherr Cranes",
     companyEmail: "info@liebherr.com"
   },
-  {
-    id: 402,
-    name: "Grove GMK5250L Crane",
-    price: "$150,000",
-    images: [
-      "/images/crane2-1.jpg", "/images/crane2-2.jpg", "/images/crane2-3.jpg"
-    ],
-    phone: "+1 555-789-0123",
-    email: "sales@grovecranes.com",
-    companyName: "Grove Cranes",
-    companyEmail: "info@grovecranes.com"
-  }
 ];
 
 export default cranesData;

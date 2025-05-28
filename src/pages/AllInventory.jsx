@@ -1,6 +1,7 @@
 import excavatorsData from "../data/excavatorsData";
 import loadersData from "../data/loadersData";
 import forkliftsData from "../data/forkliftsData";
+import bulldozersData from "../data/bulldozersData";
 import cranesData from "../data/cranesData";
 import InventorySearch from "../components/InventorySearch";
 import InventoryCard from "../components/InventoryCard";
@@ -8,9 +9,11 @@ import HeroHeader from "../components/HeroHeader";
 import bgImage from "/images/c1.jpg"; 
 import "../index.css";
 
+
 const AllInventory = () => {
   // Combine all inventory data into one array
   const allItems = [
+    ...bulldozersData.map(item => ({ ...item, category: "Bulldozers" })),
     ...excavatorsData.map(item => ({ ...item, category: "Excavators" })),
     ...loadersData.map(item => ({ ...item, category: "Loaders" })),
     ...forkliftsData.map(item => ({ ...item, category: "Forklifts" })),

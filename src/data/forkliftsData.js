@@ -11,18 +11,6 @@ const forkliftsData = [
     companyName: "Toyota Forklifts",
     companyEmail: "info@toyotamaterial.com"
   },
-  {
-    id: 302,
-    name: "Hyster H60FT Forklift",
-    price: "$28,000",
-    images: [
-      "/images/forklift2-1.jpg", "/images/forklift2-2.jpg", "/images/forklift2-3.jpg"
-    ],
-    phone: "+1 555-234-7890",
-    email: "sales@hysterforklifts.com",
-    companyName: "Hyster Forklifts",
-    companyEmail: "info@hysterforklifts.com"
-  }
 ];
 
 export default forkliftsData;
