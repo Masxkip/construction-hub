@@ -50,7 +50,7 @@ const ItemDetail = () => {
         </div>
 
         <p className="image-note">
-          Pictures may not be current. Contact us for the latest. Items shown may not be included in sale price unless noted.
+          Before coming to view a specific piece of equipment, please be sure to schedule an appointment, as some units may be located at different sites. We're happy to assist with freight arrangements and work closely with several trusted trucking companies to offer competitive shipping rates. If you'd like a quick quote, feel free to email, text, or call us directly.
         </p>
       </div>
 
@@ -60,13 +60,18 @@ const ItemDetail = () => {
         <p className="item-price">{item.price}</p>
 
         <ul className="item-specs">
+          <li><strong>Serial Number:</strong> {item.serialNumber || "N/A"}</li>
           <li><strong>Condition:</strong> {item.condition || "N/A"}</li>
+          <li><strong>Year:</strong> {item.year || "N/A"}</li>
+          <li><strong>Category:</strong> {item.category || "N/A"}</li>
           <li><strong>Manufacturer:</strong> {item.manufacturer || "N/A"}</li>
           <li><strong>Model:</strong> {item.model || "N/A"}</li>
-          <li><strong>Serial Number:</strong> {item.serialNumber || "N/A"}</li>
+          <li><strong>Location:</strong> {item.location || "N/A"}</li>
+          
         </ul>
 
         <div className="item-contact">
+          <h3>Contact Information</h3>
           <p><strong>Phone:</strong> <a href={`tel:${item.phone}`}>{item.phone}</a></p>
           <p><strong>Company Email:</strong> <a href={`mailto:${item.companyEmail}`}>{item.companyEmail}</a></p>
         </div>

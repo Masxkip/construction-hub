@@ -1,20 +1,22 @@
 const bulldozersData = [
   {
       id: 101,
-      name: "CAT 320 Excavator",
+      name: "CAT D5C XL Hystat",
       price: "Call for Prices",
       images: [
         "/images/i1/i1a.jpeg", "/images/i1/i1b.jpeg", "/images/i1/i1c.jpeg",
-        "/images/i1/i1ad.jpeg", "/images/i1/i1e.jpeg", "/images/i1/i1f.jpeg",
+        "/images/i1/i1d.jpeg", "/images/i1/i1e.jpeg", "/images/i1/i1f.jpeg",
       ],
+      year: 2022,
       phone: "+1 543-201-5678",
       location: "Vancouver",
       companyEmail: "info@catdealers.com",
-      manufacturer:"Caterpillar",
-      model: "XC2350",
+      manufacturer:"CATERPILLAR",
+      category: "Bulldozer",
+      model: "D5C XL HST III",
       condition: "New",
-      serialNumber: "200475",
-      description: "XC2350 getting a nwe air conditoner from temu, can you guess in what we want in ram, XC2350 getting a nwe air conditoner from temu, can you guess in what we want in ram,vXC2350 getting a nwe air conditoner from temu, can you guess in what we want in ram,XC2350 getting a nwe air conditoner from temu, can you guess in what we want in ramXC2350 getting a nwe air conditoner from temu, can you guess in what we want in ramXC2350 getting a nwe air conditoner from temu, can you guess in what we want in ram"
+      serialNumber: "7PS00422",
+      description: "Base Unit, 90HP Caterpillar Turbo Diesel Engine, Open ROPS Canopy, Cloth Suspension Seat, Joystick Controls, Hydrostatic Transmission, 2-Speed Travel, 6-Way Tilt Blade, 19,316 lb Operating Weight, 6.2 mph Max Travel Speed, Steel Tracks with 70% Remaining, Pads at 65%, Sprockets at 40%. Features include Grade Control, Undercarriage Guards, and Protective Screens. Undercarriage in Good Operating Condition (Sprockets Showing Wear). This Machine Runs and Operates Well. Please Call or Email to Schedule a Viewing."
     },
  
 ];
