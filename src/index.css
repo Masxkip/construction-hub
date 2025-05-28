@@ -992,7 +992,7 @@ color: whitesmoke;
 /* ============================================= */
 /* Footer Base Styles */
 .footer {
-  background: #1d4572;
+  background: #0f346b;
   color: white;
   padding: 5px 10px;
   width: 100%;
@@ -1090,7 +1090,7 @@ color: whitesmoke;
 
 /* Footer Bottom */
 .footer-bottom {
-  background: #1d4572;
+  background: #0f346b;
   padding: 20px 0;
   font-size: 1rem;
   color: whitesmoke;
@@ -1120,11 +1120,11 @@ color: whitesmoke;
   .footer-logo {
     max-width: 140px;
     margin: 0 auto 10px;
-    margin-left: 80px;
+    margin-left: 87px;
   }
 
   .footer-left p {
-    font-size: 0.95rem;
+    font-size: 1rem;
     line-height: 1.5;
     max-width: 100%;
     text-align: center;
@@ -1149,7 +1149,7 @@ color: whitesmoke;
   }
 
   .footer-middle p {
-    font-size: 0.95rem;
+    font-size: 1rem;
     margin: 5px 0;
   }
 
@@ -1178,7 +1178,7 @@ color: whitesmoke;
   }
 
   .footer-links a {
-    font-size: 0.95rem;
+    font-size: 1rem;
     color: white;
     text-decoration: none;
   }
@@ -1850,36 +1850,45 @@ color: #333; /* Darker shade on hover */
 }
 
 @media (max-width: 768px) {
+  .hero {
+    height: 65vh; /* Reduced from 90vh */
+    padding: 10px;
+  }
+
+  .hero-content {
+    padding: 15px;
+    max-width: 90%;
+  }
+
+  .hero h1 {
+    font-size: 1.4rem; /* Reduced title */
+    margin-bottom: 10px;
+  }
+
+  .hero p {
+    font-size: 1rem; /* Smaller paragraph */
+    margin-bottom: 15px;
+  }
+
+  .cta-button1 {
+    font-size: 0.9rem;
+    padding: 7px 12px;
+  }
+
   .nav-arrow {
-    font-size: 1.2rem;
+    font-size: 1rem;
     padding: 6px 10px;
   }
 
   .nav-arrow.left {
-    left: 10px;
+    left: 8px;
   }
 
   .nav-arrow.right {
-    right: 10px;
-  }
-
-  .hero-content {
-    padding: 20px;
-  }
-
-  .hero h1 {
-    font-size: 1.8rem;
-  }
-
-  .hero p {
-    font-size: 1.3rem;
-  }
-
-  .cta-button1 {
-    font-size: 1rem;
-    padding: 8px 15px;
+    right: 8px;
   }
 }
+
 /* ============================================= */
 
 
