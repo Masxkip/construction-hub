@@ -64,6 +64,11 @@ line-height: 1.6;
     font-size: 1rem;
 }
 }
+
+html, body {
+  overflow-x: hidden;
+}
+
 /* ============================================= */
 
 
@@ -984,7 +989,7 @@ color: whitesmoke;
 /* ============================================= */
 
 
-
+/* ============================================= */
 /* Footer Base Styles */
 .footer {
   background: #1d4572;
@@ -1016,7 +1021,7 @@ color: whitesmoke;
 }
 
 .footer-logo {
-  max-width: 180px;
+  max-width: 160px;
   margin-bottom: 15px;
 }
 
@@ -1097,23 +1102,57 @@ color: whitesmoke;
 @media (max-width: 768px) {
   .footer-container {
     flex-direction: column;
+    align-items: center;
     text-align: center;
-    gap: 30px;
+    gap: 20px;
+    padding: 20px 15px;
   }
 
-  .footer-left, .footer-middle, .footer-right {
-    text-align: center !important;
-  }
-
-  .footer-left p,
-  .footer-middle p {
-    text-align: center;
-  }
-
+  .footer-left,
+  .footer-middle,
   .footer-right {
-    text-align: center;
+    width: 100%;
+    margin: 0;
+    padding: 0 10px;
+  }
+
+  .footer-logo {
+    max-width: 140px;
+    margin: 0 auto 10px;
+    margin-left: 120px;
+
+  }
+
+  .footer-left p {
+    font-size: 0.95rem;
+    line-height: 1.5;
+    max-width: 100%;
+    margin: 0 auto;
+  }
+
+  .footer-middle h3,
+  .footer-right h3 {
+    font-size: 1.3rem;
+    margin-bottom: 8px;
+    border-bottom: 1px solid #ccc;
+    display: inline-block;
+  }
+
+  .footer-middle p,
+  .footer-right a {
+    font-size: 0.95rem;
+  }
+
+  .footer-links li {
+    margin-bottom: 6px;
+  }
+
+  .footer-bottom {
+    font-size: 0.9rem;
+    padding: 15px 0;
   }
 }
+
 /* ============================================= */
 
 
