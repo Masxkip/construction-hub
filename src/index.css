@@ -289,7 +289,7 @@ padding: 0;
 /* Responsive Styles */
 @media (max-width: 768px) {
   .navbar{
-    padding: 1.3rem;
+    padding: 1rem;
   }
 
   .branding {
@@ -1108,7 +1108,7 @@ color: whitesmoke;
   .footer-logo {
     max-width: 140px;
     margin: 0 auto 10px;
-    margin-left: 89px;
+    margin-left: 88px;
   }
 
   .footer-left p {
@@ -1962,7 +1962,7 @@ color: #333; /* Darker shade on hover */
 
 @media (max-width: 600px) {
   .partners {
-    padding: 15px 15px;
+    padding: 10px 10px;
   }
 
   .partner-grid {
@@ -1972,11 +1972,11 @@ color: #333; /* Darker shade on hover */
   }
 
   .partner-logo {
-    height: 39px;
+    height: 31px;
   }
 
   .partners-title {
-    font-size: 1.8rem;
+    font-size: 1.6rem;
   }
 }
 /* ============================================= */
@@ -2064,7 +2064,7 @@ color: #333; /* Darker shade on hover */
   }
 
   .services-content h2 {
-    font-size: 1.8rem;
+    font-size: 1.7rem;
   }
 
   .services-content h3 {
@@ -2239,7 +2239,7 @@ color: #333; /* Darker shade on hover */
 }
 
 .welcome-visuals img {
-  height: 130px;
+  height: 120px;
   object-fit: cover;
   border-radius: 6px;
 }
@@ -2265,7 +2265,7 @@ color: #333; /* Darker shade on hover */
   }
 
   .welcome-section h2 {
-    font-size: 1.7rem;
+    font-size: 1.5rem;
   }
 
   .welcome-visuals {
@@ -2275,7 +2275,7 @@ color: #333; /* Darker shade on hover */
 
   .welcome-visuals img {
     width: 100%;
-    max-width: 230px;
+    max-width: 165px;
     height: auto;
   }
 
@@ -2284,7 +2284,7 @@ color: #333; /* Darker shade on hover */
   }
 
   .welcome-description {
-    font-size: 1.05rem;
+    font-size: 1.03rem;
     line-height: 1.6;
     padding: 0;
   }
