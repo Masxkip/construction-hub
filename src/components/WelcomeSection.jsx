@@ -2,7 +2,7 @@
 const WelcomeSection = () => {
   return (
     <section className="welcome-section">
-      <h2>WELCOME AAA CONSTRUCTION SERVICES</h2>
+      <h2>WELCOME TO AAA CONSTRUCTION SERVICES</h2>
       <hr />
 
       <div className="welcome-visuals">

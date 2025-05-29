@@ -72,7 +72,6 @@ const Home = () => {
 
       {/* Quote call section */}
       <div className="contact-quote">
-      <Phone className="phone-icon" size={30} />
       <p>
         Please call for a quote:{" "}
         <a href="tel:+15551234567" className="phone-number">
