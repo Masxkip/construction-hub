@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 const BestSellers = () => {
   return (
     <section className="best-sellers">
-      <h2 className="welcome-section">Top Picks – Our Most Trusted Machines & Attachments</h2>
+      <h2 className="welcome-section">Our Most Trusted Machines on Sale</h2>
       <div className="best-sellers-grid">
         {bestSellers.map((item) => (
           <div key={item.id} className="best-seller-card">
