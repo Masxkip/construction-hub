@@ -66,6 +66,9 @@ line-height: 1.6;
 }
 
 html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
   overflow-x: hidden;
 }
 
@@ -78,8 +81,9 @@ html, body {
 width: 100%; /* Make it full width */
 max-width: 100%; /* Remove content restriction */
 margin: 0; /* Remove auto-centering */
-padding: 0
+padding: 0;
 }
+
 
 /* Responsive Container */
 @media (max-width: 768px) {
@@ -106,7 +110,9 @@ padding: 0
   top: 0;
   width: 100%;
   z-index: 1000;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
+
 
 .logo-img {
   width: 140px; /* Adjust size */
@@ -265,19 +271,6 @@ padding: 0
   cursor: pointer;
 }
 
-.company-header {
-  flex: 1;
-}
-
-.company-name {
-  font-size: 2rem;
-  font-weight: 700;
-  color: white;
-  margin: 0;
-  padding-left: 10px;
-  letter-spacing: 1px;
-  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4);
-}
 
 /* Branding block */
 .branding {
@@ -290,14 +283,6 @@ padding: 0
   display: flex;
   align-items: center;
   text-decoration: none;
-}
-
-.company-name {
-  font-size: 1.8rem;
-  font-weight: 700;
-  color: white;
-  letter-spacing: 1px;
-  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4);
 }
 
 
@@ -329,8 +314,6 @@ padding: 0
       left: 50%;
       transform: translateX(-50%);
     }
-  
-
 }
 /* ============================================= */
 
@@ -343,7 +326,7 @@ justify-content: space-around;
 align-items: center;
 text-align: center;
 padding: 50px 20px;
-background: #f8f9fa;
+background: white;
 flex-wrap: wrap; /* Ensures responsiveness */
 gap: 30px; /* Adds spacing between items */
 }
@@ -357,21 +340,21 @@ flex: 1;
 /* Feature Icons */
 .feature-icon {
 color: #0f346b; /* Yellow Icon */
-font-size: 30rem; /* Adjust size */
+font-size: 21rem; /* Adjust size */
 margin-bottom: 10px;
 }
 
 /* Feature Headings */
 .feature h2 {
 color: #333;
-font-size: 1.5rem;
+font-size: 1.3rem;
 margin-bottom: 10px;
 }
 
 /* Feature Text */
 .feature p {
 color: #666;
-font-size: 1.07rem;
+font-size: 1.05rem;
 }
 
 /* Responsive Design */
@@ -386,7 +369,7 @@ font-size: 1.07rem;
 }
 
 .feature-icon {
-  font-size: 2.5rem; /* Slightly smaller icons */
+  font-size: 2rem; /* Slightly smaller icons */
 }
 }
 
@@ -535,20 +518,21 @@ font-size: 1.07rem;
 /* Best Sellers Section */
 .best-sellers {
   text-align: center;
-   padding: 30px 15px; /* Reduced from 50px 20px */
+   padding: 1px 1px; /* Reduced from 50px 20px */
 }
 
 .best-sellers h2 {
-  font-size: 2rem;
+  margin-top: 15px;
+  font-size: 2.2rem;
   margin-bottom: 20px;
-  color: #222;
+  color: #0f346b;
 }
 
 /* Best Sellers Grid */
 .best-sellers-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 30px; /* Reduced gap */
+  gap: 27px; /* Reduced gap */
   max-width: 950px;
   margin: auto;
 }
@@ -557,9 +541,9 @@ font-size: 1.07rem;
 .best-seller-card {
   background: white;
   border-radius: 10px;
-  padding: 12px;
+  padding: 10px;
   width: 100%;
-  max-width: 420px; /* Reduced container width */
+  max-width: 350px; /* Reduced container width */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   text-align: center;
   transition: transform 0.2s ease-in-out;
@@ -573,7 +557,7 @@ font-size: 1.07rem;
 /* Best Seller Image - Smaller */
 .best-seller-image {
   width: 100%;
-  max-height: 220px; /* Reduced image height */
+  max-height: 180px; /* Reduced image height */
   border-radius: 8px;
   object-fit: cover;
 }
@@ -618,25 +602,27 @@ font-size: 1.07rem;
     gap: 20px;
   }
 
-  .best-seller-card {
+  .best-sellers-card {
     max-width: 95%;
   }
 
-  .best-seller-image {
+  .best-sellers-image {
     max-height: 200px;
   }
-
-  .best-seller-card h3 {
+  .best-sellers h2 {
+    font-size: 1.8em;
+  }
+  .best-sellers-card h3 {
     font-size: 1.06rem;
   }
 
-  .best-seller-price {
+  .best-sellers-price {
     font-size: 1.1rem;
   }
 
-  .best-seller-btn {
+  .best-sellers-btn {
     font-size: 13px;
-    padding: 7px 14px;
+    padding: 7px 12px;
   }
 }
 
@@ -690,12 +676,18 @@ font-size: 1.07rem;
  background: white;
   border: 2px solid #0f346b;
   color: #0f346b;
+  
 }
 
 /* Responsive Design */
 @media (max-width: 768px) {
   .best-sellers-grid {
     grid-template-columns: 1fr;
+  }
+
+  .discover-btn {
+    font-size: 14.4px;
+    padding: 7px 12px;
   }
 }
 /* ============================================= */
@@ -840,7 +832,8 @@ font-size: 1.07rem;
 
 /* Ensure Hover Works */
 .call-us-btn:hover {
-  background: whitesmoke !important; /* Force hover color */
+  background: #0b2751 !important;
+  color: white!important;
 }
 
 /* Position CTA Button in Navbar */
@@ -852,50 +845,12 @@ font-size: 1.07rem;
 
 
 /* ============================================= */
-/* Home About Section */
-.home-about {
-  text-align: center;
-  padding: 50px 20px;
-  background: #f8f9fa;
-}
-
-.about-content h2 {
-  font-size: 2em;
-  color: #17385E;
-}
-
-.about-content {
-  max-width: 800px;
-  margin: auto;
-  font-size: 1.2rem;
-}
-
-/* Learn More Button */
-.learn-more-btn {
-  display: inline-block;
-  margin-top: 15px;
-  padding: 10px 20px;
-  background: #17385E;
-  color: white;
-  text-decoration: none;
-  font-weight: bold;
-  border-radius: 5px;
-}
-
-.learn-more-btn:hover {
-  background: #1d4572;
-  color: white
-}
-/* ============================================= */
-
-
-/* ============================================= */
 /* Why Work With Us Section */
 .why-work-with-us {
 display: flex;
 justify-content: center;
 align-items: center;
-padding: 100px 20px;
+padding: 18px 12px;
 background: url("../public/images/hn1.jpg") center/cover no-repeat; /* Background image */
 position: relative;
 color: white;
@@ -925,7 +880,7 @@ z-index: 1;
 
 /* Left Side - Image */
 .why-image img {
-width: 250px;
+width: 200px;
 height: auto;
 border-radius: 10px;
 object-fit: cover;
@@ -938,12 +893,12 @@ text-align: left;
 }
 
 .why-text h2 {
-font-size: 2.5rem;
+font-size: 2.2rem;
 margin-bottom: 15px;
 }
 
 .why-text p {
-font-size: 1.3rem;
+font-size: 1.1rem;
 margin-bottom: 20px;
 }
 
@@ -954,7 +909,7 @@ padding: 0;
 }
 
 .why-text li {
-font-size: 1.25rem;
+font-size: 1.1rem;
 margin-bottom: 10px;
 position: relative;
 padding-left: 20px;
@@ -970,22 +925,55 @@ font-size: 1.5rem;
 color: whitesmoke;
 }
 
-/* Responsive Design */
 @media (max-width: 768px) {
-.why-content {
+  .why-content {
     flex-direction: column;
+    align-items: center;
+    padding: 5px 5px;
     text-align: center;
-}
+    gap: 20px;
+  }
 
-.why-image img {
+  .why-image img {
     width: 100%;
-    max-width: 200px;
+    max-width: 170px;
+    height: auto;
+    margin-bottom: 20px;
+  }
+
+  .why-text {
+    width: 100%;
+    text-align: left;
+    padding: 0 10px;
+  }
+
+  .why-text h2 {
+    font-size: 1.6rem;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+
+  .why-text p {
+    font-size: 0.94rem;
+    line-height: 1.5;
+  }
+
+  .why-text ul {
+    padding-left: 0;
+    margin-top: 15px;
+  }
+
+  .why-text li {
+    font-size: 0.93rem;
+    padding-left: 18px;
+  }
+
+  .why-text li::before {
+    font-size: 1.2rem;
+    top: 0.1rem;
+  }
 }
 
-.why-text ul {
-    text-align: left;
-}
-}
 /* ============================================= */
 
 
@@ -1120,7 +1108,7 @@ color: whitesmoke;
   .footer-logo {
     max-width: 140px;
     margin: 0 auto 10px;
-    margin-left: 94px;
+    margin-left: 90px;
   }
 
   .footer-left p {
@@ -1418,6 +1406,28 @@ color: #333; /* Darker shade on hover */
     max-width: 100%;
   }
 }
+
+@media (max-width: 767px) {
+  .team-card {
+    height: auto; /* Let content define height for flexibility */
+    padding: 15px;
+  }
+
+  .team-image {
+    width: 130px;
+    height: 130px;
+  }
+
+  .team-name {
+    font-size: 18px;
+  }
+
+  .team-title,
+  .team-role {
+    font-size: 14px;
+  }
+}
+
 /* ============================================= */
 
 
