@@ -84,24 +84,6 @@ const Home = () => {
 
       <ServicesIntro />
 
-      <section className="cta-contact-us">
-  <div className="cta-content">
-    <h2>Need Help or a Custom Quote?</h2>
-    <p>Our team is ready to assist you with sales, rentals, service, and everything in between.</p>
-    <button
-      onClick={() => setShowModal(true)}
-      className="contact-button"
-    >
-      Contact Us
-    </button>
-  </div>
-</section>
-
-
-      {/* Contact Modal */}
-      <ContactModal isOpen={showModal} onClose={() => setShowModal(false)}>
-        <ContactUsForm />
-      </ContactModal>
 
       <section className="why-work-with-us">
         <div className="why-content">
@@ -125,6 +107,26 @@ const Home = () => {
           </div>
         </div>
       </section>
+
+
+          <section className="cta-contact-us">
+  <div className="cta-content">
+    <h2>Need Help or a Custom Quote?</h2>
+    <p>Our team is ready to assist you with sales, rentals, service, and everything in between.</p>
+    <button
+      onClick={() => setShowModal(true)}
+      className="contact-button"
+    >
+      Contact Us
+    </button>
+  </div>
+</section>
+
+
+      {/* Contact Modal */}
+      <ContactModal isOpen={showModal} onClose={() => setShowModal(false)}>
+        <ContactUsForm />
+      </ContactModal>
 
 
     </div>
