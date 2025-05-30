@@ -70,7 +70,11 @@ html, body {
   padding: 0;
   height: 100%;
   overflow-x: hidden;
+  scroll-behavior: smooth;    
 }
+
+
+
 
 /* ============================================= */
 
@@ -457,7 +461,7 @@ font-size: 1.05rem;
 
 /* Item Name */
 .item-name {
-  font-size: 1.3rem;
+  font-size: 1.25rem;
   font-weight: bold;
   margin-top: 20px;
 }
@@ -501,11 +505,11 @@ font-size: 1.05rem;
   }
 
   .item-name {
-    font-size: 1.3rem;
+    font-size: 1.1rem;
   }
 
   .item-price {
-    font-size: 0.95rem;
+    font-size: 0.9rem;
   }
 
   .view-details-btn {
@@ -2207,7 +2211,7 @@ color: #333; /* Darker shade on hover */
 
 /* ============================================= */
 .welcome-section {
-  background: #fff;
+  background: #f4f3f3e4;
   padding: 60px 40px;
   text-align: left; /* left-align for a stronger full-width layout */
   color: #222;
@@ -2580,3 +2584,159 @@ color: #333; /* Darker shade on hover */
 
 
 
+
+
+
+
+.contact-form {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.form-group {
+  margin-bottom: 1.5rem;
+}
+
+.form-group label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.name-fields,
+.address-fields {
+  display: flex;
+  gap: 1rem;
+}
+
+.name-fields input,
+.address-fields input,
+.address-fields select {
+  flex: 1;
+}
+
+input,
+select,
+textarea {
+  width: 100%;
+  padding: 0.6rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+textarea {
+  resize: vertical;
+}
+
+.required {
+  color: red;
+}
+
+.form-submit {
+  text-align: left;
+}
+
+.form-submit button {
+  padding: 0.6rem 1.2rem;
+  border: 1px solid red;
+  background-color: transparent;
+  color: red;
+  cursor: pointer;
+  font-weight: bold;
+  border-radius: 4px;
+  transition: background-color 0.2s ease;
+}
+
+.form-submit button:hover {
+  background-color: red;
+  color: white;
+}
+
+.cta-contact-us {
+  background-color: #f8f8f8;
+  padding: 3rem 1rem;
+  text-align: center;
+}
+
+.cta-contact-us h2 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.cta-contact-us p {
+  font-size: 1rem;
+  margin-bottom: 1.5rem;
+  color: #444;
+}
+
+.contact-button {
+  background-color: #e63946;
+  color: #fff;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.contact-button:hover {
+  background-color: #d62828;
+}
+
+
+
+
+
+
+
+
+
+
+.modal-overlay {
+  position: fixed;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 1000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-backdrop {
+  width: 100%;
+  max-width: 850px;
+  margin: 0 1rem;
+}
+
+.modal-content-box {
+  background-color: white;
+  border-radius: 8px;
+  padding: 2rem;
+  position: relative;
+  max-height: 90vh;
+  overflow-y: auto;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.modal-close-button {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  font-size: 1.5rem;
+  background: none;
+  border: none;
+  color: #333;
+  cursor: pointer;
+}
+
+.modal-title {
+  font-size: 1.75rem;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+
+.modal-form-body {
+  margin-top: 1rem;
+}

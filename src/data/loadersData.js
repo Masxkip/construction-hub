@@ -12,7 +12,7 @@ const loadersData = [
       phone: "+1 543-201-5678",
       location: "Vancouver",
       companyEmail: "info@catdealers.com",
-      manufacturer:"KUBOTA",
+      manufacturer:"CATERPILLAR",
       model: " 262D56",
       condition: "Used",
       serialNumber: "ZB203216",

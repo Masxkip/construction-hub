@@ -1,6 +1,6 @@
 const forkliftsData = [
   {
-    id: 301,
+    id: 401,
     name: "Toyota 8FGU25 Forklift",
     price: "$30,000",
     images: [
