@@ -68,20 +68,16 @@ line-height: 1.6;
 html, body {
   margin: 0;
   padding: 0;
-  height: 100%;
-  overflow-x: hidden;
-  scroll-behavior: smooth;    
 }
 /* ============================================= */
 
 
 /* ============================================= */  
-/* Main Content Wrapper */
+
+
 .main-content {
-width: 100%; /* Make it full width */
-max-width: 100%; /* Remove content restriction */
-margin: 0; /* Remove auto-centering */
-padding: 0;
+  overflow-y: visible !important;
+  height: auto !important;
 }
 
 /* Responsive Container */
@@ -696,22 +692,26 @@ font-size: 1.05rem;
 /* ============================================= */
 /* Call Us Now Button */
 .call-us-btn {
-  background: white!important; /* Force the color change */
+  display: inline-block;
+  background: white!important;
   color: #0f346b!important;
-  font-weight: bold;
+  padding: 6px 12px;
+  border: 2px solid #0f346b!important;
+  border-radius: 8px;
+  font-size: 0.9rem;
+  text-transform: uppercase;
   text-decoration: none;
-  padding: 8px 15px;
-  border-radius: 5px;
-  display: flex;
-  align-items: center;
-  height: 40px;
-  transition: background 0.3s ease-in-out;
+  font-weight: 600;
+  white-space: nowrap;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 /* Ensure Hover Works */
 .call-us-btn:hover {
-  background: #0b2751 !important;
+  background: #0f346b!important;
   color: white!important;
+   border: 2px solid white!important;
 }
 
 /* Position CTA Button in Navbar */
@@ -986,7 +986,7 @@ color: whitesmoke;
   .footer-logo {
     max-width: 140px;
     margin: 0 auto 10px;
-    margin-left: 84px;
+    margin-left: 86px;
   }
 
   .footer-left p {
@@ -1069,7 +1069,7 @@ color: whitesmoke;
 background-color: #747576; /* Yellow background */
 padding: 23px 20px;
 text-align: center;
-font-size: 1.5rem;
+font-size: 1.53rem;
 font-weight: bold;
 color: black; /* Black text */
 display: flex;
@@ -1094,6 +1094,26 @@ transition: color 0.3s ease-in-out;
 .phone-number:hover {
 color: #333; /* Darker shade on hover */
 }
+
+.phone-box {
+  background-color: #0f346b;
+  border: 2px solid white;
+  padding: 2px 8px;
+  border-radius: 8px;
+  color: white;
+  font-size: 1.33rem;
+  font-weight: bold;
+  text-decoration: none;
+  display: inline-block;
+  transition: all 0.3s ease-in-out;
+}
+
+.phone-box:hover {
+  background-color: white;
+  border-color: #0f346b;
+  color: #0f346b;
+}
+
 
 /* Responsive Styling */
 @media (max-width: 768px) {
@@ -1576,21 +1596,77 @@ color: #333; /* Darker shade on hover */
   display: flex;
   justify-content: space-between;
   margin-top: 30px;
+  margin-bottom: 20px;
 }
 
 .filter-buttons button {
-  padding: 10px 25px;
-  background-color: #17385E;
+ display: inline-block;
+  background: #0f346b;
   color: white;
-  border: none;
+  padding: 6px 12px;
+  border: 2px solid white;
   border-radius: 8px;
-  font-weight: bold;
+  font-size: 0.92rem;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-weight: 600;
+  white-space: nowrap;
   cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 .filter-buttons button:hover {
-  background-color: #0f2a46;
+  background-color: white;
+  color: #0f346b;
+  border: 2px solid #0f346b;
 }
+
+
+.checkbox-option {
+  font-weight: normal;
+  margin: 0;
+  padding: 0;
+}
+
+.checkbox-option input {
+  margin: 0;
+  padding: 0;
+}
+
+.checkbox-option input + span,
+.checkbox-option input + label {
+  font-weight: normal;
+}
+
+.checkbox-option span {
+  font-weight: normal; /* ensures all are consistent */
+}
+
+.checkbox-option {
+  display: flex;
+  align-items: center; /* 🔥 fixes vertical misalignment */
+  gap: 8px;             /* consistent spacing between checkbox and label */
+  font-weight: normal;
+}
+
+.checkbox-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.checkbox-option {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-weight: normal;
+  margin-top: -5px; /* ⬅ Apply top margin to all */
+}
+
+/* Remove top margin from the first checkbox */
+.checkbox-option:first-child {
+  margin-top: 0;
+}
+
 
 /* MOBILE */
 @media (max-width: 600px) {
@@ -1609,7 +1685,10 @@ color: #333; /* Darker shade on hover */
     width: 100%;
   }
 }
+/* ============================================= */
 
+
+/* ============================================= */
 .search-bar {
   display: flex;
   gap: 10px;
@@ -1633,16 +1712,25 @@ color: #333; /* Darker shade on hover */
 }
 
 .filter-toggle-btn {
-  background-color: #1d4572;
+  display: inline-block;
+  background: #0f346b;
   color: white;
-  padding: 10px 20px;
-  border: none;
-  border-radius: 5px;
+  padding: 6px 12px;
+  border: 2px solid white;
+  border-radius: 8px;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-weight: 600;
+  white-space: nowrap;
   cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-.filter-toggle-btn:hover {
-  background-color: #17385E; 
+.filter-toggle-btn:hover{
+  background-color: white;
+  color: #0f346b;
+  border: 2px solid #0f346b;
 }
 
 /* ✕ Button */
@@ -1755,6 +1843,33 @@ color: #333; /* Darker shade on hover */
 .nav-arrow.right {
   right: 16px;
 }
+
+.call-button {
+  margin-top: 12px;
+  align-items: center;
+  justify-content: center;
+  display: inline-block;
+  background: #0f346b;
+  color: white;
+  padding: 6px 12px;
+  border: 2px solid white;
+  border-radius: 8px;
+  font-size: 1rem;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-weight: 600;
+  white-space: nowrap;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  margin-left: 10px;
+}
+
+.call-button:hover {
+  background-color: white;
+  color: #0f346b;
+  border: 2px solid #0f346b;
+}
+
 
 @media (max-width: 768px) {
   .hero {
@@ -2456,119 +2571,6 @@ color: #333; /* Darker shade on hover */
 
 
 /* ============================================= */
-.contact-form {
-  max-width: 900px;          /* Wider container */
-  width: 100%;
-  margin: 0 auto;
-  padding: 0 1rem;
-}
-
-.form-group {
-  margin-bottom: 1.5rem;
-}
-
-.form-group label {
-  display: block;
-  font-weight: bold;
-  margin-bottom: 0.4rem;
-  font-size: 0.95rem;
-}
-
-.name-fields,
-.address-fields {
-  display: flex;
-  gap: 1rem;
-  flex-wrap: wrap;
-}
-
-.name-fields input,
-.address-fields input,
-.address-fields select {
-  flex: 1;
-  min-width: 150px;
-}
-
-/* Input and textarea style - smaller height */
-input,
-select,
-textarea {
-  width: 100%;
-  padding: 0.5rem 0.75rem;
-  font-size: 0.95rem;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  line-height: 1.2;
-}
-
-textarea {
-  resize: vertical;
-  min-height: 120px;
-}
-
-.required {
-  color: red;
-}
-
-.form-submit {
-  text-align: left;
-}
-
-.form-submit button {
-  padding: 0.65rem 1.4rem;
-  border: 1px solid red;
-  background-color: transparent;
-  color: red;
-  cursor: pointer;
-  font-weight: bold;
-  border-radius: 4px;
-  transition: background-color 0.2s ease;
-}
-
-.form-submit button:hover {
-  background-color: red;
-  color: white;
-}
-
-.form-error {
-  color: red;
-  font-size: 0.85rem;
-  margin-top: 0.2rem;
-}
-
-.form-success {
-  background-color: #e6ffe6;
-  color: #027a02;
-  border: 1px solid #b4e2b4;
-  padding: 0.75rem 1rem;
-  margin-bottom: 1.5rem;
-  border-radius: 6px;
-  font-weight: bold;
-}
-
-@media (max-width: 768px) {
-  .contact-form {
-    max-width: 100%;
-    padding: 0 1rem;
-  }
-
-  .name-fields,
-  .address-fields {
-    flex-direction: column;
-  }
-
-  .form-submit {
-    text-align: center;
-  }
-
-  .form-submit button {
-    width: 100%;
-  }
-}
-/* ============================================= */
-
-
-
-/* ============================================= */
 .cta-contact-us {
   background-color: #f8f8f8;
   padding: 3rem 1rem;
@@ -2607,6 +2609,115 @@ textarea {
   color: #0f346b;
 }
 /* ============================================= */
+
+.contact-form {
+  max-width: 900px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.contact-form-group {
+  margin-bottom: 1.5rem;
+}
+
+.contact-form-group label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 0.4rem;
+  font-size: 0.95rem;
+}
+
+.contact-name-fields,
+.contact-address-fields {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.contact-name-fields input,
+.contact-address-fields input,
+.contact-address-fields select {
+  flex: 1;
+  min-width: 150px;
+}
+
+.contact-form input,
+.contact-form select,
+.contact-form textarea {
+  width: 100%;
+  padding: 0.5rem 0.75rem;
+  font-size: 0.95rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  line-height: 1.2;
+}
+
+.contact-form textarea {
+  resize: vertical;
+  min-height: 120px;
+}
+
+.contact-required {
+  color: red;
+}
+
+.contact-form-submit {
+  text-align: left;
+}
+
+.contact-form-submit button {
+  padding: 0.65rem 1.4rem;
+  border: 1px solid red;
+  background-color: transparent;
+  color: red;
+  cursor: pointer;
+  font-weight: bold;
+  border-radius: 4px;
+  transition: background-color 0.2s ease;
+}
+
+.contact-form-submit button:hover {
+  background-color: red;
+  color: white;
+}
+
+.contact-form-error {
+  color: red;
+  font-size: 0.85rem;
+  margin-top: 0.2rem;
+}
+
+.contact-form-success {
+  background-color: #e6ffe6;
+  color: #027a02;
+  border: 1px solid #b4e2b4;
+  padding: 0.75rem 1rem;
+  margin-bottom: 1.5rem;
+  border-radius: 6px;
+  font-weight: bold;
+}
+
+@media (max-width: 768px) {
+  .contact-form {
+    max-width: 100%;
+    padding: 0 1rem;
+  }
+
+  .contact-name-fields,
+  .contact-address-fields {
+    flex-direction: column;
+  }
+
+  .contact-form-submit {
+    text-align: center;
+  }
+
+  .contact-form-submit button {
+    width: 100%;
+  }
+}
+
 
 
 /* ============================================= */

@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
-
+import { FiPhoneCall } from "react-icons/fi"; // ✅ Import the phone icon
 
 const slides = [
   {
@@ -62,6 +62,12 @@ const HeroSlider = () => {
         <Link to={currentSlide.link} className="cta-button1">
           {currentSlide.button}
         </Link>
+        
+        {/* ✅ Call CTA Button */}
+        <a href="tel:+1234567890" className="cta-button1 call-button">
+          <FiPhoneCall style={{ marginRight: "8px" }} />
+          Call: +1 (234) 567-890
+        </a>
       </div>
       <button className="nav-arrow right" onClick={goToNext}>
         &#10095;

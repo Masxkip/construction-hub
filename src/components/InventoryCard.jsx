@@ -14,7 +14,7 @@ const InventoryCard = ({ item }) => {
   }
 
   // Limit images to show only the first 5
-  const displayedImages = item.images.slice(0, 5);
+  const displayedImages = item.images.slice(0, 4);
 
   // Handle next and previous images
   const nextImage = () => {

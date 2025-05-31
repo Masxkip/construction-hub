@@ -7,7 +7,7 @@ const Footer = () => {
       <div className="contact-quote">
       <p>
         Please call for a quote:{" "}
-        <a href="tel:+15551234567" className="phone-number">
+        <a href="tel:+15551234567" className="phone-number phone-box">
           +1 555-123-4567
         </a>
       </p>
@@ -40,6 +40,9 @@ const Footer = () => {
               <li><Link to="/">Home</Link></li>
               <li><Link to="/about">About Us</Link></li>
               <li><Link to="/inventory">Inventory</Link></li>
+              <li><Link to="/contact">Services</Link></li>
+              <li><Link to="/contact">Our Team</Link></li>
+              <li><Link to="/contact">Company News</Link></li>
               <li><Link to="/contact">Contact</Link></li>
             </ul>
           </div>

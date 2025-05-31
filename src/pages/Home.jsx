@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { Wrench, DollarSign, Clock, Phone } from "lucide-react";
+import { Wrench, DollarSign, Clock } from "lucide-react";
 import React, { useState } from "react";
 
 // Components
@@ -74,13 +74,13 @@ const Home = () => {
 
       {/* Quote call section */}
       <div className="contact-quote">
-        <p>
-          Please call for a quote:{" "}
-          <a href="tel:+15551234567" className="phone-number">
-            +1 555-123-4567
-          </a>
-        </p>
-      </div>
+      <p>
+        Please call for a quote:{" "}
+        <a href="tel:+15551234567" className="phone-number phone-box">
+          +1 555-123-4567
+        </a>
+      </p>
+    </div>
 
       <ServicesIntro />
 

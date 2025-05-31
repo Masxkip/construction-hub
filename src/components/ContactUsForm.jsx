@@ -18,7 +18,6 @@ const ContactUsForm = () => {
   const [errors, setErrors] = useState({});
   const [submitted, setSubmitted] = useState(false);
 
-  // Validation
   const validate = () => {
     const newErrors = {};
     if (!formData.companyName.trim()) newErrors.companyName = "Company name is required.";
@@ -32,7 +31,6 @@ const ContactUsForm = () => {
     return newErrors;
   };
 
-  // Form handler
   const handleChange = (e) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
@@ -46,10 +44,7 @@ const ContactUsForm = () => {
     } else {
       setErrors({});
       setSubmitted(true);
-      // Here you could call EmailJS, Axios, or your backend
       console.log("Submitted data:", formData);
-
-      // Optional: Clear form
       setFormData({
         companyName: "",
         firstName: "",
@@ -69,13 +64,12 @@ const ContactUsForm = () => {
   return (
     <form className="contact-form" onSubmit={handleSubmit}>
       {submitted && (
-        <div className="form-success">Your message has been sent successfully!</div>
+        <div className="contact-form-success">Your message has been sent successfully!</div>
       )}
 
-      {/* Company Name */}
-      <div className="form-group">
+      <div className="contact-form-group">
         <label>
-          Your Company's Name <span className="required">*</span>
+          Your Company's Name <span className="contact-required">*</span>
         </label>
         <input
           type="text"
@@ -83,13 +77,12 @@ const ContactUsForm = () => {
           value={formData.companyName}
           onChange={handleChange}
         />
-        {errors.companyName && <p className="form-error">{errors.companyName}</p>}
+        {errors.companyName && <p className="contact-form-error">{errors.companyName}</p>}
       </div>
 
-      {/* Name */}
-      <div className="form-group">
+      <div className="contact-form-group">
         <label>Your Name</label>
-        <div className="name-fields">
+        <div className="contact-name-fields">
           <input
             type="text"
             name="firstName"
@@ -107,8 +100,7 @@ const ContactUsForm = () => {
         </div>
       </div>
 
-      {/* Address */}
-      <div className="form-group">
+      <div className="contact-form-group">
         <label>Your Company’s Address</label>
         <input
           type="text"
@@ -124,7 +116,7 @@ const ContactUsForm = () => {
           value={formData.address2}
           onChange={handleChange}
         />
-        <div className="address-fields">
+        <div className="contact-address-fields">
           <input
             type="text"
             name="city"
@@ -149,10 +141,9 @@ const ContactUsForm = () => {
         />
       </div>
 
-      {/* Phone */}
-      <div className="form-group">
+      <div className="contact-form-group">
         <label>
-          Phone <span className="required">*</span>
+          Phone <span className="contact-required">*</span>
         </label>
         <input
           type="tel"
@@ -160,13 +151,12 @@ const ContactUsForm = () => {
           value={formData.phone}
           onChange={handleChange}
         />
-        {errors.phone && <p className="form-error">{errors.phone}</p>}
+        {errors.phone && <p className="contact-form-error">{errors.phone}</p>}
       </div>
 
-      {/* Email */}
-      <div className="form-group">
+      <div className="contact-form-group">
         <label>
-          Email <span className="required">*</span>
+          Email <span className="contact-required">*</span>
         </label>
         <input
           type="email"
@@ -174,13 +164,12 @@ const ContactUsForm = () => {
           value={formData.email}
           onChange={handleChange}
         />
-        {errors.email && <p className="form-error">{errors.email}</p>}
+        {errors.email && <p className="contact-form-error">{errors.email}</p>}
       </div>
 
-      {/* Message */}
-      <div className="form-group">
+      <div className="contact-form-group">
         <label>
-          Message / Question <span className="required">*</span>
+          Message / Question <span className="contact-required">*</span>
         </label>
         <textarea
           name="message"
@@ -188,11 +177,10 @@ const ContactUsForm = () => {
           value={formData.message}
           onChange={handleChange}
         />
-        {errors.message && <p className="form-error">{errors.message}</p>}
+        {errors.message && <p className="contact-form-error">{errors.message}</p>}
       </div>
 
-      {/* Submit */}
-      <div className="form-submit">
+      <div className="contact-form-submit">
         <button type="submit">SUBMIT</button>
       </div>
     </form>

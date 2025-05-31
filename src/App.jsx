@@ -7,7 +7,7 @@ import About from "./pages/About";
 import Footer from "./components/Footer";
 import CompanyNews from "./pages/CompanyNews";
 import OurTeam from "./pages/OurTeam";
-import ScrollToTop from "./components/ScrollToTop"; // ✅ Ensure it's imported
+import ScrollToTop from "./components/ScrollToTop";
 import ServicesLanding from "./pages/ServicesLanding"; 
 import ContactPage from "./pages/ContactPage"; 
 import "./index.css";

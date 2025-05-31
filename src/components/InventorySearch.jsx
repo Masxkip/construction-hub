@@ -75,144 +75,142 @@ const InventorySearch = ({ inventoryData }) => {
   return (
     <div className="inventory-container">
       <div className="search-bar">
-  <div className="search-input-wrapper">
-    <input
-      type="text"
-      placeholder="Search equipment..."
-      value={searchQuery}
-      onChange={(e) => setSearchQuery(e.target.value)}
-    />
-    {searchQuery && (
-      <button
-        className="clear-search-btn"
-        onClick={() => setSearchQuery("")}
-      >
-        ✕
-      </button>
-    )}
-  </div>
-
+        <div className="search-input-wrapper">
+          <input
+            type="text"
+            placeholder="Search equipment..."
+            value={searchQuery}
+            onChange={(e) => setSearchQuery(e.target.value)}
+          />
+          {searchQuery && (
+            <button
+              className="clear-search-btn"
+              onClick={() => setSearchQuery("")}
+            >
+              ✕
+            </button>
+          )}
+        </div>
 
         <button
-        onClick={() => setFilterMenuOpen(true)}
-        className="filter-toggle-btn"
+          onClick={() => setFilterMenuOpen(true)}
+          className="filter-toggle-btn"
         >
-        Filter
+          Filter
         </button>
       </div>
 
       {filterMenuOpen && (
-  <div className="filter-overlay">
-    <div className="filter-modal">
-      <button
-        className="modal-close-btn"
-        onClick={() => setFilterMenuOpen(false)}
-      >
-        ✖
-      </button>
+        <div className="filter-overlay">
+          <div className="filter-modal">
+            <button
+              className="modal-close-btn"
+              onClick={() => setFilterMenuOpen(false)}
+            >
+              ✖
+            </button>
 
-      <div className="filter-fields">
-        <div className="filter-group">
-          <label>Category</label>
-          <div className="checkbox-group">
-            {categories.map((cat) => (
-              <label key={cat} className="checkbox-option">
+            <div className="filter-fields">
+              <div className="filter-group">
+                <label>Category</label>
+                <div className="checkbox-group">
+                  {categories.map((cat) => (
+                    <label key={cat} className="checkbox-option">
+                      <input
+                        type="checkbox"
+                        checked={filters.category.includes(cat)}
+                        onChange={() => handleCheckboxChange("category", cat)}
+                      />
+                      <span>{cat}</span>
+                    </label>
+                  ))}
+                </div>
+              </div>
+
+              <div className="filter-group">
+                <label>Manufacturer</label>
+                <div className="checkbox-group">
+                  {manufacturers.map((man) => (
+                    <label key={man} className="checkbox-option">
+                      <input
+                        type="checkbox"
+                        checked={filters.manufacturer.includes(man)}
+                        onChange={() => handleCheckboxChange("manufacturer", man)}
+                      />
+                      <span>{man}</span>
+                    </label>
+                  ))}
+                </div>
+              </div>
+
+              <div className="filter-group">
+                <label>Year</label>
+                <div className="checkbox-group">
+                  {years.map((y) => (
+                    <label key={y} className="checkbox-option">
+                      <input
+                        type="checkbox"
+                        checked={filters.year.includes(y.toString())}
+                        onChange={() => handleCheckboxChange("year", y.toString())}
+                      />
+                      <span>{y}</span>
+                    </label>
+                  ))}
+                </div>
+              </div>
+
+              <div className="filter-group">
+                <label>Condition</label>
+                <div className="checkbox-group">
+                  {conditions.map((c) => (
+                    <label key={c} className="checkbox-option">
+                      <input
+                        type="checkbox"
+                        checked={filters.condition.includes(c)}
+                        onChange={() => handleCheckboxChange("condition", c)}
+                      />
+                      <span>{c}</span>
+                    </label>
+                  ))}
+                </div>
+              </div>
+
+              <div className="filter-group">
+                <label>Max Price ($)</label>
                 <input
-                  type="checkbox"
-                  checked={filters.category.includes(cat)}
-                  onChange={() => handleCheckboxChange("category", cat)}
+                  type="number"
+                  placeholder="e.g., 75000"
+                  value={filters.price}
+                  onChange={(e) =>
+                    setFilters({ ...filters, price: e.target.value })
+                  }
                 />
-                {cat}
-              </label>
-            ))}
+              </div>
+
+              <div className="filter-buttons">
+                <button
+                  onClick={() => {
+                    setSearchQuery("");
+                    setFilters({
+                      category: [],
+                      manufacturer: [],
+                      year: [],
+                      condition: [],
+                      price: ""
+                    });
+                  }}
+                >
+                  Reset Filters
+                </button>
+
+                <button onClick={() => setFilterMenuOpen(false)}>
+                  Search
+                </button>
+              </div>
+            </div>
           </div>
         </div>
-
-        <div className="filter-group">
-          <label>Manufacturer</label>
-          <div className="checkbox-group">
-            {manufacturers.map((man) => (
-              <label key={man} className="checkbox-option">
-                <input
-                  type="checkbox"
-                  checked={filters.manufacturer.includes(man)}
-                  onChange={() => handleCheckboxChange("manufacturer", man)}
-                />
-                {man}
-              </label>
-            ))}
-          </div>
-        </div>
-
-        <div className="filter-group">
-          <label>Year</label>
-          <div className="checkbox-group">
-            {years.map((y) => (
-              <label key={y} className="checkbox-option">
-                <input
-                  type="checkbox"
-                  checked={filters.year.includes(y.toString())}
-                  onChange={() => handleCheckboxChange("year", y.toString())}
-                />
-                {y}
-              </label>
-            ))}
-          </div>
-        </div>
-
-        <div className="filter-group">
-          <label>Condition</label>
-          <div className="checkbox-group">
-            {conditions.map((c) => (
-              <label key={c} className="checkbox-option">
-                <input
-                  type="checkbox"
-                  checked={filters.condition.includes(c)}
-                  onChange={() => handleCheckboxChange("condition", c)}
-                />
-                {c}
-              </label>
-            ))}
-          </div>
-        </div>
-
-        <div className="filter-group">
-          <label>Max Price ($)</label>
-          <input
-            type="number"
-            placeholder="e.g., 75000"
-            value={filters.price}
-            onChange={(e) =>
-              setFilters({ ...filters, price: e.target.value })
-            }
-          />
-        </div>
-
-        <div className="filter-buttons">
-          <button
-            onClick={() => {
-              setSearchQuery("");
-              setFilters({
-                category: [],
-                manufacturer: [],
-                year: [],
-                condition: [],
-                price: ""
-              });
-            }}
-          >
-            Reset Filters
-          </button>
-
-          <button onClick={() => setFilterMenuOpen(false)}>
-            Search
-          </button>
-        </div>
-      </div>
-    </div>
-  </div>
-)}
-
+      )}
 
       <div className="items-grid">
         {filteredItems.length > 0 ? (
