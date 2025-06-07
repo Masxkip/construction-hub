@@ -1174,7 +1174,7 @@ color: #333; /* Darker shade on hover */
 }
 
 .news-content {
-  font-size: 14px;
+  font-size: 1rem!important;
   color: #444;
 }
 
@@ -1211,7 +1211,7 @@ color: #333; /* Darker shade on hover */
   }
 
   .news-content {
-    font-size: 1.2rem;
+    font-size: 0.7rem;
     line-height: 1.5;
   }
 }
@@ -2593,7 +2593,7 @@ color: #333; /* Darker shade on hover */
   background: #0f346b;
   color: white;
   padding: 8px 16px;
-  border: 2px solid #0f346b;
+  border: 2px solid rgb(255, 255, 255);
   border-radius: 8px;
   font-size: 0.95rem;
   text-transform: uppercase;
@@ -2607,9 +2607,12 @@ color: #333; /* Darker shade on hover */
 .contact-button:hover {
   background: white;
   color: #0f346b;
+  border: 2px solid #0f346b;
 }
 /* ============================================= */
 
+
+/* ============================================= */
 .contact-form {
   max-width: 900px;
   width: 100%;
@@ -2667,19 +2670,25 @@ color: #333; /* Darker shade on hover */
 }
 
 .contact-form-submit button {
-  padding: 0.65rem 1.4rem;
-  border: 1px solid red;
-  background-color: transparent;
-  color: red;
+ display: inline-block;
+  background: #0f346b;
+  color: white;
+  padding: 6px 12px;
+  border: 2px solid white;
+  border-radius: 8px;
+  font-size: 0.92rem;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-weight: 600;
+  white-space: nowrap;
   cursor: pointer;
-  font-weight: bold;
-  border-radius: 4px;
-  transition: background-color 0.2s ease;
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 .contact-form-submit button:hover {
-  background-color: red;
-  color: white;
+  background-color: white;
+  color: #0f346b;
+  border: 2px solid #0f346b;
 }
 
 .contact-form-error {
@@ -2861,9 +2870,9 @@ color: #333; /* Darker shade on hover */
   margin-bottom: 2.5rem;
 }
 
-.contact-header h1 {
-  font-size: 2.75rem;
-  margin-bottom: 0.5rem;
+.contact-header h3 {
+  font-size: 1.4rem;
+  margin-bottom: 0.9rem;
 }
 
 .contact-header p {
@@ -2899,7 +2908,7 @@ color: #333; /* Darker shade on hover */
   background-color: #f8f8f8;
   padding: 1.5rem;
   border-radius: 8px;
-  font-size: 0.95rem;
+  font-size: 1.15rem;
   color: #333;
   min-width: 260px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
@@ -2927,10 +2936,11 @@ color: #333; /* Darker shade on hover */
 
   .info-section {
     margin-top: 2rem;
+    font-size: 1rem;
   }
 
-   .contact-header h1 {
-    font-size: 2rem;
+   .contact-header h3 {
+    font-size: 1.2rem;
   }
 
   .contact-header p {
@@ -2939,7 +2949,7 @@ color: #333; /* Darker shade on hover */
   }
 
   .contact-map iframe {
-    height: 300px;
+    height: 250px;
   }
 }
 /* ============================================= */

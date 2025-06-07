@@ -1,4 +1,6 @@
 import React from "react";
+import HeroHeader from "../components/HeroHeader";
+import bgImage from "/images/c1.jpg"; 
 
 const newsData = [
   {
@@ -29,8 +31,13 @@ const newsData = [
 
 const CompanyNews = () => {
   return (
+             <>
+      <HeroHeader
+        title="Company News"
+        subtitle="Learn More About Our Team and Mission"
+        backgroundImage={bgImage}
+      />
     <section className="company-news">
-      <h2 className="section-header">Company News</h2>
       <div className="news-container">
         {newsData.map((news) => (
           <div className="news-block" key={news.id}>
@@ -44,6 +51,7 @@ const CompanyNews = () => {
         ))}
       </div>
     </section>
+    </>
   );
 };
 

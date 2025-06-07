@@ -1,4 +1,6 @@
 import React from "react";
+import HeroHeader from "../components/HeroHeader";
+import bgImage from "/images/c1.jpg"; 
 
 const teamMembers = [
   {
@@ -47,6 +49,12 @@ const teamMembers = [
 
 const OurTeam = () => {
   return (
+             <>
+      <HeroHeader
+        title="Our Team"
+        subtitle="Meet Our Team Dedicated To This Mission"
+        backgroundImage={bgImage}
+      />
     <section className="our-team">
       <h2 className="team-section-header">Meet Our Team</h2>
       <div className="team-grid">
@@ -62,6 +70,7 @@ const OurTeam = () => {
         ))}
       </div>
     </section>
+     </>
   );
 };
 

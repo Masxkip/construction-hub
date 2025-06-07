@@ -29,7 +29,7 @@ const Footer = () => {
           <div className="footer-middle">
             <h3>Contact Information</h3>
             <p>📍 727 Mission ST, Winnipeg, MB R2J 3Y3</p>
-            <p>📧 info@aaaconstructionequipmentmarket.ca</p>
+            <p>info@aaaconstructionequipmentmarket.ca</p>
             <p>📞  +1 (844) 622-0508</p>
           </div>
 
