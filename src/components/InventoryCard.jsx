@@ -46,9 +46,9 @@ const InventoryCard = ({ item }) => {
 
       {/* Item Details */}
       <h3 className="item-name">{item.name}</h3>
-      <p className="item-price">Price: {item.price}</p>
+      <p className="item-price"  style={{ color: "red" }}>Price: {item.price}</p>
       <p className="item-price">Condition: {item.condition}</p>
-      <p className="item-price">Location: {item.price}</p>
+      <p className="item-price">Location: {item.location}</p>
 
       <Link to={`/inventory/item/${item.id}`} className="view-details-btn">
               View Details

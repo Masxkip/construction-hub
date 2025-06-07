@@ -507,7 +507,7 @@ font-size: 1.05rem;
 /* ============================================= */
 
 
-/* ============================================= */
+/* ==================best sellers=========================== */
 /* Best Sellers Section */
 .best-sellers {
   text-align: center;
@@ -620,7 +620,7 @@ font-size: 1.05rem;
 /* ============================================= */
 
 
-/* ============================================= */
+/* ====================view details button========================= */
 /* View Details Button */
 .view-details-btn {
   display: inline-block;
@@ -689,7 +689,7 @@ font-size: 1.05rem;
 
 
 
-/* ============================================= */
+/* ==================contact phone navbar=========================== */
 /* Call Us Now Button */
 .call-us-btn {
   display: inline-block;
@@ -722,7 +722,7 @@ font-size: 1.05rem;
 /* ============================================= */
 
 
-/* ============================================= */
+/* ==================why work with us=========================== */
 /* Why Work With Us Section */
 .why-work-with-us {
 display: flex;
@@ -855,7 +855,7 @@ color: whitesmoke;
 /* ============================================= */
 
 
-/* ============================================= */
+/* ==================footer=========================== */
 /* Footer Base Styles */
 .footer {
   background: #0f346b;
@@ -1064,7 +1064,7 @@ color: whitesmoke;
 /* ============================================= */
 
 
-/* ============================================= */
+/* ==================contact grey line =========================== */
 /* Contact Quote Section */
 .contact-quote {
 background-color: #747576; /* Yellow background */
@@ -1131,7 +1131,7 @@ color: #333; /* Darker shade on hover */
 /* ============================================= */
 
 
-/* ============================================= */
+/* ====================company news landing========================= */
 .company-news {
   padding: 40px 20px;
   background: #f9f9f9;
@@ -1219,7 +1219,7 @@ color: #333; /* Darker shade on hover */
 /* ============================================= */
 
 
-/* ============================================= */
+/* ==================our team landing=========================== */
 .our-team {
   padding: 60px 20px;
   background-color: #ffffff;
@@ -1328,7 +1328,7 @@ color: #333; /* Darker shade on hover */
 /* ============================================= */
 
 
-/* ============================================= */
+/* ================about us landing============================= */
 .about-us-container {
   max-width: 1100px;
   margin: auto;
@@ -1391,7 +1391,7 @@ color: #333; /* Darker shade on hover */
 
   .about-us-container p,
   .about-us-container ul li {
-    font-size: 0.98rem;
+    font-size: 1.06rem;
   }
 
   .values-list {
@@ -1438,7 +1438,7 @@ color: #333; /* Darker shade on hover */
 /* ============================================= */
 
 
-/* ============================================= */
+/* ====================small hero========================= */
 .bero-header {
   position: relative;
   height: 180px;
@@ -1503,7 +1503,7 @@ color: #333; /* Darker shade on hover */
 
 
 
-/* ============================================= */
+/* =======================all inventory====================== */
 /* BACKDROP OVERLAY */
 .filter-overlay {
   position: fixed;
@@ -1683,7 +1683,7 @@ color: #333; /* Darker shade on hover */
   }
 
   .filter-buttons button {
-    width: 100%;
+    width: 95%;
   }
 }
 /* ============================================= */
@@ -1748,10 +1748,11 @@ color: #333; /* Darker shade on hover */
   cursor: pointer;
   line-height: 1;
 }
+
 /* ============================================= */
 
 
-/* ============================================= */
+/* =======================main hero====================== */
 .hero {
   height: 90vh;
   background-size: cover;
@@ -1975,7 +1976,7 @@ color: #333; /* Darker shade on hover */
 
 
 
-/* ============================================= */
+/* ========================who we are abd why it m================ */
 .services-intro {
   min-height: 70vh; /* Or try 60vh if you want it even shorter */
   padding: 30px 15px;
@@ -2031,17 +2032,22 @@ color: #333; /* Darker shade on hover */
   display: inline-block;
   background: white;
   color: #0f346b;
-  padding: 10px 20px;
-  border-radius: 5px;
-  font-size: 1.1rem;
-  font-weight: bold;
+  padding: 6px 12px;
+  border: 2px solid #0f346b;
+  border-radius: 8px;
+  font-size: 0.92rem;
+  text-transform: uppercase;
   text-decoration: none;
-  transition: background 0.3s ease;
+  font-weight: 600;
+  white-space: nowrap;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 .cta-button2:hover {
-  background: #0f346b;
+  background-color: #0f346b;
   color: white;
+  border: 2px solid white;
 }
 
 @media (max-width: 768px) {
@@ -2284,7 +2290,7 @@ color: #333; /* Darker shade on hover */
 /* ============================================= */
 
 
-/* ============================================= */
+/* =================your equipment our p============================ */
 .home-about {
   padding: 60px 40px;
   background: #f8f9fa;
@@ -2309,9 +2315,9 @@ color: #333; /* Darker shade on hover */
 .learn-more-btn {
   display: inline-block;
   margin-top: 25px;
-   background: transparent;
-  color: #0f346b;
-  padding: 8px 16px;
+  background: #0f346b;
+  color: white;
+  padding: 6px 14px;
   border: 2px solid #0f346b;
   border-radius: 8px;
   font-size: 0.95rem;
@@ -2324,8 +2330,9 @@ color: #333; /* Darker shade on hover */
 }
 
 .learn-more-btn:hover {
-  background: #0f346b;
-  color: white;
+  background-color: white;
+  color: #0f346b;
+  border: 2px solid #0f346b;
 }
 
 /* ✅ Responsive Mobile Styling */
@@ -2478,26 +2485,26 @@ color: #333; /* Darker shade on hover */
 
 .get-quote-btn,
 .second-btn {
-  padding: 8px 16px;
-  border: 2px solid #1d4572;
-  border-radius: 4px;
-  background: transparent;
-  color: #1d4572;
-  font-weight: 600;
-  font-size: 0.95rem;
+  display: inline-block;
+  background: #0f346b;
+  color: white;
+  padding: 6px 12px;
+  border: 2px solid white;
+  border-radius: 8px;
+  font-size: 0.92rem;
   text-transform: uppercase;
   text-decoration: none;
+  font-weight: 600;
+  white-space: nowrap;
   cursor: pointer;
-  white-space: nowrap; /* ✅ Prevents text wrapping */
-  display: inline-block;
   transition: background-color 0.3s ease, color 0.3s ease;
-  min-width: max-content;
 }
 
 .get-quote-btn:hover,
 .second-btn:hover {
-  background-color: #1d4572;
-  color: white;
+  background-color: white;
+  color: #0f346b;
+  border: 2px solid #0f346b;
 }
 
 .divider {
@@ -2552,7 +2559,7 @@ color: #333; /* Darker shade on hover */
 
   .item-specs li,
   .item-contact p {
-    font-size: 0.9rem;
+    font-size: 1.05rem;
   }
 
  .quote-buttons {
@@ -2564,7 +2571,7 @@ color: #333; /* Darker shade on hover */
   .get-quote-btn,
   .second-btn {
     width: auto;
-    padding: 10px 14px;
+    padding: 7px 12px;
     font-size: 0.9rem;
   }
 

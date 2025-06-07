@@ -10,7 +10,7 @@ const loadersData = [
       year: 2022,
       category: "Loader",
       phone: "+1 543-201-5678",
-      location: "Vancouver",
+      location: "Winnipeg",
       companyEmail: "info@catdealers.com",
       manufacturer:"CATERPILLAR",
       model: " 262D56",

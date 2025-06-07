@@ -1,9 +1,30 @@
 import { Link } from "react-router-dom";
+import React, { useState } from "react";
+import ContactUsForm from "../components/ContactUsForm";
+import ContactModal from "../components/ContactModal";
 
 const Footer = () => {
+  const [showModal, setShowModal] = useState(false);
   return (
     <>
-      {/* Main Footer Section */}
+       <section className="cta-contact-us">
+  <div className="cta-content">
+    <h2>Need Help or a Custom Quote?</h2>
+    <p>Our team is ready to assist you with sales, rentals, service, and everything in between.</p>
+    <button
+      onClick={() => setShowModal(true)}
+      className="contact-button"
+    >
+      Contact Us
+    </button>
+  </div>
+</section>
+      {/* Contact Modal */}
+      <ContactModal isOpen={showModal} onClose={() => setShowModal(false)}>
+        <ContactUsForm />
+      </ContactModal>
+
+     {/* Quote call section */}
       <div className="contact-quote">
       <p>
         Please call for a quote:{" "}
@@ -12,6 +33,7 @@ const Footer = () => {
         </a>
       </p>
     </div>
+
       <footer className="footer">
         <div className="footer-container">
 

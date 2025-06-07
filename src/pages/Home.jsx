@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import { Wrench, DollarSign, Clock } from "lucide-react";
-import React, { useState } from "react";
+
 
 // Components
 import BestSellers from "../components/BestSellers";
@@ -8,11 +8,10 @@ import HeroSlider from "../components/HeroSlider";
 import PartnersSection from "../components/PartnersSection";
 import ServicesIntro from "../components/ServicesIntro";
 import WelcomeSection from "../components/WelcomeSection";
-import ContactUsForm from "../components/ContactUsForm"; // ✅ Renamed import
-import ContactModal from "../components/ContactModal";    // ✅ Modal component
+
 
 const Home = () => {
-  const [showModal, setShowModal] = useState(false); // ✅ State placed correctly
+
 
   return (
     <div className="home">
@@ -107,26 +106,6 @@ const Home = () => {
           </div>
         </div>
       </section>
-
-
-          <section className="cta-contact-us">
-  <div className="cta-content">
-    <h2>Need Help or a Custom Quote?</h2>
-    <p>Our team is ready to assist you with sales, rentals, service, and everything in between.</p>
-    <button
-      onClick={() => setShowModal(true)}
-      className="contact-button"
-    >
-      Contact Us
-    </button>
-  </div>
-</section>
-
-
-      {/* Contact Modal */}
-      <ContactModal isOpen={showModal} onClose={() => setShowModal(false)}>
-        <ContactUsForm />
-      </ContactModal>
 
 
     </div>

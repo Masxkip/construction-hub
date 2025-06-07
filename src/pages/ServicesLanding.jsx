@@ -1,13 +1,10 @@
 import { Link } from "react-router-dom";
 import PartnersSection from "../components/PartnersSection";
-import ContactUsForm from "../components/ContactUsForm"; // ✅ Renamed import
-import ContactModal from "../components/ContactModal";    // ✅ Modal component
-import React, { useState } from "react";
 import HeroHeader from "../components/HeroHeader";
 import bgImage from "/images/c1.jpg"; 
 
 const ServicesLanding = () => {
-  const [showModal, setShowModal] = useState(false); // ✅ State placed correctly
+
 
   return (
              <>
@@ -111,25 +108,7 @@ const ServicesLanding = () => {
 
       </div>
        <PartnersSection />
-
-        <section className="cta-contact-us"  style={{ backgroundColor: "white" }}>
-  <div className="cta-content">
-    <h2>Need Help or a Custom Quote?</h2>
-    <p>Our team is ready to assist you with sales, rentals, service, and everything in between.</p>
-    <button
-      onClick={() => setShowModal(true)}
-      className="contact-button"
-    >
-      Contact Us
-    </button>
-  </div>
 </section>
-
-       {/* Contact Modal */}
-      <ContactModal isOpen={showModal} onClose={() => setShowModal(false)}>
-        <ContactUsForm />
-      </ContactModal>
-    </section>
      </>
   );
 };
