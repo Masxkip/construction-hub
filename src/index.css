@@ -1175,7 +1175,7 @@ color: #333; /* Darker shade on hover */
 }
 
 .news-content {
-  font-size: 1rem!important;
+  font-size: 1.17rem!important;
   color: #444;
 }
 
@@ -2566,6 +2566,12 @@ color: #333; /* Darker shade on hover */
     width: auto;
     padding: 10px 14px;
     font-size: 0.9rem;
+  }
+
+  .item-image-side,
+  .item-info-side {
+    min-width: 0;
+    width: 100%;
   }
 }
 /* ============================================= */

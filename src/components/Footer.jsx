@@ -18,11 +18,11 @@ const Footer = () => {
           {/* Left Section - Logo & Description */}
           <div className="footer-left">
             <img src="/images/aab1.png" alt="Company Logo" className="footer-logo" />
-            <p>
-              We provide top-quality construction equipment and reliable service, ensuring you get the best solutions for your projects.
-              We provide top-quality construction equipment and reliable service, ensuring you get the best solutions for your projects.
-              We provide top-quality construction equipment and reliable service, ensuring you get the best solutions for your projects.
-            </p>
+         <p>
+  With 20+ years in the construction industry, we specialize in equipment sales, servicing, and genuine parts. Our team is committed to providing reliable machines and expert support to keep your projects running smoothly.
+</p>
+
+
           </div>
 
           {/* Middle Section - Address & Contact Information */}

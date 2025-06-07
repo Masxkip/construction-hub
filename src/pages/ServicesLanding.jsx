@@ -20,7 +20,6 @@ const ServicesLanding = () => {
 
       {/* Intro Section */}
       <div className="intro">
-        <h2>AAA Construction Services & Parts</h2>
         <p>
           At AAA Constructions, we don’t just sell equipment — we support your operations end to end.
           From premium machine parts to expert servicing, our goal is to keep your fleet productive

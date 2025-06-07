@@ -56,7 +56,6 @@ const OurTeam = () => {
         backgroundImage={bgImage}
       />
     <section className="our-team">
-      <h2 className="team-section-header">Meet Our Team</h2>
       <div className="team-grid">
         {teamMembers.map((member) => (
           <div className="team-card" key={member.id}>
