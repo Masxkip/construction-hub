@@ -66,7 +66,7 @@ const HeroSlider = () => {
         {/* ✅ Call CTA Button */}
         <a href="tel:+1234567890" className="cta-button1 call-button">
           <FiPhoneCall style={{ marginRight: "8px" }} />
-          Call: +1 (234) 567-890
+          Call: +1 (844) 622-0508
         </a>
       </div>
       <button className="nav-arrow right" onClick={goToNext}>

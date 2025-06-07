@@ -33,10 +33,10 @@ const ContactPage = () => {
         <div className="info-section">
             <h2>Contact Information</h2>
             <p><strong>AAA Construction Equipment</strong></p>
-            <p>390 Marf Avenue<br />Mississauga, ON L5G 1T1</p>
+            <p>727 Mission ST,<br />Winnipeg, MB R2J 3Y3</p>
 
-            <p><strong>Phone:</strong><br /><a href="tel:2892035779">(289) 203-5779</a></p>
-            <p><strong>Email:</strong><br /><a href="mailto:support@aaa.com">support@aaa.com</a></p>
+            <p><strong>Phone:</strong><br /><a href="tel:2892035779"> +1 (844) 622-0508</a></p>
+            <p><strong>Email:</strong><br /><a href="mailto:support@aaa.com">info@aaaconstructionequipmentmarket.ca</a></p>
             
             <p><strong>Hours:</strong><br />
             Monday – Friday: 8:00 AM – 6:00 PM<br />

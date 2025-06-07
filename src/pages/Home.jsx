@@ -77,7 +77,7 @@ const Home = () => {
       <p>
         Please call for a quote:{" "}
         <a href="tel:+15551234567" className="phone-number phone-box">
-          +1 555-123-4567
+           +1 (844) 622-0508
         </a>
       </p>
     </div>
