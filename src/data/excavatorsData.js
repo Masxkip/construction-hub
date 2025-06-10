@@ -82,6 +82,132 @@ const excavatorsData = [
       serialNumber: "CAT0308EJFJX1265",
       description: "Base Unit, 66HP Bobcat Turbo Diesel Engine, Enclosed ROPS Cab with Heat & A/C, Suspension Seat, Joystick Controls, Hydraulic Quick Coupler, Auxiliary Hydraulics, 2-Speed Travel, Rubber Tracks, 18,977 lb Operating Weight, 3,650 lb Max Bucket Force, Long Arm Option for Extended Reach, and 11.5 ft Max Dig Depth. Tracks and Undercarriage in Good Condition. Current Machine Hours: 1,825. Machine Operates Well with Excellent Visibility and Smooth Hydraulics, Ideal for Utility, Residential, and General Construction Work."
     },
+
+   
+        {
+     id: 205,
+      name: "CAT 318EL Compact Excavator",
+      price: "Call for Price",
+      images: [
+        "/images/i9/i9a.JPG", "/images/i9/i9b.JPG", "/images/i9/i9c.JPG",
+        "/images/i9/i9d.JPG", "/images/i9/i9e.JPG", "/images/i9/i9f.JPG",
+      ],
+      year: 2015,
+      category: "Compact Excavator",
+      phone: "+1 543-201-5678",
+      location: "Winnipeg",
+      companyEmail: "info@catdealers.com",
+      manufacturer:"CATERPILLAR",
+      model: " 308E2 CR",
+      condition: "Used",
+      serialNumber: "CAT0308EJFJX1265",
+      description: "Base Unit, 66HP Bobcat Turbo Diesel Engine, Enclosed ROPS Cab with Heat & A/C, Suspension Seat, Joystick Controls, Hydraulic Quick Coupler, Auxiliary Hydraulics, 2-Speed Travel, Rubber Tracks, 18,977 lb Operating Weight, 3,650 lb Max Bucket Force, Long Arm Option for Extended Reach, and 11.5 ft Max Dig Depth. Tracks and Undercarriage in Good Condition. Current Machine Hours: 1,825. Machine Operates Well with Excellent Visibility and Smooth Hydraulics, Ideal for Utility, Residential, and General Construction Work."
+    },
+   
+
+        {
+     id: 206,
+      name: "CAT 315F LCR Excavator",
+      price: "Call for Price",
+      images: [
+        "/images/i10/i10a.JPG", "/images/i10/i10b.JPG", "/images/i10/i10c.JPG",
+        "/images/i10/i10d.JPG", "/images/i10/i10e.JPG", "/images/i10/i10f.JPG",
+      ],
+      year: 2018,
+      category: "Compact Excavator",
+      phone: "+1 543-201-5678",
+      location: "Winnipeg",
+      companyEmail: "info@catdealers.com",
+      manufacturer:"CATERPILLAR",
+      model: " 308E2 CR",
+      condition: "Used",
+      serialNumber: "CAT0308EJFJX1265",
+      description: "Base Unit, 66HP Bobcat Turbo Diesel Engine, Enclosed ROPS Cab with Heat & A/C, Suspension Seat, Joystick Controls, Hydraulic Quick Coupler, Auxiliary Hydraulics, 2-Speed Travel, Rubber Tracks, 18,977 lb Operating Weight, 3,650 lb Max Bucket Force, Long Arm Option for Extended Reach, and 11.5 ft Max Dig Depth. Tracks and Undercarriage in Good Condition. Current Machine Hours: 1,825. Machine Operates Well with Excellent Visibility and Smooth Hydraulics, Ideal for Utility, Residential, and General Construction Work."
+    },
+   
+
+        {
+     id: 207,
+      name: "CAT 320 Compact",
+      price: "Call for Price",
+      images: [
+        "/images/i11/i11a.JPG", "/images/i11/i11b.JPG", "/images/i11/i11c.JPG",
+        "/images/i11/i11d.JPG", "/images/i11/i11e.JPG", "/images/i11/i11f.JPG",
+      ],
+      year: 2020,
+      category: "Compact Excavator",
+      phone: "+1 543-201-5678",
+      location: "Winnipeg",
+      companyEmail: "info@catdealers.com",
+      manufacturer:"CATERPILLAR",
+      model: " 308E2 CR",
+      condition: "Used",
+      serialNumber: "CAT0308EJFJX1265",
+      description: "Base Unit, 66HP Bobcat Turbo Diesel Engine, Enclosed ROPS Cab with Heat & A/C, Suspension Seat, Joystick Controls, Hydraulic Quick Coupler, Auxiliary Hydraulics, 2-Speed Travel, Rubber Tracks, 18,977 lb Operating Weight, 3,650 lb Max Bucket Force, Long Arm Option for Extended Reach, and 11.5 ft Max Dig Depth. Tracks and Undercarriage in Good Condition. Current Machine Hours: 1,825. Machine Operates Well with Excellent Visibility and Smooth Hydraulics, Ideal for Utility, Residential, and General Construction Work."
+    },
+   
+
+        {
+     id: 208,
+      name: "CAT 320DLRR Excavator",
+      price: "Call for Price",
+      images: [
+        "/images/i12/i12a.JPG", "/images/i12/i12b.JPG", "/images/i12/i12c.JPG",
+        "/images/i12/i12d.JPG", "/images/i12/i12e.JPG", "/images/i12/i12f.JPG",
+      ],
+      year: 2011,
+      category: "Compact Excavator",
+      phone: "+1 543-201-5678",
+      location: "Winnipeg",
+      companyEmail: "info@catdealers.com",
+      manufacturer:"CATERPILLAR",
+      model: " 308E2 CR",
+      condition: "Used",
+      serialNumber: "CAT0308EJFJX1265",
+      description: "Base Unit, 66HP Bobcat Turbo Diesel Engine, Enclosed ROPS Cab with Heat & A/C, Suspension Seat, Joystick Controls, Hydraulic Quick Coupler, Auxiliary Hydraulics, 2-Speed Travel, Rubber Tracks, 18,977 lb Operating Weight, 3,650 lb Max Bucket Force, Long Arm Option for Extended Reach, and 11.5 ft Max Dig Depth. Tracks and Undercarriage in Good Condition. Current Machine Hours: 1,825. Machine Operates Well with Excellent Visibility and Smooth Hydraulics, Ideal for Utility, Residential, and General Construction Work."
+    },
+   
+
+        {
+     id: 209,
+      name: "CAT 320GC Compact",
+      price: "Call for Price",
+      images: [
+        "/images/i13/i13a.JPG", "/images/i12/i12b.JPG", "/images/i12/i12c.JPG",
+        "/images/i12/i12d.JPG", "/images/i12/i12e.JPG", "/images/i12/i12f.JPG",
+      ],
+      year: 2024,
+      category: "Compact Excavator",
+      phone: "+1 543-201-5678",
+      location: "Winnipeg",
+      companyEmail: "info@catdealers.com",
+      manufacturer:"CATERPILLAR",
+      model: " 308E2 CR",
+      condition: "Used",
+      serialNumber: "CAT0308EJFJX1265",
+      description: "Base Unit, 66HP Bobcat Turbo Diesel Engine, Enclosed ROPS Cab with Heat & A/C, Suspension Seat, Joystick Controls, Hydraulic Quick Coupler, Auxiliary Hydraulics, 2-Speed Travel, Rubber Tracks, 18,977 lb Operating Weight, 3,650 lb Max Bucket Force, Long Arm Option for Extended Reach, and 11.5 ft Max Dig Depth. Tracks and Undercarriage in Good Condition. Current Machine Hours: 1,825. Machine Operates Well with Excellent Visibility and Smooth Hydraulics, Ideal for Utility, Residential, and General Construction Work."
+    },
+   
+
+        {
+     id: 2010,
+      name: "CAT 323 Compact Excavator",
+      price: "Call for Price",
+      images: [
+        "/images/i14/i14a.JPG", "/images/i14/i14b.JPG", "/images/i14/i14c.JPG",
+        "/images/i14/i14d.JPG", "/images/i14/i14e.JPG", "/images/i14/i14f.JPG",
+      ],
+      year: 2019,
+      category: "Compact Excavator",
+      phone: "+1 543-201-5678",
+      location: "Winnipeg",
+      companyEmail: "info@catdealers.com",
+      manufacturer:"CATERPILLAR",
+      model: " 308E2 CR",
+      condition: "Used",
+      serialNumber: "CAT0308EJFJX1265",
+      description: "Base Unit, 66HP Bobcat Turbo Diesel Engine, Enclosed ROPS Cab with Heat & A/C, Suspension Seat, Joystick Controls, Hydraulic Quick Coupler, Auxiliary Hydraulics, 2-Speed Travel, Rubber Tracks, 18,977 lb Operating Weight, 3,650 lb Max Bucket Force, Long Arm Option for Extended Reach, and 11.5 ft Max Dig Depth. Tracks and Undercarriage in Good Condition. Current Machine Hours: 1,825. Machine Operates Well with Excellent Visibility and Smooth Hydraulics, Ideal for Utility, Residential, and General Construction Work."
+    },
    
     
     
