@@ -282,7 +282,7 @@ const excavatorsData = [
       price: "Call for Price",
       images: [
         "/images/i19/i19a.JPG", "/images/i19/i19b.JPG", "/images/i19/i19c.JPG",
-        "/images/i19/i194d.JPG", "/images/i19/i19e.JPG", "/images/i19/i19f.JPG",
+        "/images/i19/i19d.JPG", "/images/i19/i19e.JPG", "/images/i19/i19f.JPG",
       ],
       year: 2017,
       category: "Compact Excavator",
@@ -295,8 +295,48 @@ const excavatorsData = [
       serialNumber: "EX6231906",
       description: "Base Unit, 66HP Bobcat Turbo Diesel Engine, Enclosed ROPS Cab with Heat & A/C, Suspension Seat, Joystick Controls, Hydraulic Quick Coupler, Auxiliary Hydraulics, 2-Speed Travel, Rubber Tracks, 18,977 lb Operating Weight, 3,650 lb Max Bucket Force, Long Arm Option for Extended Reach, and 11.5 ft Max Dig Depth. Tracks and Undercarriage in Good Condition. Current Machine Hours: 1,825. Machine Operates Well with Excellent Visibility and Smooth Hydraulics, Ideal for Utility, Residential, and General Construction Work."
     },
+
+
+           {
+     id: 2015,
+      name: "2016 CATERPILLAR 335F LCR",
+      price: "Call for Price",
+      images: [
+        "/images/i22/i22a.JPG", "/images/i22/i22b.JPG", "/images/i22/i22c.JPG",
+        "/images/i22/i22d.JPG", "/images/i22/i22e.JPG", "/images/i22/i22f.JPG",
+      ],
+      year: 2015,
+      category: "Crawler Excavator",
+      phone: "+1 543-201-5678",
+      location: "Winnipeg",
+      companyEmail: "info@catdealers.com",
+      manufacturer:"CATERPILLAR",
+      model: "323",
+      condition: "Used",
+      serialNumber: "EX6231906",
+      description: "Base Unit, 66HP Bobcat Turbo Diesel Engine, Enclosed ROPS Cab with Heat & A/C, Suspension Seat, Joystick Controls, Hydraulic Quick Coupler, Auxiliary Hydraulics, 2-Speed Travel, Rubber Tracks, 18,977 lb Operating Weight, 3,650 lb Max Bucket Force, Long Arm Option for Extended Reach, and 11.5 ft Max Dig Depth. Tracks and Undercarriage in Good Condition. Current Machine Hours: 1,825. Machine Operates Well with Excellent Visibility and Smooth Hydraulics, Ideal for Utility, Residential, and General Construction Work."
+    },
    
     
+               {
+     id: 2016,
+      name: "2018 CATERPILLAR 349FL",
+      price: "Call for Price",
+      images: [
+        "/images/i23/i23a.JPG", "/images/i23/i23b.JPG", "/images/i23/i23c.JPG",
+        "/images/i23/i23d.JPG", "/images/i23/i23e.JPG", "/images/i23/i23f.JPG",
+      ],
+      year: 2018,
+      category: "Crawler Excavator",
+      phone: "+1 543-201-5678",
+      location: "Winnipeg",
+      companyEmail: "info@catdealers.com",
+      manufacturer:"CATERPILLAR",
+      model: "323",
+      condition: "Used",
+      serialNumber: "EX6231906",
+      description: "Base Unit, 66HP Bobcat Turbo Diesel Engine, Enclosed ROPS Cab with Heat & A/C, Suspension Seat, Joystick Controls, Hydraulic Quick Coupler, Auxiliary Hydraulics, 2-Speed Travel, Rubber Tracks, 18,977 lb Operating Weight, 3,650 lb Max Bucket Force, Long Arm Option for Extended Reach, and 11.5 ft Max Dig Depth. Tracks and Undercarriage in Good Condition. Current Machine Hours: 1,825. Machine Operates Well with Excellent Visibility and Smooth Hydraulics, Ideal for Utility, Residential, and General Construction Work."
+    },
     
 ];
 
