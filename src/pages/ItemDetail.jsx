@@ -3,7 +3,7 @@ import { useState } from "react";
 import excavatorsData from "../data/excavatorsData";
 import loadersData from "../data/loadersData";
 import forkliftsData from "../data/forkliftsData";
-import bulldozersData from "../data/bulldozersData";
+import dozersData from "../data/dozersData";
 import cranesData from "../data/cranesData";
 
 
@@ -11,7 +11,7 @@ const ItemDetail = () => {
   const { id } = useParams();
   const [currentIndex, setCurrentIndex] = useState(0);
 
-  const allItems = [...bulldozersData, ...excavatorsData, ...loadersData, ...forkliftsData, ...cranesData];
+  const allItems = [...dozersData, ...excavatorsData, ...loadersData, ...forkliftsData, ...cranesData];
   const item = allItems.find((item) => item.id.toString() === id);
 
   if (!item) return <p className="error-message">Item not found.</p>;

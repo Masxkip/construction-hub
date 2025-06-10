@@ -1,7 +1,7 @@
 import excavatorsData from "../data/excavatorsData";
 import loadersData from "../data/loadersData";
 import forkliftsData from "../data/forkliftsData";
-import bulldozersData from "../data/bulldozersData";
+import dozersData from "../data/dozersData";
 import cranesData from "../data/cranesData";
 import InventorySearch from "../components/InventorySearch";
 import InventoryCard from "../components/InventoryCard";
@@ -13,7 +13,7 @@ import "../index.css";
 const AllInventory = () => {
   // Combine all inventory data into one array
   const allItems = [
-    ...bulldozersData.map(item => ({ ...item, category: "Bulldozers" })),
+    ...dozersData.map(item => ({ ...item, category: "Dozers" })),
     ...excavatorsData.map(item => ({ ...item, category: "Excavators" })),
     ...loadersData.map(item => ({ ...item, category: "Loaders" })),
     ...forkliftsData.map(item => ({ ...item, category: "Forklifts" })),
