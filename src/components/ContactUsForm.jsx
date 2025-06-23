@@ -1,4 +1,8 @@
 import React, { useState } from "react";
+import axios from 'axios';
+
+const API_URL = import.meta.env.VITE_BACKEND_URL;
+
 
 const ContactUsForm = () => {
   const [formData, setFormData] = useState({
@@ -35,34 +39,44 @@ const ContactUsForm = () => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    const validationErrors = validate();
-    if (Object.keys(validationErrors).length > 0) {
-      setErrors(validationErrors);
-      setSubmitted(false);
-    } else {
-      setErrors({});
-      setSubmitted(true);
-      console.log("Submitted data:", formData);
-      setFormData({
-        companyName: "",
-        firstName: "",
-        lastName: "",
-        street: "",
-        address2: "",
-        city: "",
-        state: "",
-        zip: "",
-        phone: "",
-        email: "",
-        message: "",
-      });
-    }
-  };
+
+  const handleSubmit = async (e) => {
+  e.preventDefault();
+  const validationErrors = validate();
+  if (Object.keys(validationErrors).length > 0) {
+    setErrors(validationErrors);
+    setSubmitted(false);
+    return;
+  }
+
+  try {
+    await axios.post(`${API_URL}/api/contact`, formData);
+    setSubmitted(true);
+    setErrors({});
+    setFormData({
+      companyName: "",
+      firstName: "",
+      lastName: "",
+      street: "",
+      address2: "",
+      city: "",
+      state: "",
+      zip: "",
+      phone: "",
+      email: "",
+      message: "",
+    });
+  } catch (err) {
+    console.error("Failed to send contact form:", err);
+    setErrors({ form: "Failed to send message. Please try again later." });
+  }
+};
+
+{errors.form && <p className="contact-form-error">{errors.form}</p>}
+
 
   return (
-    <form className="contact-form" onSubmit={handleSubmit}>
+          <form className="contact-form" onSubmit={handleSubmit}>
       {submitted && (
         <div className="contact-form-success">Your message has been sent successfully!</div>
       )}

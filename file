@@ -1,0 +1,293 @@
+.cta-button:hover {
+  background: #1d4572;
+
+  background: #1e4674;
+
+   background: #1f4877;
+  
+  .cta-button {
+  display: inline-block;
+  background: #17385E;
+
+
+  font-family: 'Arial Black', Arial, sans-serif;
+    font-weight: 900;
+    text-transform: uppercase;
+    color: #17385E;
+
+    bkg col
+    background-color: #0f346b;
+
+    .cta-button1 {
+  display: inline-block;
+  background: transparent;
+  color: #1d4572;
+  padding: 8px 16px;
+  border: 2px solid #1d4572;
+  border-radius: 4px;
+  font-size: 0.95rem;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-weight: 600;
+  white-space: nowrap;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.cta-button1:hover {
+  background: #1d4572;
+  color: white;
+}
+===============================================
+
+
+.filter-buttons button {
+ display: inline-block;
+  background: #0f346b;
+  color: white;
+  padding: 6px 12px;
+  border: 2px solid white;
+  border-radius: 8px;
+  font-size: 0.92rem;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-weight: 600;
+  white-space: nowrap;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.filter-buttons button:hover {
+  background-color: white;
+  color: #0f346b;
+  border: 2px solid #0f346b;
+}
+
+
+
+/* ============================================= */
+/* View Details Button */
+.view-details-btn {
+  display: inline-block;
+  background: #0f346b;
+  color: whitesmoke;
+  padding: 8px 16px;
+  border: 2px solid white;
+  border-radius: 8px;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-weight: 600;
+  white-space: nowrap;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  margin-top: 10px;
+}
+
+.view-details-btn:hover {
+  background: white;
+  border: 2px solid #0f346b;
+  color: #0f346b;
+}
+
+
+    ======================================
+
+
+.get-quote-btn,
+.second-btn {
+  padding: 8px 16px;
+  border: 2px solid #1d4572;
+  border-radius: 4px;
+  background: transparent;
+  color: #1d4572;
+  font-weight: 600;
+  font-size: 0.95rem;
+  text-transform: uppercase;
+  text-decoration: none;
+  cursor: pointer;
+  white-space: nowrap; /* ✅ Prevents text wrapping */
+  display: inline-block;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  min-width: max-content;
+}
+
+.get-quote-btn:hover,
+.second-btn:hover {
+  background-color: #1d4572;
+  color: white;
+}
+
+
+
+    <strong>Company Wrench</strong>,
+
+    06316e;
+
+    #0d336b; new
+
+
+  import { useState } from "react"; 
+import excavatorsData from "../data/excavatorsData";
+import loadersData from "../data/loadersData";
+import forkliftsData from "../data/forkliftsData";
+import cranesData from "../data/cranesData";
+import InventoryCard from "../components/InventoryCard";
+import "../index.css"; 
+
+
+const AllInventory = () => {
+  const [searchTerm, setSearchTerm] = useState("");
+  const [selectedCategory, setSelectedCategory] = useState("All");
+
+  // Store all categories
+  const categories = {
+    All: [...excavatorsData, ...loadersData, ...forkliftsData, ...cranesData],
+    Excavators: [...excavatorsData], // Ensure fresh array each time
+    Loaders: [...loadersData],
+    Forklifts: [...forkliftsData],
+    Cranes: [...cranesData],
+  };
+
+  // Ensure selected category always resets correctly
+  const handleCategoryChange = (category) => {
+    setSelectedCategory(category);
+    setSearchTerm(""); // Reset search when switching categories
+  };
+
+  // Get items based on selected category
+  const filteredByCategory = categories[selectedCategory] || [];
+
+  // Filter items based on search term
+  const filteredItems = filteredByCategory.filter((item) =>
+    item.name.toLowerCase().includes(searchTerm.toLowerCase())
+  );
+
+  return (
+    <div className="category-page">
+      <h2>All Inventory</h2>
+
+      {/* Category Selection */}
+      <div className="category-buttons">
+        {Object.keys(categories).map((category) => (
+          <button
+            key={category}
+            className={`category-btn ${selectedCategory === category ? "active" : ""}`}
+            onClick={() => handleCategoryChange(category)}
+          >
+            {category}
+          </button>
+        ))}
+      </div>
+
+      {/* Search Bar */}
+      <input
+        type="text"
+        placeholder="Search Inventory..."
+        value={searchTerm}
+        onChange={(e) => setSearchTerm(e.target.value)}
+        className="search-bar"
+      />
+
+      {/* Inventory List */}
+      <div className="items-grid">
+        {filteredItems.length > 0 ? (
+          filteredItems.map((item) => <InventoryCard key={item.id} item={item} />)
+        ) : (
+          <p className="no-items-message">No items found for this category.</p>
+        )}
+      </div>
+    </div>
+    
+  );
+};
+
+export default AllInventory;
+
+
+
+
+
+import { useState, useEffect } from "react";
+import { Link, useLocation } from "react-router-dom";
+
+const Navbar = () => {
+  const [isOpen, setIsOpen] = useState(false);
+  const [dropdownOpen, setDropdownOpen] = useState(false);
+  const location = useLocation();
+
+  useEffect(() => {
+    setIsOpen(false);
+    setDropdownOpen(false);
+  }, [location.pathname]);
+
+  return (
+    <nav className="navbar">
+      {/* Company Name */}
+      <div className="company-header">
+        <h1 className="company-name">AAA Professionals Limited</h1>
+      </div>
+
+      {/* Nav Links */}
+      <ul className={`nav-links ${isOpen ? "open" : ""}`}>
+        <li><Link to="/">Home</Link></li>
+        <li><Link to="/about">About</Link></li>
+
+        <li className="dropdown">
+          <button onClick={() => setDropdownOpen(!dropdownOpen)}>Inventory ▼</button>
+          {dropdownOpen && (
+            <ul className="dropdown-menu">
+              <li><Link to="/inventory">All Inventory</Link></li>
+              <li><Link to="/category/excavators">Excavators</Link></li>
+              <li><Link to="/category/loaders">Loaders</Link></li>
+              <li><Link to="/category/cranes">Cranes</Link></li>
+              <li><Link to="/category/forklifts">Forklifts</Link></li>
+            </ul>
+          )}
+        </li>
+
+        <li><Link to="/our-team">Our Team</Link></li>
+        <li><Link to="/company-news">Company News</Link></li>
+        <li><Link to="/contact">Contact</Link></li>
+        <li className="nav-cta">
+          <a href="tel:+15551234567" className="call-us-btn">Call Us Now</a>
+        </li>
+      </ul>
+
+      {/* Hamburger Menu */}
+      <div className="hamburger" onClick={() => setIsOpen(true)}>
+        <div className="bar"></div>
+        <div className="bar"></div>
+        <div className="bar"></div>
+      </div>
+
+      {/* Mobile Menu */}
+      {isOpen && (
+        <div className="mobile-menu">
+          <button className="close-btn" onClick={() => setIsOpen(false)}>✖</button>
+          <ul className="mobile-links">
+            <li><Link to="/" onClick={() => setIsOpen(false)}>Home</Link></li>
+            <li><Link to="/about" onClick={() => setIsOpen(false)}>About</Link></li>
+            <li className="dropdown">
+              <button onClick={() => setDropdownOpen(!dropdownOpen)}>Inventory ▼</button>
+              {dropdownOpen && (
+                <ul className="dropdown-menu">
+                  <li><Link to="/inventory" onClick={() => setIsOpen(false)}>All Inventory</Link></li>
+                  <li><Link to="/category/excavators" onClick={() => setIsOpen(false)}>Excavators</Link></li>
+                  <li><Link to="/category/loaders" onClick={() => setIsOpen(false)}>Loaders</Link></li>
+                  <li><Link to="/category/cranes" onClick={() => setIsOpen(false)}>Cranes</Link></li>
+                  <li><Link to="/category/forklifts" onClick={() => setIsOpen(false)}>Forklifts</Link></li>
+                </ul>
+              )}
+            </li>
+            <li><Link to="/our-team" onClick={() => setIsOpen(false)}>Our Team</Link></li>
+            <li><Link to="/company-news" onClick={() => setIsOpen(false)}>Company News</Link></li>
+            <li><Link to="/contact" onClick={() => setIsOpen(false)}>Contact</Link></li>
+          </ul>
+        </div>
+      )}
+    </nav>
+  );
+};
+
+export default Navbar;
