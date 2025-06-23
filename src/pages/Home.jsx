@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import { Wrench, DollarSign, Clock } from "lucide-react";
-import React, { useState } from "react";
+import React, { useState,  useEffect } from "react";
 import ContactUsForm from "../components/ContactUsForm";
 import ContactModal from "../components/ContactModal";
 
@@ -15,6 +15,23 @@ import WelcomeSection from "../components/WelcomeSection";
 
 const Home = () => {
  const [showModal, setShowModal] = useState(false);
+ const [successMessage, setSuccessMessage] = useState('');
+
+
+ const handleContactSuccess = (message) => {
+  setSuccessMessage(message);   // show success message
+  setShowModal(false);          // close the modal
+};
+
+
+useEffect(() => {
+  if (successMessage) {
+    const timer = setTimeout(() => setSuccessMessage(''), 5000);
+    return () => clearTimeout(timer);
+  }
+}, [successMessage]);
+
+
 
   return (
     <div className="home">
@@ -124,8 +141,15 @@ const Home = () => {
 </section>
       {/* Contact Modal */}
       <ContactModal isOpen={showModal} onClose={() => setShowModal(false)}>
-        <ContactUsForm />
+        <ContactUsForm onSuccess={handleContactSuccess} />
       </ContactModal>
+
+          {successMessage && (
+      <div className="contact-success-banner">
+        {successMessage}
+      </div>
+    )}
+
 
     </div>
   );

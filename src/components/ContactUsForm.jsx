@@ -4,7 +4,7 @@ import axios from 'axios';
 const API_URL = import.meta.env.VITE_BACKEND_URL;
 
 
-const ContactUsForm = () => {
+const ContactUsForm = ({ onSuccess }) => {
   const [formData, setFormData] = useState({
     companyName: "",
     firstName: "",
@@ -51,6 +51,11 @@ const ContactUsForm = () => {
 
   try {
     await axios.post(`${API_URL}/api/contact`, formData);
+
+    if (onSuccess) {
+    onSuccess("Your message has been sent successfully!");
+  }
+
     setSubmitted(true);
     setErrors({});
     setFormData({
