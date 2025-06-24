@@ -3,7 +3,6 @@ import axios from 'axios';
 
 const API_URL = import.meta.env.VITE_BACKEND_URL;
 
-
 const ContactUsForm = ({ onSuccess }) => {
   const [formData, setFormData] = useState({
     companyName: "",
@@ -39,51 +38,46 @@ const ContactUsForm = ({ onSuccess }) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
 
-
   const handleSubmit = async (e) => {
-  e.preventDefault();
-  const validationErrors = validate();
-  if (Object.keys(validationErrors).length > 0) {
-    setErrors(validationErrors);
-    setSubmitted(false);
-    return;
-  }
+    e.preventDefault();
+    const validationErrors = validate();
+    if (Object.keys(validationErrors).length > 0) {
+      setErrors(validationErrors);
+      setSubmitted(false);
+      return;
+    }
 
-  try {
-    await axios.post(`${API_URL}/api/contact`, formData);
-
-    if (onSuccess) {
-    onSuccess("Your message has been sent successfully!");
-  }
-
-    setSubmitted(true);
-    setErrors({});
-    setFormData({
-      companyName: "",
-      firstName: "",
-      lastName: "",
-      street: "",
-      address2: "",
-      city: "",
-      state: "",
-      zip: "",
-      phone: "",
-      email: "",
-      message: "",
-    });
-  } catch (err) {
-    console.error("Failed to send contact form:", err);
-    setErrors({ form: "Failed to send message. Please try again later." });
-  }
-};
-
-{errors.form && <p className="contact-form-error">{errors.form}</p>}
-
+    try {
+      await axios.post(`${API_URL}/api/contact`, formData);
+      setSubmitted(true);
+      setErrors({});
+      setFormData({
+        companyName: "",
+        firstName: "",
+        lastName: "",
+        street: "",
+        address2: "",
+        city: "",
+        state: "",
+        zip: "",
+        phone: "",
+        email: "",
+        message: "",
+      });
+      if (onSuccess) onSuccess("Your message has been sent successfully!");
+    } catch (err) {
+      console.error("Failed to send contact form:", err);
+      setErrors({ form: "Failed to send message. Please try again later." });
+    }
+  };
 
   return (
-          <form className="contact-form" onSubmit={handleSubmit}>
+    <form className="contact-form" onSubmit={handleSubmit}>
       {submitted && (
         <div className="contact-form-success">Your message has been sent successfully!</div>
+      )}
+      {errors.form && (
+        <p className="contact-form-error">{errors.form}</p>
       )}
 
       <div className="contact-form-group">
